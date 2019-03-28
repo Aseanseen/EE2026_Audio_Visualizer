@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 28.03.2019 07:23:28
+// Create Date: 28.03.2019 20:03:24
 // Design Name: 
-// Module Name: dff
+// Module Name: freq_sim
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,8 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module dff(input DFF_CLOCK, D, output reg Q = 0);
-    always @ (posedge DFF_CLOCK) begin
-        Q <= D;
-    end
+
+module freq_sim(
+
+    );
 endmodule

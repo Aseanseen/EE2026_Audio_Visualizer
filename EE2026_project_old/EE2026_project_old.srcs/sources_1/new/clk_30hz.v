@@ -1,23 +1,7 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 28.03.2019 07:23:05
-// Design Name: 
-// Module Name: clk_30hz
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+/**
+ * 30 Hz Clock for color selector
+ */
 
 module clk_30hz(
     input clk,

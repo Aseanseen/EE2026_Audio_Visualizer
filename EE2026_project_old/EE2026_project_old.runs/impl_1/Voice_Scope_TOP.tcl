@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,12 +69,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Jy/Desktop/EE2026_project_old/EE2026_project_old.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Jy/Desktop/EE2026_project_old/EE2026_project_old.xpr [current_project]
-  set_property ip_output_repo C:/Users/Jy/Desktop/EE2026_project_old/EE2026_project_old.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.cache/wt [current_project]
+  set_property parent.project_path D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.xpr [current_project]
+  set_property ip_output_repo D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Jy/Desktop/EE2026_project_old/EE2026_project_old.runs/synth_1/Voice_Scope_TOP.dcp
-  read_xdc C:/Users/Jy/Desktop/EE2026_project_old/EE2026_project_old.srcs/constrs_1/new/Basys3_Master.xdc
+  add_files -quiet D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/Voice_Scope_TOP.dcp
+  read_xdc D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/constrs_1/new/Basys3_Master.xdc
   link_design -top Voice_Scope_TOP -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
