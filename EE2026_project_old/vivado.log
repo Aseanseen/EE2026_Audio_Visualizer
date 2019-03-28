@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 28 22:30:24 2019
+# Process ID: 19820
+# Current directory: D:/NUS/ee2026lab/jy/EE2026_project_old
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19600 D:\NUS\ee2026lab\jy\EE2026_project_old\EE2026_project_old.xpr
+# Log file: D:/NUS/ee2026lab/jy/EE2026_project_old/vivado.log
+# Journal file: D:/NUS/ee2026lab/jy/EE2026_project_old\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/NUS/ee2026lab/jy/EE2026_project_old/EE2026_project_old.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Jy/Desktop/EE2026_project_old/.Xil/Vivado-9420-JY-XPS13/PrjAr/_X_' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/../EE2026_Project/archive_project_summary.txt', nor could it be found using path 'C:/Users/Jy/Desktop/EE2026_Project/archive_project_summary.txt'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-231] Project 'EE2026_project_old.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VivadoHLX/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 827.914 ; gain = 62.215
+update_compile_order -fileset sources_1

@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 28 12:41:55 2019
+# Process ID: 9420
+# Current directory: C:/Users/Jy/Desktop/EE2026_project_old
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9164 C:\Users\Jy\Desktop\EE2026_project_old\EE2026_project_old.xpr
+# Log file: C:/Users/Jy/Desktop/EE2026_project_old/vivado.log
+# Journal file: C:/Users/Jy/Desktop/EE2026_project_old\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jy/Desktop/EE2026_project_old/EE2026_project_old.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Jy/Desktop/EE2026_Project/archive_project_summary.txt'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 688.500 ; gain = 123.391
+update_compile_order -fileset sources_1
+archive_project C:/Users/Jy/Desktop/EE2026_project_old.xpr.zip -temp_dir C:/Users/Jy/Desktop/EE2026_project_old/.Xil/Vivado-9420-JY-XPS13 -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Jy/Desktop/EE2026_project_old/.Xil/Vivado-9420-JY-XPS13' for archiving project
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Jy/Desktop/EE2026_Project/archive_project_summary.txt'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+WARNING: [Coretcl 2-52] File 'C:/Users/Jy/Desktop/EE2026_Project/archive_project_summary.txt' does not exist

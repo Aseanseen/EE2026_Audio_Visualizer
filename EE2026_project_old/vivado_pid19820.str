@@ -1,0 +1,163 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 19820
+License: Customer
+
+Current time: 	Thu Mar 28 22:30:44 SGT 2019
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 20 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/VivadoHLX/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/VivadoHLX/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Admin
+User home directory: C:/Users/Admin
+User working directory: D:/NUS/ee2026lab/jy/EE2026_project_old
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: D:/VivadoHLX/Vivado
+HDI_APPROOT: D:/VivadoHLX/Vivado/2018.2
+RDI_DATADIR: D:/VivadoHLX/Vivado/2018.2/data
+RDI_BINDIR: D:/VivadoHLX/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/VivadoHLX/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/NUS/ee2026lab/jy/EE2026_project_old/vivado.log
+Vivado journal file location: 	D:/NUS/ee2026lab/jy/EE2026_project_old/vivado.jou
+Engine tmp dir: 	D:/NUS/ee2026lab/jy/EE2026_project_old/.Xil/Vivado-19820-LAPTOP-MNQMD5TA
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/VivadoHLX/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/VivadoHLX/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/VivadoHLX/Vivado/2018.2
+XILINX_SDK: D:/VivadoHLX/SDK/2018.2
+XILINX_VIVADO: D:/VivadoHLX/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/VivadoHLX/Vivado/2018.2
+
+
+GUI allocated memory:	209 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 507 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 60 MB (+60599kb) [00:00:10]
+// [Engine Memory]: 492 MB (+364849kb) [00:00:10]
+// HOptionPane Warning: 'This project was created with a future version of Vivado. It will be opened in read-only mode for the protection of unrecognized data. Please use 'File | Save Project As...' if you need to alter a copy of this project. The project may or may not open reliably with this version of Vivado. OK to proceed and open the project? (Future Project Version)'
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: D:\NUS\ee2026lab\jy\EE2026_project_old\EE2026_project_old.xpr. Version: Vivado v2018.3 
+selectButton("PAResourceOtoP.PABaseTab_THIS_PROJECT_WILL_BE_OPENED_IN_READ_ONLY_OK", "OK"); // JButton (A, G)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 77 MB (+14062kb) [00:00:14]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 507 MB. GUI used memory: 34 MB. Current time: 3/28/19 10:30:46 PM SGT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/NUS/ee2026lab/jy/EE2026_project_old/EE2026_project_old.xpr 
+// Tcl Message: open_project D:/NUS/ee2026lab/jy/EE2026_project_old/EE2026_project_old.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Jy/Desktop/EE2026_project_old/.Xil/Vivado-9420-JY-XPS13/PrjAr/_X_' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VivadoHLX/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 573 MB (+58580kb) [00:00:18]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 827.914 ; gain = 62.215 
+// [Engine Memory]: 612 MB (+11187kb) [00:00:22]
+// Project name: EE2026_project_old; location: D:/NUS/ee2026lab/jy/EE2026_project_old; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// a (ck): Critical Messages: addNotify
+// y (ck): Project is Read-Only: addNotify
+// Elapsed time: 55 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (y)
+dismissDialog("Project is Read-Only"); // y (ck)
+dismissDialog("Critical Messages"); // a (ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v)]", 1); // B (D, ck)
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// PAPropertyPanels.initPanels (VGA_DISPLAY.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), vga : VGA_DISPLAY (VGA_DISPLAY.v)]", 9, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), vga : VGA_DISPLAY (VGA_DISPLAY.v)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), vga : VGA_DISPLAY (VGA_DISPLAY.v), VGA_CLK_108M : CLK_108M(xilinx) (CLK_108M.vhd)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), vga : VGA_DISPLAY (VGA_DISPLAY.v)]", 9, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), cs : colour_selector (colour_selector.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), cs : colour_selector (colour_selector.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), cs : colour_selector (colour_selector.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("colour_selector.v", 125, 252); // D (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("colour_selector.v", 2, 162, true, false, false, false, false); // D (w, ck) - Shift Key
+typeControlKey((HResource) null, "colour_selector.v", 'c'); // D (w, ck)
+// [GUI Memory]: 82 MB (+1101kb) [00:04:47]
+// Elapsed time: 301 seconds
+selectCodeEditor("colour_selector.v", 232, 174); // D (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA_DISPLAY.v", 1); // k (j, ck)
+// [GUI Memory]: 86 MB (+854kb) [00:06:57]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+selectCodeEditor("Voice_Scope_TOP.v", 92, 253); // D (w, ck)
+selectCodeEditor("Voice_Scope_TOP.v", 92, 253, false, false, false, false, true); // D (w, ck) - Double Click
+selectCodeEditor("Voice_Scope_TOP.v", 108, 206); // D (w, ck)
+selectCodeEditor("Voice_Scope_TOP.v", 108, 206, false, false, false, false, true); // D (w, ck) - Double Click
+selectCodeEditor("Voice_Scope_TOP.v", 98, 195); // D (w, ck)
+selectCodeEditor("Voice_Scope_TOP.v", 98, 195, false, false, false, false, true); // D (w, ck) - Double Click
+selectCodeEditor("Voice_Scope_TOP.v", 98, 195, false, false, false, true, false); // D (w, ck) - Popup Trigger
+selectCodeEditor("Voice_Scope_TOP.v", 97, 195, false, false, false, true, false); // D (w, ck) - Popup Trigger
+selectCodeEditor("Voice_Scope_TOP.v", 53, 195); // D (w, ck)
+selectCodeEditor("Voice_Scope_TOP.v", 624, 195); // D (w, ck)
+typeControlKey((HResource) null, "Voice_Scope_TOP.v", 'c'); // D (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("Voice_Scope_TOP.v", 16, 97); // D (w, ck)
+typeControlKey((HResource) null, "Voice_Scope_TOP.v", 'c'); // D (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Voice_Scope_TOP.v", 309, 76); // D (w, ck)
+typeControlKey((HResource) null, "Voice_Scope_TOP.v", 'c'); // D (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("Voice_Scope_TOP.v", 247, 39); // D (w, ck)
+typeControlKey((HResource) null, "Voice_Scope_TOP.v", 'c'); // D (w, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), slow_clk : clk_30hz (clk_30hz.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), slow_clk : clk_30hz (clk_30hz.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("clk_30hz.v", 109, 364, true, false, false, false, false); // D (w, ck) - Shift Key
+typeControlKey((HResource) null, "clk_30hz.v", 'c'); // D (w, ck)
+typeControlKey((HResource) null, "clk_30hz.v", 'c'); // D (w, ck)
+// [GUI Memory]: 92 MB (+1003kb) [00:11:22]
+// Elapsed time: 419 seconds
+selectCodeEditor("clk_30hz.v", 232, 112); // D (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "colour_selector.v", 1); // k (j, ck)
+// Elapsed time: 607 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), vga : VGA_DISPLAY (VGA_DISPLAY.v)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), vga : VGA_DISPLAY (VGA_DISPLAY.v)]", 11, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 612 MB. GUI used memory: 44 MB. Current time: 3/28/19 11:00:46 PM SGT

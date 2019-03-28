@@ -1,0 +1,107 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Mar 28 11:53:49 2019
+| Host         : JY-XPS13 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Voice_Scope_TOP_control_sets_placed.rpt
+| Design       : Voice_Scope_TOP
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            1 |
+|      4 |            1 |
+|      8 |            1 |
+|      9 |            1 |
+|     12 |            7 |
+|     13 |            1 |
+|     14 |           21 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              65 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             102 |           38 |
+| Yes          | No                    | No                     |              20 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+--------------------------------------------+--------------------------------------+------------------+----------------+
+|        Clock Signal        |                Enable Signal               |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------------------+--------------------------------------------+--------------------------------------+------------------+----------------+
+|  CLOCK_IBUF_BUFG           |                                            |                                      |                3 |              3 |
+|  vga/VGA_CLK_108M/clk_out1 |                                            |                                      |                4 |              4 |
+|  CLOCK_IBUF_BUFG           | ld/maxVol                                  |                                      |                3 |              8 |
+|  slow_clk/clk_wire_30hz    |                                            | cs/state[2]                          |                5 |              9 |
+|  vga/VGA_CLK_108M/clk_out1 |                                            | vga/VGA_CONTROL/v_cntr_reg_reg[10]_0 |                7 |             12 |
+|  vga/VGA_CLK_108M/clk_out1 | vga/VGA_CONTROL/eqOp2_in                   | vga/VGA_CONTROL/v_cntr_reg0          |                3 |             12 |
+|  CLOCK_IBUF_BUFG           |                                            | JA1_OBUF_BUFG                        |                3 |             12 |
+|  CLOCK_IBUF_BUFG           |                                            | my_clk/clear                         |                3 |             12 |
+|  CLOCK_IBUF_BUFG           | ld/p_0_in_0                                | ld/maxVol                            |                6 |             12 |
+|  CLOCK_IBUF_BUFG           | ld/led                                     |                                      |                4 |             12 |
+| ~vc/JA4_OBUF               |                                            |                                      |                4 |             12 |
+|  slow_clk/clk_wire_30hz    |                                            |                                      |                3 |             13 |
+|  vga/VGA_CLK_108M/clk_out1 |                                            | vga/VGA_CONTROL/eqOp2_in             |                8 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_576_639_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_64_127_0_2_i_1_n_0    |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_384_447_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_448_511_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_512_575_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_768_831_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_832_895_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_896_959_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_704_767_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_960_1023_0_2_i_1_n_0  |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_1024_1087_0_2_i_1_n_0 |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_0_63_0_2_i_4_n_0      |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_1216_1279_0_2_i_1_n_0 |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_1088_1151_0_2_i_1_n_0 |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_192_255_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_1152_1215_0_2_i_1_n_0 |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_128_191_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_256_319_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_320_383_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  JA1_OBUF_BUFG             | dw/Sample_Memory_reg_640_703_0_2_i_1_n_0   |                                      |                4 |             14 |
+|  CLOCK_IBUF_BUFG           |                                            | slow_clk/count[0]_i_1__0_n_0         |                5 |             18 |
+|  CLOCK_IBUF_BUFG           |                                            | ld/clear                             |                7 |             25 |
+|  JA1_OBUF_BUFG             |                                            |                                      |               14 |             33 |
++----------------------------+--------------------------------------------+--------------------------------------+------------------+----------------+
+
+
