@@ -9,6 +9,7 @@ module Draw_Waveform(
     input [9:0] wave_sample,
     input [11:0] VGA_HORZ_COORD,
     input [11:0] VGA_VERT_COORD,
+    input [11:0] colour,
     output [3:0] VGA_Red_waveform,
     output [3:0] VGA_Green_waveform,
     output [3:0] VGA_Blue_waveform
@@ -27,10 +28,18 @@ module Draw_Waveform(
         Sample_Memory[i] <= (SW0 == 1) ? wave_sample : ramp_count;              
     end
      
-
-    assign VGA_Red_waveform =   ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))) ? 4'hf : 0;
-    assign VGA_Green_waveform = ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))) ? 4'hf : 0;
-    assign VGA_Blue_waveform =  ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))) ? 4'hf : 0 ;
+    wire [3:0] red;
+    wire [3:0] green;
+    wire [3:0] blue;
+    
+    assign red = colour >> 8;
+    assign green = colour << 4 >> 8;
+    assign blue = colour << 8 >> 8;
+    
+    assign VGA_Red_waveform =   ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))) ? red : 0;
+    assign VGA_Green_waveform = ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))) ? green : 0;
+    assign VGA_Blue_waveform =  ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))) ? blue : 0 ;
 
     
 endmodule
+

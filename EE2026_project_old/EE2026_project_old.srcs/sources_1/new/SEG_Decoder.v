@@ -41,7 +41,7 @@ module SEG_Decoder(input CLOCK, [5:0] WORD0, [5:0] WORD1, [5:0] WORD2, [5:0] WOR
             12: begin seg = 8'b11000110; end //C
             13: begin seg = 8'b10100001; end //D
             14: begin seg = 8'b10000110; end //E
-            15: begin seg = 8'b10000110; end //F
+            15: begin seg = 8'b10001110; end //F
             16: begin seg = 8'b10000010; end //G
             17: begin seg = 8'b10001001; end //H
             18: begin seg = 8'b10000110; end //I

@@ -1,0 +1,135 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Nov  3 21:23:11 2018
+| Host         : KHLim running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Voice_Scope_TOP_control_sets_placed.rpt
+| Design       : Voice_Scope_TOP
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    67 |
+| Unused register locations in slices containing registers |   104 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      8 |            6 |
+|     10 |            1 |
+|     12 |            5 |
+|    16+ |           54 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             378 |          121 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             664 |          116 |
+| Yes          | No                    | No                     |             168 |           44 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             150 |           42 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------+---------------------------------------------+-----------------------------------------------+------------------+----------------+
+|                 Clock Signal                |                Enable Signal                |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++---------------------------------------------+---------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  slow_clks/clk_div_05/CLK                   |                                             |                                               |                2 |              4 |
+|  clk_btns_debounce_BUFG                     |                                             | menu/main_pointer[1]_i_1_n_0                  |                1 |              8 |
+|  slow_clks/clk_div_04/current_vol_reg[3]    |                                             |                                               |                1 |              8 |
+|  slow_clks/clk_div_04/current_vol_reg[3]    | seg/mux/current_vol[3]_i_1_n_0              |                                               |                2 |              8 |
+|  slow_clks/clk_div_05/CLK                   |                                             | menu/config_02/SS[0]                          |                1 |              8 |
+|  clk_vol_update_BUFG                        | draw_vol_history/overflow_index             | draw_vol_history/overflow_index[8]_i_1_n_0    |                2 |              8 |
+|  clk_leds_refresh_BUFG                      | leds/current_vol[3]_i_1__0_n_0              |                                               |                1 |              8 |
+|  clk_vol_update_BUFG                        | draw_vol_history/overflow_index             |                                               |                2 |             10 |
+|  vga_display/VGA_CLK_108M/clk_out1          |                                             | draw_menu/SS[0]                               |                4 |             12 |
+|  vga_display/VGA_CLK_108M/clk_out1          |                                             | draw_menu/VGA_Green_Grid_reg[3][0]            |                4 |             12 |
+|  clk_btns_debounce_BUFG                     | menu/config_01/LEDS_REFRESH_FREQ[5]_i_1_n_0 |                                               |                4 |             12 |
+|  clk_leds_refresh_BUFG                      |                                             |                                               |                4 |             12 |
+|  clk_btns_debounce_BUFG                     | menu/config_02/SEG_REFRESH_FREQ[5]_i_1_n_0  |                                               |                3 |             12 |
+|  clk_btns_debounce_BUFG                     | menu/config_02/SEG_BLINK_FREQ[8]_i_1_n_0    |                                               |                5 |             16 |
+|  clk_vol_update_BUFG                        | draw_vol_history/vol_sum0                   | draw_vol_history/i[8]_i_1__0_n_0              |                4 |             16 |
+|  CLK_100M_IBUF_BUFG                         |                                             |                                               |                8 |             16 |
+|  clk_btns_debounce_BUFG                     | menu/config_03/DISP_REFRESH_FREQ[9]_i_1_n_0 |                                               |                4 |             16 |
+|  vga_display/VGA_CLK_108M/clk_out1          | vga_display/VGA_CONTROL/p_2_in              |                                               |                5 |             18 |
+|  clk_leds_refresh_BUFG                      | menu/E[0]                                   |                                               |                2 |             18 |
+|  slow_clks/clk_div_06/clk_disp_refresh_BUFG | draw_waveform/bar/p_0_in0_out__0            |                                               |                2 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                      |                                             | ramp_gen/clear                                |                5 |             20 |
+|  clk_leds_refresh_BUFG                      |                                             | menu/SR[0]                                    |                7 |             20 |
+|  clk_leds_refresh_BUFG                      | menu/config_01/center_l_reg[4][0]           |                                               |                4 |             20 |
+|  vga_display/VGA_CLK_108M/clk_out1          |                                             | vga_display/VGA_CONTROL/VGA_RED_reg[3]_0      |                6 |             24 |
+|  vga_display/VGA_CLK_108M/clk_out1          |                                             | vga_display/VGA_CONTROL/SR[0]                 |                4 |             24 |
+|  vga_display/VGA_CLK_108M/clk_out1          | vga_display/VGA_CONTROL/E[0]                | vga_display/VGA_CONTROL/WAVEFORM_reg[0]_14[0] |                5 |             24 |
+|  CLK_100M_IBUF_BUFG                         |                                             | slow_clks/clk_div_01/clear                    |                3 |             24 |
+| ~voice_capturer/J_MIC3_Pin4_OBUF            |                                             |                                               |                7 |             24 |
+|  CLK_100M_IBUF_BUFG                         |                                             | J_MIC3_Pin1_OBUF_BUFG                         |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_17    |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]       |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_7     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_10    |                                               |                4 |             28 |
+|  slow_clks/clk_div_06/clk_disp_refresh_BUFG |                                             |                                               |                5 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_3     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_18    |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_13    |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_11    |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_8     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_0     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_15    |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_16    |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_4     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_1     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_12    |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_2     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_5     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_9     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_6     |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | draw_waveform/normal/VGA_GREEN_reg[3]_14    |                                               |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                      | vol_converter/clear                         |                                               |               12 |             30 |
+|  slow_clks/clk_div_06/clk_disp_refresh_BUFG | draw_waveform/circle/p_0_in0_out            |                                               |                2 |             32 |
+|  J_MIC3_Pin1_OBUF_BUFG                      |                                             | vol_converter/in                              |                8 |             32 |
+|  clk_vol_update_BUFG                        |                                             | draw_vol_history/vol_sum0                     |                6 |             34 |
+|  CLK_100M_IBUF_BUFG                         |                                             | slow_clks/clk_div_06/clear                    |                5 |             38 |
+|  CLK_100M_IBUF_BUFG                         |                                             | slow_clks/clk_div_05/clear                    |                5 |             40 |
+|  CLK_100M_IBUF_BUFG                         |                                             | slow_clks/clk_div_07/clear                    |                6 |             44 |
+|  J_MIC3_Pin1_OBUF_BUFG                      |                                             |                                               |               10 |             46 |
+|  CLK_100M_IBUF_BUFG                         |                                             | slow_clks/clk_div_04/clear                    |                7 |             52 |
+|  CLK_100M_IBUF_BUFG                         |                                             | slow_clks/clk_div_03/clear                    |                7 |             52 |
+|  CLK_100M_IBUF_BUFG                         |                                             | slow_clks/clk_div_02/clear                    |                7 |             52 |
+|  vga_display/VGA_CLK_108M/clk_out1          |                                             | vga_display/VGA_CONTROL/eqOp2_in              |               16 |             62 |
+|  clk_vol_update_BUFG                        |                                             |                                               |               10 |             64 |
+|  clk_btns_debounce_BUFG                     |                                             |                                               |               18 |             68 |
+|  J_MIC3_Pin1_OBUF_BUFG                      |                                             | vol_converter/clear                           |               11 |             82 |
+|  vga_display/VGA_CLK_108M/clk_out1          | vga_display/VGA_CONTROL/eqOp2_in            | vga_display/VGA_CONTROL/v_cntr_reg0__11       |               31 |            102 |
+|  vga_display/VGA_CLK_108M/clk_out1          |                                             |                                               |               58 |            140 |
++---------------------------------------------+---------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+

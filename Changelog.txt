@@ -1,0 +1,15 @@
+Features:
+	Mode Selector:
+	1 - Lock waveform (will add soon)
+	2 - Display vol (0 to 12)
+	3 - Color changing mode
+	4 - Frequency sampling mode
+
+
+29.3.19
+	Dan:
+		Merged color changing state code
+		Added frequency sampling code (Mode 4):
+			Finds the number of crossings per second, using the 20KHz clock to sample
+			May be unreliable if background noise is too big
+			

@@ -7,6 +7,7 @@
 module Mode_Selector(
     input CLOCK, btnC, btnU, btnD, btnL, btnR, 
     [5:0] SEG_VOL0, [5:0] SEG_VOL1, 
+    [3:0] FREQ0, [3:0] FREQ1,  [3:0] FREQ2, [3:0] FREQ3, 
     output [7:0] SEG, [3:0] AN, [4:0] MODE, [2:0] CLRSTATE);
     
     wire USTATE; //state of button up
@@ -61,7 +62,7 @@ module Mode_Selector(
             //Change screen color scheme
             5'b00100: begin word0 = 12; word1 = 21; word2 = 27; word3 = clrstate; end
             //Display freq level
-            5'b01000: begin word0 = 15; end
+            5'b01000: begin word0 = (FREQ0 == 0 ? 15 : FREQ0) ; word1 = FREQ1; word2 = FREQ2; word3 = FREQ3; end
         endcase
     
     end

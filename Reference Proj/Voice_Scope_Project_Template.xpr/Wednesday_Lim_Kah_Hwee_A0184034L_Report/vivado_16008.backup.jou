@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 10 11:38:58 2018
+# Process ID: 16008
+# Current directory: C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12108 C:\Users\KH\Documents\KH\NUS\EE2026\LAB\Lab Project\Voice_Scope_Project_Template.xpr\Wednesday_Lim_Kah_Hwee_A0184034L_Report\Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr
+# Log file: C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/vivado.log
+# Journal file: C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/EE2026_Voice_Scope_Project-Vernon_Task_A/EE2026_Voice_Scope_Project-Vernon_Task_A/Voice_Scope_Project_Template.srcs/sources_1/new/Select_Waveform.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw

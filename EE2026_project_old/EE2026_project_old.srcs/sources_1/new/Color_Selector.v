@@ -7,7 +7,7 @@
 
 module Colour_Selector(
     input CLOCK,
-    input state,
+    input [2:0] STATE,
     
     output reg [11:0] background,
     output reg [11:0] waveform,
@@ -16,7 +16,10 @@ module Colour_Selector(
     output reg [11:0] ticks
     );
     
+    reg [2:0] state;
+    
     always @ (posedge CLOCK) begin
+    state <= STATE;
     case (state)
         0: begin 
             background <= 1;

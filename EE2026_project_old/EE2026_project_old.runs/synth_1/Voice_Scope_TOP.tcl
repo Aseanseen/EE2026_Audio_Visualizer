@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,16 +31,19 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Button_Pulser.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Color_Selector.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Waveform.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Freq_Counter.v
-  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Freq_FlipState.v
-  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Freq_Sampler.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/SEG_Decoder.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Sound_Lvl_Converter.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_DISPLAY.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Capturer.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/clk_30hz.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/clk_div.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/posE_dff.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v
 }
 read_vhdl -library xil_defaultlib {
