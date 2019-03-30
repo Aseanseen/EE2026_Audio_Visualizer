@@ -17,6 +17,8 @@ module Freq_Counter(input CLOCK, clk_wire, [11:0] wave_sample_raw,
         counter1Hz <= (counter1Hz > 20000 ? 0 : counter1Hz + 1); //1 Hz reset
         
         //count crossings per 1s, hard capped at 5k
+        //counter <= (wave_sample_raw > 2048 && prev < 2048 ? (counter >= 5000 ? counter : counter + 1) : counter);
+        
         counter <= (wave_sample_raw > 2048 && prev < 2048 ? (counter >= 5000 ? counter : counter + 1) : counter);
         
         if(counter1Hz == 0) begin //update every 1Hz

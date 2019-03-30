@@ -1,10 +1,28 @@
 Features:
-	Mode Selector:
-	1 - Lock waveform (will add soon)
-	2 - Display vol (0 to 12)
-	3 - Color changing mode
-	4 - Frequency sampling mode
+LED Volume Indicator (0-12)
+7SEG Volume Indicator (0-12)
 
+Sound wave frequency indicator
+Sound wave volume percentage indicator
+
+Mode Selector:
+7SEG Menu Display
+	1 - Lock waveform (will add soon)
+	2 - Display vol, default (0 to 12)
+	3 - Color Scheme Mode Changer
+		- 5 different colors
+	
+	4 - Waveform Parameter Displays
+		- Frequency
+		- Sound Percentage Level
+
+VGA Display
+
+
+Stuff to work on:
+	Dan - Volume / frequency history
+		- Clk update frequency changer
+		% char in decoder doesnt work, will look into it sometime later
 
 29.3.19
 	Dan:
@@ -13,3 +31,11 @@ Features:
 			Finds the number of crossings per second, using the 20KHz clock to sample
 			May be unreliable if background noise is too big
 			
+30.3.19
+	Dan:
+		Cleaned up frequency sampling code
+		Added sound percentage level code
+		Added switching options for mode 4
+			Mode 4 now displays different parameters:
+			Frequency
+			Sound level in %

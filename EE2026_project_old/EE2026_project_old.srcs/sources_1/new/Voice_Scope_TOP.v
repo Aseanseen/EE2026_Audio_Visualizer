@@ -60,8 +60,6 @@ module Voice_Scope_TOP(
     wire [5:0] SEG_VOL0;
     wire [5:0] SEG_VOL1;
     
-    //Sound_Lvl_Converter sound_converter(CLOCK, wave_sample_raw, LED, SEG_VOL0, SEG_VOL1);
-    
     //freq sampler
     wire [11:0] freq;
     wire [3:0] freq0; //freq SEG0
@@ -69,24 +67,27 @@ module Voice_Scope_TOP(
     wire [3:0] freq2;
     wire [3:0] freq3;
     
-    
     Freq_Counter fc(CLOCK, clk_wire, wave_sample_raw, freq, freq0, freq1, freq2, freq3);
-    //Freq_Decoder fd(clk_wire, freq, freq0, freq1, freq2, freq3);
     
-    //Freq_Sampler fs(CLOCK, clk_wire, wave_sample_raw, freq);
-
-    //SEG_Decoder seg(CLOCK, freq0, freq1, freq2, freq3, SEG, AN);
-    Sound_Lvl_Converter sound_converter(CLOCK, wave_sample_raw, LED, SEG_VOL0, SEG_VOL1);
-    //assign LED = freq;
+    wire [5:0] SPERCENT0;
+    wire [5:0] SPERCENT1;
+    wire [5:0] SPERCENT2;
+    
+    Sound_Lvl_Converter sound_converter(CLOCK, wave_sample_raw, freq, LED, SEG_VOL0, SEG_VOL1, SPERCENT0, SPERCENT1, SPERCENT2);
     
     //mode selector
     wire [2:0] MODE;
     wire [2:0] CLRSTATE;
     
-    Mode_Selector mode_s(CLOCK, btnC, btnU, btnD, btnL, btnR, SEG_VOL0, SEG_VOL1, freq0, freq1, freq2, freq3, SEG, AN, MODE, CLRSTATE);
+    Mode_Selector mode_s(CLOCK, clk_wire, wave_sample_raw, btnC, btnU, btnD, btnL, btnR, 
+    SEG_VOL0, SEG_VOL1, freq0, freq1, freq2, freq3, SPERCENT0, SPERCENT1, SPERCENT2,  
+    SEG, AN, MODE, CLRSTATE);
     
     //LED_display ld(CLOCK, wave_sample_raw, LED);
     assign wave_sample = wave_sample_raw >> 2;
+    
+    wire [9:0] freq_sample;
+    assign freq_sample = freq >> 2;
     
     //assign LED = wave_sample_raw;
     
@@ -113,7 +114,9 @@ module Voice_Scope_TOP(
     wire [3:0] VGA_Green_waveform;
     wire [3:0] VGA_Blue_waveform;
         
+    //Draw_Waveform dw(clk_wire, SW0, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_waveform, VGA_Green_waveform, VGA_Blue_waveform);
     Draw_Waveform dw(clk_wire, SW0, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_waveform, VGA_Green_waveform, VGA_Blue_waveform);
+          
             
     //VGA Background Grid 
     wire [3:0] VGA_Red_grid;
