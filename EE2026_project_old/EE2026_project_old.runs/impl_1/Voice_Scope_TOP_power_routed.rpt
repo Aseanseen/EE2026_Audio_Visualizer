@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sat Mar 30 18:08:46 2019
+| Date             : Mon Apr  1 01:16:26 2019
 | Host             : LAPTOP-MNQMD5TA running 64-bit major release  (build 9200)
 | Command          : report_power -file Voice_Scope_TOP_power_routed.rpt -pb Voice_Scope_TOP_power_summary_routed.pb -rpx Voice_Scope_TOP_power_routed.rpx
 | Design           : Voice_Scope_TOP
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.004 |        5 |       --- |             --- |
-| Slice Logic              |     0.007 |     2371 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     1169 |     20800 |            5.62 |
+| Slice Logic              |     0.008 |     2558 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     1295 |     20800 |            6.23 |
 |   LUT as Distributed RAM |    <0.001 |      280 |      9600 |            2.92 |
-|   CARRY4                 |    <0.001 |      204 |      8150 |            2.50 |
-|   Register               |    <0.001 |      384 |     41600 |            0.92 |
-|   F7/F8 Muxes            |    <0.001 |       20 |     32600 |            0.06 |
+|   CARRY4                 |    <0.001 |      210 |      8150 |            2.58 |
+|   Register               |    <0.001 |      412 |     41600 |            0.99 |
+|   F7/F8 Muxes            |    <0.001 |       22 |     32600 |            0.07 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |       42 |       --- |             --- |
-| Signals                  |     0.010 |     1690 |       --- |             --- |
+|   Others                 |     0.000 |       41 |       --- |             --- |
+| Signals                  |     0.010 |     1809 |       --- |             --- |
 | MMCM                     |     0.123 |        1 |         5 |           20.00 |
-| I/O                      |     0.008 |       47 |       106 |           44.34 |
+| I/O                      |     0.009 |       47 |       106 |           44.34 |
 | Static Power             |     0.072 |          |           |                 |
 | Total                    |     0.226 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
@@ -149,7 +149,7 @@ Table of Contents
 | Voice_Scope_TOP                     |     0.154 |
 |   cs                                |    <0.001 |
 |   dbg                               |    <0.001 |
-|   dw                                |     0.004 |
+|   dw                                |     0.003 |
 |     Sample_Memory_reg_0_63_0_2      |    <0.001 |
 |     Sample_Memory_reg_0_63_3_5      |    <0.001 |
 |     Sample_Memory_reg_0_63_6_8      |    <0.001 |
@@ -231,7 +231,7 @@ Table of Contents
 |     Sample_Memory_reg_960_1023_6_8  |    <0.001 |
 |     Sample_Memory_reg_960_1023_9_9  |    <0.001 |
 |   fc                                |    <0.001 |
-|   mode_s                            |     0.002 |
+|   mode_s                            |     0.003 |
 |     down                            |    <0.001 |
 |       dff1                          |    <0.001 |
 |       dff2                          |    <0.001 |
@@ -246,7 +246,7 @@ Table of Contents
 |       dff1                          |    <0.001 |
 |       dff2                          |    <0.001 |
 |   my_clk                            |    <0.001 |
-|   sound_converter                   |     0.007 |
+|   sound_converter                   |     0.008 |
 |   vc                                |    <0.001 |
 |   vga                               |     0.129 |
 |     VGA_CLK_108M                    |     0.124 |

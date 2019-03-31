@@ -33,7 +33,7 @@ read_verilog -library xil_defaultlib {
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Button_Pulser.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Color_Selector.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v
-  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Waveform.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Mode.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Freq_Counter.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/SEG_Decoder.v

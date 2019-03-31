@@ -82,10 +82,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/Draw_Waveform.v">
+      <File Path="$PSRCDIR/sources_1/new/Draw_Waveform_Mode.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="G:/EE2026_Project/EE2026_Project.srcs/sources_1/imports/new/Draw_Waveform.v"/>
-          <Attr Name="ImportTime" Val="1552548495"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -180,6 +178,16 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="G:/EE2026_Project/EE2026_Project.srcs/sources_1/new/Voice_Scope_TOP.v"/>
           <Attr Name="ImportTime" Val="1552548330"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/Draw_Waveform.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/EE2026_Project/EE2026_Project.srcs/sources_1/imports/new/Draw_Waveform.v"/>
+          <Attr Name="ImportTime" Val="1552548495"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

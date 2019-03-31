@@ -9,8 +9,8 @@ module Mode_Selector(
     btnC, btnU, btnD, btnL, btnR, 
     [5:0] SEG_VOL0, [5:0] SEG_VOL1, 
     [3:0] FREQ0, [3:0] FREQ1,  [3:0] FREQ2, [3:0] FREQ3, 
-    [5:0] SPERCENT0, [5:0] SPERCENT1, [5:0] SPERCENT2,  
-    output [7:0] SEG, [3:0] AN, [4:0] MODE, [2:0] CLRSTATE);
+    [5:0] SPERCENT0, [5:0] SPERCENT1, [5:0] SPERCENT2,
+    output [7:0] SEG, [3:0] AN, [4:0] MODE, [2:0] CLRSTATE, [2:0] WAVEFORMSTATE);
     
     wire USTATE; //state of button up
     wire DSTATE; //state of button down
@@ -33,6 +33,9 @@ module Mode_Selector(
     //state of parameter displays
     reg [2:0] displaystate = 1;
     reg [29:0] display1Hz = 0; //parameter menu word displays (1 sec)
+    
+    //state of waveform display
+    reg [2:0] waveformstate = 0;
     
     Button_Pulser up(CLOCK, btnU, USTATE); //single pulser for button presses
     Button_Pulser down(CLOCK, btnD, DSTATE);
@@ -78,6 +81,19 @@ module Mode_Selector(
         
         display1Hz <= (display1Hz >= 400000000 ? display1Hz : display1Hz + 1);
         
+        //waveform display options
+        if (LSTATE == 1 && ~btnR && mode == 5'b10000) begin //button press left
+            waveformstate <= (waveformstate >= 5 ? waveformstate : waveformstate + 1);
+            //display1Hz <= display1Hz >= 400000000 ? 0 : display1Hz;
+            display1Hz = 0;
+        end
+        
+        if (RSTATE == 1 && ~btnL && mode == 5'b10000) begin //button press right
+            waveformstate <= (waveformstate == 0 ? waveformstate : waveformstate - 1);
+            //display1Hz <= display1Hz >= 400000000 ? 0 : display1Hz;
+            display1Hz = 0;
+        end
+        
         if (mode == 5'b01000) begin
         case (displaystate)
             1: begin
@@ -107,6 +123,8 @@ module Mode_Selector(
             5'b00100: begin word0 = 12; word1 = 21; word2 = 27; word3 = clrstate; end
             //Display parameters - Freq / Vol %
             5'b01000: begin word0 = (FREQ0 == 0 ? 15 : FREQ0); word1 = FREQ1; word2 = FREQ2; word3 = FREQ3; end
+            //Change waveform displays
+            5'b10000: begin word0 = 32; word1 = 10; word2 = 31; word3 = waveformstate; end
                         
         endcase
     
@@ -119,5 +137,7 @@ module Mode_Selector(
     
     assign MODE = mode;
     assign CLRSTATE = clrstate;
+    
+    assign WAVEFORMSTATE = waveformstate;
     
 endmodule

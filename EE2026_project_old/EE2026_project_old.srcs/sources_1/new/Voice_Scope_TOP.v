@@ -78,10 +78,11 @@ module Voice_Scope_TOP(
     //mode selector
     wire [2:0] MODE;
     wire [2:0] CLRSTATE;
+    wire [2:0] waveformstate;
     
     Mode_Selector mode_s(CLOCK, clk_wire, wave_sample_raw, btnC, btnU, btnD, btnL, btnR, 
     SEG_VOL0, SEG_VOL1, freq0, freq1, freq2, freq3, SPERCENT0, SPERCENT1, SPERCENT2,  
-    SEG, AN, MODE, CLRSTATE);
+    SEG, AN, MODE, CLRSTATE, waveformstate);
     
     //LED_display ld(CLOCK, wave_sample_raw, LED);
     assign wave_sample = wave_sample_raw >> 2;
@@ -115,7 +116,7 @@ module Voice_Scope_TOP(
     wire [3:0] VGA_Blue_waveform;
         
     //Draw_Waveform dw(clk_wire, SW0, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_waveform, VGA_Green_waveform, VGA_Blue_waveform);
-    Draw_Waveform dw(clk_wire, SW0, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_waveform, VGA_Green_waveform, VGA_Blue_waveform);
+    Draw_Waveform_Mode dw(clk_wire, SW0, waveformstate, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_waveform, VGA_Green_waveform, VGA_Blue_waveform);
           
             
     //VGA Background Grid 
