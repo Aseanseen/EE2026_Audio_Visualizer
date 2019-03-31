@@ -5,6 +5,10 @@ LED Volume Indicator (0-12)
 Sound wave frequency indicator
 Sound wave volume percentage indicator
 
+Multiple waveform displays
+
+Color scheme change mode
+
 Mode Selector:
 7SEG Menu Display
 	1 - Lock waveform (will add soon)
@@ -39,3 +43,9 @@ Stuff to work on:
 			Mode 4 now displays different parameters:
 			Frequency
 			Sound level in %
+			
+31.3.19
+	Dan:
+		Added alternate waveform mode selector
+		Binded original waveform to waveform 0 in mode 4
+		Added filled waveform (waveform 1) and block waveform (waveform 2)
