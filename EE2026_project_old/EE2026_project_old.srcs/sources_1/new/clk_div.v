@@ -31,4 +31,5 @@ module clk_div(
         clk_new <= (count >= 2499) ? ~clk_new : clk_new;
         count <= (count >= 2499) ? 0 : (count + 1);
     end
+    
 endmodule

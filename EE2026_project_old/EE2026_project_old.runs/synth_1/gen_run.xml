@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1554052329">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1554314592">
   <File Type="PA-TCL" Name="Voice_Scope_TOP.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Voice_Scope_TOP_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Voice_Scope_TOP_reports.tcl"/>
@@ -29,6 +29,20 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="G:/EE2026_Project/EE2026_Project.srcs/sources_1/imports/new/Draw_Background.v"/>
         <Attr Name="ImportTime" Val="1552531879"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Draw_Waveform_Circle.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Draw_Waveform_History.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -87,13 +101,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clk_30hz.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/clk_div.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="G:/EE2026_Project/EE2026_Project.srcs/sources_1/new/clk_div.v"/>
@@ -130,6 +137,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="G:/EE2026_Project/EE2026_Project.srcs/sources_1/new/Voice_Scope_TOP.v"/>
         <Attr Name="ImportTime" Val="1552548330"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_30hz.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

@@ -38,7 +38,10 @@ set_property PACKAGE_PIN V3 [get_ports {LED[9]}]
 set_property PACKAGE_PIN W3 [get_ports {LED[10]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {LED[10]}]
 set_property PACKAGE_PIN U3 [get_ports {LED[11]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {LED[11]}]		
+	set_property IOSTANDARD LVCMOS33 [get_ports {LED[11]}]	
+	
+set_property PACKAGE_PIN L1 [get_ports {LOCKLED}]                    
+    set_property IOSTANDARD LVCMOS33 [get_ports {LOCKLED}]        	
 	
 	
 ##7 segment display

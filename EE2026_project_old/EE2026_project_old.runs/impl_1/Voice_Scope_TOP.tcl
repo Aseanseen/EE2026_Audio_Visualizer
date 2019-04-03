@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config  -ruleid {1}  -id {Labtoolstcl 44-513}  -suppress 
 
 start_step init_design
 set ACTIVE_STEP init_design

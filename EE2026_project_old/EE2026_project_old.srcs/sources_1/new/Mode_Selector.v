@@ -10,12 +10,18 @@ module Mode_Selector(
     [5:0] SEG_VOL0, [5:0] SEG_VOL1, 
     [3:0] FREQ0, [3:0] FREQ1,  [3:0] FREQ2, [3:0] FREQ3, 
     [5:0] SPERCENT0, [5:0] SPERCENT1, [5:0] SPERCENT2,
-    output [7:0] SEG, [3:0] AN, [4:0] MODE, [2:0] CLRSTATE, [2:0] WAVEFORMSTATE);
+    output [7:0] SEG, [3:0] AN, [5:0] MODE, 
+    [2:0] CLRSTATE, [2:0] WAVEFORMSTATE, [2:0] HISTSTATE, [2:0] CIRCLESTATE, 
+    LOCK);
     
     wire USTATE; //state of button up
     wire DSTATE; //state of button down
     wire LSTATE; //state of button left
     wire RSTATE; //state of button right
+    wire CSTATE; //state of button center
+    
+    reg lock = 0; //locking reg
+    reg [5:0] option = 1; //num in option selector
     
     wire [5:0] WORD0; //words to print in decoder
     wire [5:0] WORD1;
@@ -27,104 +33,222 @@ module Mode_Selector(
     reg [5:0] word2;
     reg [5:0] word3;
     
-    reg [4:0] mode = 5'b00010;
+    reg [5:0] mode = 1;
     reg [2:0] clrstate = 1; //state of color display options
+    reg [2:0] clrprev = 1;
     
     //state of parameter displays
     reg [2:0] displaystate = 1;
     reg [29:0] display1Hz = 0; //parameter menu word displays (1 sec)
     
     //state of waveform display
-    reg [2:0] waveformstate = 0;
+    reg [2:0] waveformstate = 1;
+    reg [2:0] waveformprev = 1;
+    
+    //state of waveform history display
+    reg [2:0] histstate = 1;
+    reg [2:0] histprev = 1;
+    
+    //state of circle waveform display
+    reg [2:0] circlestate = 1;
+    reg [2:0] circleprev = 1;
     
     Button_Pulser up(CLOCK, btnU, USTATE); //single pulser for button presses
     Button_Pulser down(CLOCK, btnD, DSTATE);
     Button_Pulser left(CLOCK, btnL, LSTATE);                                      
     Button_Pulser right(CLOCK, btnR, RSTATE);
+    Button_Pulser ctr(CLOCK, btnC, CSTATE);
     
     SEG_Decoder seg_d(CLOCK, WORD0, WORD1, WORD2, WORD3, SEG, AN);
     
     always @ (posedge CLOCK) begin
+        //mode changing logic
         if (USTATE == 1 && ~btnD) begin //button press up
-            mode <= (mode == 5'b10000 ? mode : mode << 1);
-            //display1Hz <= display1Hz >= 400000000 ? 0 : display1Hz;
+            mode <= (mode == 6 ? mode : mode + 1);
             display1Hz = 0;
+            
+            //change back to original settings
+            clrstate <= clrprev;
+            waveformstate <= waveformprev;
+            histstate <= histprev;
+            circlestate <= circleprev;
         end
         
         if (DSTATE == 1 && ~btnU) begin //button press down
-            mode <= (mode == 5'b00001 ? mode : mode >> 1);
-            //display1Hz <= display1Hz >= 400000000 ? 0 : display1Hz;
+            mode <= (mode == 0 ? mode : mode - 1);
+            display1Hz = 0;
+            
+            //change back to original settings
+            clrstate <= clrprev;
+            waveformstate <= waveformprev;
+            histstate <= histprev;
+            circlestate <= circleprev;
+        end
+        
+        //lock waveform mode
+        if (mode == 0) begin //set logic when btnC is pressed
+            if (CSTATE == 1) begin
+                lock <= ~lock;
+                mode <= 1; //switch back to base mode
+            end
+        end
+        
+        //parameter display mode
+        if (LSTATE == 1 && ~btnR && mode == 2) begin //button press left
+            displaystate <= (displaystate >= 2 ? displaystate : displaystate + 1);
             display1Hz = 0;
         end
         
-        //color state button change
-        if (LSTATE == 1 && ~btnR && mode == 5'b00100) begin //button press left
-            clrstate <= (clrstate >= 5 ? clrstate : clrstate + 1);  
-        end
-        
-        if (RSTATE == 1 && ~btnL && mode == 5'b00100) begin //button press right
-            clrstate <= (clrstate == 1 ? clrstate : clrstate - 1);
-        end
-        
-        //parameter display options
-        if (LSTATE == 1 && ~btnR && mode == 5'b01000) begin //button press left
-            displaystate <= (displaystate >= 5 ? displaystate : displaystate + 1);
-            //display1Hz <= display1Hz >= 400000000 ? 0 : display1Hz;
-            display1Hz = 0;
-        end
-        
-        if (RSTATE == 1 && ~btnL && mode == 5'b01000) begin //button press right
+        if (RSTATE == 1 && ~btnL && mode == 2) begin //button press right
             displaystate <= (displaystate == 1 ? displaystate : displaystate - 1);
-            //display1Hz <= display1Hz >= 400000000 ? 0 : display1Hz;
             display1Hz = 0;
         end
         
-        display1Hz <= (display1Hz >= 400000000 ? display1Hz : display1Hz + 1);
+        if (mode == 2) begin
+            clrstate <= clrprev;
+            waveformstate <= waveformprev;
+            histstate <= histprev;
+            circlestate <= circleprev;
+        end
         
-        //waveform display options
-        if (LSTATE == 1 && ~btnR && mode == 5'b10000) begin //button press left
-            waveformstate <= (waveformstate >= 5 ? waveformstate : waveformstate + 1);
-            //display1Hz <= display1Hz >= 400000000 ? 0 : display1Hz;
+        //parameter display counter, shows FREQ / VOL at the start
+        display1Hz <= (display1Hz >= 210000000 ? display1Hz : display1Hz + 1);
+        
+        //color state mode
+        if (LSTATE == 1 && ~btnR && mode == 3) begin //button press left
+            option <= (option >= 5 ? option : option + 1);  
+        end
+        
+        if (RSTATE == 1 && ~btnL && mode == 3) begin //button press right
+            option <= (option == 1 ? option : option - 1);
+        end
+        
+        if (mode == 3) begin //set logic when btnC is pressed
+            clrstate <= option;
+            waveformstate <= waveformprev;
+            histstate <= histprev;
+            circlestate <= circleprev;
+            
+            if (CSTATE == 1) begin
+                clrstate <= option;
+                clrprev <= option;
+                option <= 1;
+                mode <= 1;
+            end
+        end
+        
+        //waveform changer mode
+        if (LSTATE == 1 && ~btnR && mode == 4) begin //button press left
+            option <= (option >= 5 ? option : option + 1);
             display1Hz = 0;
         end
         
-        if (RSTATE == 1 && ~btnL && mode == 5'b10000) begin //button press right
-            waveformstate <= (waveformstate == 0 ? waveformstate : waveformstate - 1);
-            //display1Hz <= display1Hz >= 400000000 ? 0 : display1Hz;
+        if (RSTATE == 1 && ~btnL && mode == 4) begin //button press right
+            option <= (option == 1 ? option : option - 1);
             display1Hz = 0;
         end
         
-        if (mode == 5'b01000) begin
+        if (mode == 4) begin //set logic when btnC is pressed
+            waveformstate <= option;
+            clrstate <= clrprev;
+            histstate <= histprev;
+            circlestate <= circleprev;
+            
+            if (CSTATE == 1) begin
+                waveformstate <= option;
+                waveformprev <= option;
+                option <= 1;
+                mode <= 1;
+            end
+        end
+        
+        //history changer mode
+        if (LSTATE == 1 && ~btnR && mode == 5) begin //button press left
+            option <= (option >= 3 ? option : option + 1);
+            display1Hz = 0;
+        end
+        
+        if (RSTATE == 1 && ~btnL && mode == 5) begin //button press right
+            option <= (option == 1 ? option : option - 1);
+            display1Hz = 0;
+        end
+        
+        if (mode == 5) begin //set logic when btnC is pressed
+            waveformstate <= waveformprev;
+            clrstate <= clrprev;
+            histstate <= option;
+            circlestate <= circleprev;
+            
+            if (CSTATE == 1) begin
+                histstate <= option;
+                histprev <= option;
+                option <= 1;
+                mode <= 1;
+            end
+        end
+        
+        //circle waveform changer mode
+        if (LSTATE == 1 && ~btnR && mode == 6) begin //button press left
+            option <= (option >= 4 ? option : option + 1);
+            display1Hz = 0;
+        end
+        
+        if (RSTATE == 1 && ~btnL && mode == 6) begin //button press right
+            option <= (option == 1 ? option : option - 1);
+            display1Hz = 0;
+        end
+        
+        if (mode == 6) begin //set logic when btnC is pressed
+            circlestate <= option;
+            waveformstate <= waveformprev;
+            clrstate <= clrprev;
+            histstate <= histprev;
+            
+            if (CSTATE == 1) begin
+                circlestate <= option;
+                circleprev <= option;
+                option <= 1;
+                mode <= 1;
+            end
+        end
+        
+        
+        if (mode == 2) begin
         case (displaystate)
             1: begin
-                word0 <= (display1Hz >= 400000000 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
-                word1 <= (display1Hz >= 400000000 ? FREQ1 : 27);
-                word2 <= (display1Hz >= 400000000 ? FREQ2 : 14);
-                word3 <= (display1Hz >= 400000000 ? FREQ3 : 26);
+                word0 <= (display1Hz >= 200000000 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
+                word1 <= (display1Hz >= 200000000 ? FREQ1 : 27);
+                word2 <= (display1Hz >= 200000000 ? FREQ2 : 14);
+                word3 <= (display1Hz >= 200000000 ? FREQ3 : 26);
             end
             
             2: begin
-                word0 <= (display1Hz >= 400000000 ? SPERCENT0 : 31);
-                word1 <= (display1Hz >= 400000000 ? SPERCENT1 : 24);
-                word2 <= (display1Hz >= 400000000 ? SPERCENT2 : 21);
-                word3 <= (display1Hz >= 400000000 ? 37 : 37);
+                word0 <= (display1Hz >= 200000000 ? SPERCENT0 : 31);
+                word1 <= (display1Hz >= 200000000 ? SPERCENT1 : 24);
+                word2 <= (display1Hz >= 200000000 ? SPERCENT2 : 21);
+                word3 <= (display1Hz >= 200000000 ? 37 : 37);
             end
             
         endcase
         
         end
         
+        //display on 7SEG
         case (mode) 
             //LOCK
-            5'b00001: begin word0 = 21; word1 = 24; word2 = 12; word3 = 20; end
+            0: begin word0 = 21; word1 = 24; word2 = 12; word3 = 20; end
             //Display sound level
-            5'b00010: begin word0 = 0; word1 = 0; word2 = SEG_VOL0; word3 = SEG_VOL1; end
-            //Change screen color scheme
-            5'b00100: begin word0 = 12; word1 = 21; word2 = 27; word3 = clrstate; end
+            1: begin word0 = 0; word1 = 0; word2 = SEG_VOL0; word3 = SEG_VOL1; end
             //Display parameters - Freq / Vol %
-            5'b01000: begin word0 = (FREQ0 == 0 ? 15 : FREQ0); word1 = FREQ1; word2 = FREQ2; word3 = FREQ3; end
-            //Change waveform displays
-            5'b10000: begin word0 = 32; word1 = 10; word2 = 31; word3 = waveformstate; end
+            2: begin word0 = (FREQ0 == 0 ? 15 : FREQ0); word1 = FREQ1; word2 = FREQ2; word3 = FREQ3; end
+            //Change screen color scheme
+            3: begin word0 = 12; word1 = 21; word2 = 27; word3 = option; end
+            //Waveform display mode
+            4: begin word0 = 32; word1 = 10; word2 = 31; word3 = option; end
+            //History display mode
+            5: begin word0 = 32; word1 = 10; word2 = 31; word3 = 17; end
+            //Circle display mode
+            6: begin word0 = 32; word1 = 10; word2 = 31; word3 = 12; end
                         
         endcase
     
@@ -134,6 +258,8 @@ module Mode_Selector(
     assign WORD1 = word1;
     assign WORD2 = word2;
     assign WORD3 = word3;
+    
+    assign LOCK = lock;
     
     assign MODE = mode;
     assign CLRSTATE = clrstate;

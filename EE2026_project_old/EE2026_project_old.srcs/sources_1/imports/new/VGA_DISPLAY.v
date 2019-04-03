@@ -32,8 +32,9 @@ module VGA_DISPLAY(
     output reg[3:0] VGA_GREEN,
     output reg[3:0] VGA_BLUE,
     output reg VGA_VS,          // horizontal & vertical sync outputs to VGA connector
-    output reg VGA_HS
-
+    output reg VGA_HS,
+    
+    output clk_vga
     );
     
     
@@ -49,6 +50,9 @@ module VGA_DISPLAY(
             CLK,   // 100 MHz
             CLK_VGA     // 108 MHz
         ) ; 
+        
+        
+    reg clk_vgaReg = 0;
         
     // VGA CONTROLLER   
     wire VGA_ACTIVE;
@@ -68,7 +72,7 @@ module VGA_DISPLAY(
     
     // CLOCK THEM OUT
     always@(posedge CLK_VGA) begin      
-        
+            clk_vgaReg <= ~clk_vgaReg;
             VGA_RED <= {VGA_ACTIVE, VGA_ACTIVE, VGA_ACTIVE, VGA_ACTIVE} & VGA_RED_CHAN ;  
             VGA_GREEN <= {VGA_ACTIVE, VGA_ACTIVE, VGA_ACTIVE, VGA_ACTIVE} & VGA_GREEN_CHAN ; 
             VGA_BLUE <= {VGA_ACTIVE, VGA_ACTIVE, VGA_ACTIVE, VGA_ACTIVE} & VGA_BLUE_CHAN ; 
@@ -79,5 +83,6 @@ module VGA_DISPLAY(
             
     end
     
+    assign clk_vga = clk_vgaReg;
 
 endmodule

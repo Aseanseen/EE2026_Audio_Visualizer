@@ -11,22 +11,80 @@ Color scheme change mode
 
 Mode Selector:
 7SEG Menu Display
-	1 - Lock waveform (will add soon)
-	2 - Display vol, default (0 to 12)
-	3 - Color Scheme Mode Changer
+	0 - Lock waveform
+	
+	1 - Display vol, default (0 to 12)
+	
+	2 - Color Scheme Mode Changer
 		- 5 different colors
 	
-	4 - Waveform Parameter Displays
-		- Frequency
-		- Sound Percentage Level
+	3 - Waveform Parameter Displays
+		1. Frequency
+		2. Sound Percentage Level
 
-VGA Display
-
+	4 - Waveform visualisation mode
+		1. Regular waveform
+		2. Filled waveform
+		3. Bar waveform
+		4. Bar waveform (in blocks?, not implemented)
+		
+	5 - Waveform History Display Toggle
+		1. Base sound wave
+		2. Sound wave volume (not implemented)
+		3. Freq wave (not implemented)
+		
+	6 - Circle waveform visualisation (2Hz)
+		1. Regular waveform
+		2. Waveform w. slow falloff (not implemented)
+		3. Frequency (not implemented)
+		4. Frequency w. slow falloff (not implemented)
+		
+		
+EE volume / freq history display
+	- placed at the bottom left of the graph
+	- the problem with the original code is that the full history bar (for some odd reason)
+	has empty spaces, we can compensate for this by overlaying the bar again
+		- range has been narrowed down in order to not make this look terrible (the bar will jump at some point)
+		
+	- Toggling the display
+		- changed at mode 5 options
+			option states:
+			0. turned off
+			1. turned on (base sound wave)
+			2. sound wave volume
+			3. freq wave
+			
+	- menu drawing for the display
+	- background
+		-
+	
+	border
+	- use the original border for that color scheme, but make it darker
+	- for base sound wave, have a specific line at the middle to demarcate the middle point
+	
+Note: prob with frequency ? 
+	- atm it samples for 1s and returns the number of crossings
+	- can do continuous sampling
+		- have to figure out how much to delete at each point (use reg memory to store?)
+	
+//stuff to check tmr:
+check if the history waveform fills the entire bar
+	- decide if the speed and waveform looks good
 
 Stuff to work on:
-	Dan - Volume / frequency history
-		- Clk update frequency changer
-		% char in decoder doesnt work, will look into it sometime later
+	Dan - 
+		Volume / frequency history cleanup
+		* - % char in decoder doesnt work, will look into it sometime later
+		need to bind maximum option settings to modes 4 and above
+		re-do the freq calculator, so it measures in real time instead of every 1s
+			especially need this for the freq waveforms
+		finish up those alternate waveforms (thurs night)
+		
+		Last feature (if there's time)
+			- Make a musical tuner from this (set to mode 7)
+			- Basically take the freq given, and output a specific note (will need to lookup the values)
+			
+			- possibly rebind the history code for special nyan cat mode
 
 29.3.19
 	Dan:
@@ -49,3 +107,13 @@ Stuff to work on:
 		Added alternate waveform mode selector
 		Binded original waveform to waveform 0 in mode 4
 		Added filled waveform (waveform 1) and block waveform (waveform 2)
+		
+4.4.19
+	Dan:
+		Added waveform history
+		Added circle waveform
+		Remapped mode selector
+			Now states are set via center button click
+			Code now remembers previously set states, and shows you all available options in each mode
+			After switching back, previous state is loaded
+		Added LED15 to show lock status
