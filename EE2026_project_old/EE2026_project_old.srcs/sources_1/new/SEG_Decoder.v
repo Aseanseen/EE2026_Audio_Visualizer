@@ -9,7 +9,7 @@ module SEG_Decoder(input CLOCK, [5:0] WORD0, [5:0] WORD1, [5:0] WORD2, [5:0] WOR
     reg [1:0] STATE = 0;
     reg [7:0] seg; //seg display state
     reg [3:0] an; //an display
-    reg [4:0] PRINT; //alphanumeric to print
+    reg [5:0] PRINT; //alphanumeric to print
     
     always @ (posedge CLOCK) begin
         //freq to print out letters
@@ -60,7 +60,7 @@ module SEG_Decoder(input CLOCK, [5:0] WORD0, [5:0] WORD1, [5:0] WORD2, [5:0] WOR
                           //8'b.gfedcba;
             30: begin seg = 8'b11100011; end //U
             31: begin seg = 8'b11100011; end //V
-            32: begin seg = 8'b11011001; end //W
+            32: begin seg = 8'b11010101; end //W
             33: begin seg = 8'b10001001; end //X
             34: begin seg = 8'b10010001; end //Y
             35: begin seg = 8'b10100100; end //Z

@@ -383,18 +383,68 @@ module Mode_Selector(
         case (mode) 
             //LOCK
             0: begin word0 = 21; word1 = 24; word2 = 12; word3 = 20; end
+            
             //Display sound level
             1: begin word0 = 0; word1 = 0; word2 = SEG_VOL0; word3 = SEG_VOL1; end
+            
             //Display parameters - Freq / Vol %
             2: begin word0 = (FREQ0 == 0 ? 15 : FREQ0); word1 = FREQ1; word2 = FREQ2; word3 = FREQ3; end
+            
             //Change screen color scheme
             3: begin word0 = 12; word1 = 21; word2 = 27; word3 = option; end
+            
             //Waveform display mode
-            4: begin word0 = 32; word1 = 10; word2 = 31; word3 = option; end
+            4: begin
+                if (waveformState == 1) begin
+                    word0 = 32; word1 = 10; word2 = 31; word3 = 14;
+                end 
+                
+                if (waveformState == 2) begin
+                    word0 = 32; word1 = 10; word2 = 31; word3 = 15;
+                end 
+
+                if (waveformState == 3) begin
+                    word0 = 11; word1 = 10; word2 = 27; word3 = 32;
+                end 
+
+                if (waveformState == 4) begin
+                    word0 = 11; word1 = 21; word2 = 20; word3 = 32;
+                end  
+            end
+            
             //History display mode
-            5: begin word0 = 32; word1 = 10; word2 = 31; word3 = 17; end
+            5: begin 
+                if (histState == 1) begin
+                    word0 = 17; word1 = 28; word2 = 29; word3 = 15;
+                end 
+                
+                if (histState == 2) begin
+                    word0 = 17; word1 = 28; word2 = 29; word3 = 31;
+                end 
+    
+                if (histState == 3) begin
+                    word0 = 23; word1 = 34; word2 = 10; word3 = 23;
+                end
+            end
+            
             //Circle display mode
-            6: begin word0 = 32; word1 = 10; word2 = 31; word3 = 12; end
+            6: begin
+                if (circleState == 1) begin
+                    word0 = 12; word1 = 18; word2 = 27; word3 = 12;
+                end 
+                
+                if (circleState == 2) begin
+                    word0 = 12; word1 = 18; word2 = 27; word3 = 15;
+                end 
+
+                if (circleState == 3) begin
+                    word0 = 15; word1 = 27; word2 = 26; word3 = 12;
+                end 
+
+                if (circleState == 4) begin
+                    word0 = 15; word1 = 27; word2 = 26; word3 = 15;
+                end 
+             end
                         
         endcase
     

@@ -54,8 +54,8 @@ module Colour_Selector(
         end
         
         5: begin
-            background <= 12'h770;
-            waveform <= 12'h666;
+            background <= 12'h550;
+            waveform <= 12'h888;
             axes <= 12'h00F;
             grid <= 12'h00A;
             ticks <= 12'h3B6;

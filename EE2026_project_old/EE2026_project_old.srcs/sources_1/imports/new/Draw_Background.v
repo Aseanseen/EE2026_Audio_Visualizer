@@ -30,6 +30,8 @@ module Draw_Background(
     input [11:0] mouseYPos,
     input mouseLeft,
     input [2:0] clrstate,
+    input [5:0] waveMode,
+    input [5:0] i,
     
     input [11:0] background,
     input [11:0] axes,
@@ -230,6 +232,26 @@ module Draw_Background(
     
     ? 1 : 0;
     
+    //condition for circle indicator for circle waveform
+    wire arc0 = ((VGA_HORZ_COORD + VGA_VERT_COORD) < 1149) && (VGA_HORZ_COORD > 639);
+    wire arc1 = ((VGA_HORZ_COORD + VGA_VERT_COORD) > 1149) && (VGA_VERT_COORD < 511);
+    wire arc2 = (VGA_HORZ_COORD < (128 + VGA_VERT_COORD)) && (VGA_HORZ_COORD > 639);
+    wire arc3 = (VGA_HORZ_COORD > (128 + VGA_VERT_COORD)) && (VGA_VERT_COORD > 511);
+    wire arc4 = ((VGA_HORZ_COORD + VGA_VERT_COORD) > 1149) && (VGA_HORZ_COORD < 639);
+    wire arc5 = ((VGA_HORZ_COORD + VGA_VERT_COORD) < 1149) && (VGA_VERT_COORD > 511);
+    wire arc6 = (VGA_HORZ_COORD < (128 + VGA_VERT_COORD)) && (VGA_VERT_COORD < 511);
+    wire arc7 = (VGA_HORZ_COORD > (128 + VGA_VERT_COORD)) && (VGA_HORZ_COORD < 639);
+    
+    //conditions for lighting up a specific arc
+    wire Condition_For_Arc0 = (arc0 && waveMode == 3 && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) >= (22500) && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) <= (25600));
+    wire Condition_For_Arc1 = (arc1 && waveMode == 3 && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) >= (22500) && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) <= (25600));
+    wire Condition_For_Arc2 = (arc2 && waveMode == 3 && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) >= (22500) && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) <= (25600));
+    wire Condition_For_Arc3 = (arc3 && waveMode == 3 && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) >= (22500) && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) <= (25600));
+    wire Condition_For_Arc4 = (arc4 && waveMode == 3 && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) >= (22500) && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) <= (25600));
+    wire Condition_For_Arc5 = (arc5 && waveMode == 3 && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) >= (22500) && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) <= (25600));
+    wire Condition_For_Arc6 = (arc6 && waveMode == 3 && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) >= (22500) && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) <= (25600));
+    wire Condition_For_Arc7 = (arc7 && waveMode == 3 && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) >= (22500) && ((VGA_HORZ_COORD - 639) * (VGA_HORZ_COORD - 639) + (VGA_VERT_COORD - 511) * (VGA_VERT_COORD - 511)) <= (25600));
+    
     wire Condition_For_HBox = (clrstate == 1 && VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 868 && VGA_VERT_COORD < 894)
     || (clrstate == 2 && VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 898 && VGA_VERT_COORD < 924)
     || (clrstate == 3 && VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 928 && VGA_VERT_COORD < 954)
@@ -270,6 +292,13 @@ module Draw_Background(
     assign tickB = ticks << 8 >> 8;
     
     assign VGA_Red_Grid = Condition_For_Title ? 4'b1111 : Condition_For_Mouse ? 4'b1111 : (Condition_For_HBox) ? 4'b0010 : (Condition_For_Box) ? 4'b0100 : (Condition_For_Axes) ? axeR : (Condition_For_Ticks || Condition_For_SmallT) ? tickR : Condition_For_Grid ? gridR : bgR;
-    assign VGA_Green_Grid = Condition_For_Title ? 4'b1111 : Condition_For_Mouse ? (mouseLeft ? 4'b1000 : 4'b1111) : (Condition_For_Text) ? 4'b1111 : (Condition_For_HBox) ? 4'b0010 : (Condition_For_Box) ? 4'b0100 : (Condition_For_Axes) ? axeG : (Condition_For_Ticks || Condition_For_SmallT) ? tickG : Condition_For_Grid ? gridG : bgG;
-    assign VGA_Blue_Grid = Condition_For_Title ? 4'b1111 : Condition_For_Mouse ? mouseLeft ? 4'b1000 : 4'b1111 : (Condition_For_HBox) ? 4'b0010 : (Condition_For_Box) ? 4'b0100 : (Condition_For_Axes) ? axeB : (Condition_For_Ticks || Condition_For_SmallT) ? tickB : Condition_For_Grid ? gridB : bgB;
+    
+    assign VGA_Green_Grid = Condition_For_Title ? 4'b1111 : Condition_For_Mouse ? (mouseLeft ? 4'b1000 : 4'b1111) : (Condition_For_Text) ? 4'b1111 : (Condition_For_HBox) ? 4'b0010 : 
+    ((Condition_For_Arc0 && i == 0) || (Condition_For_Arc1 && i == 1) || (Condition_For_Arc2 && i == 2) || (Condition_For_Arc3 && i == 3) || (Condition_For_Arc4 && i == 4) || (Condition_For_Arc5 && i == 5) || (Condition_For_Arc6 && i == 6) || (Condition_For_Arc7 && i == 7)) ? gridB + 4 :  
+    (Condition_For_Box) ? 4'b0100 : (Condition_For_Axes) ? axeG : (Condition_For_Ticks || Condition_For_SmallT) ? tickG : Condition_For_Grid ? gridG : bgG;
+    
+    assign VGA_Blue_Grid = Condition_For_Title ? 4'b1111 : Condition_For_Mouse ? mouseLeft ? 4'b1000 : 4'b1111 : (Condition_For_HBox) ? 4'b0010 : 
+    ((Condition_For_Arc0) || (Condition_For_Arc1) || (Condition_For_Arc2) || (Condition_For_Arc3) || (Condition_For_Arc4) || (Condition_For_Arc5) || (Condition_For_Arc6) || (Condition_For_Arc7)) ? gridB + 4 : 
+    (Condition_For_Box) ? 4'b0100 : (Condition_For_Axes) ? axeB : (Condition_For_Ticks || Condition_For_SmallT) ? tickB : Condition_For_Grid ? gridB : bgB;
+    
 endmodule

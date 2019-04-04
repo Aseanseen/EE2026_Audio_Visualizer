@@ -1343,8 +1343,6 @@ module Draw_Waveform_History(
                 prev <= 0;
 			end
 			
-			
-			//prev <= wave_sample;
 		end		
     end
      

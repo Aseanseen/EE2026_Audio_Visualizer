@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Apr  4 20:45:48 2019
+| Date         : Fri Apr  5 01:05:10 2019
 | Host         : LAPTOP-MNQMD5TA running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Voice_Scope_TOP_utilization_synth.rpt -pb Voice_Scope_TOP_utilization_synth.pb
 | Design       : Voice_Scope_TOP
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                |  7123 |     0 |     20800 | 34.25 |
-|   LUT as Logic             |  6843 |     0 |     20800 | 32.90 |
+| Slice LUTs*                |  7598 |     0 |     20800 | 36.53 |
+|   LUT as Logic             |  7318 |     0 |     20800 | 35.18 |
 |   LUT as Memory            |   280 |     0 |      9600 |  2.92 |
 |     LUT as Distributed RAM |   280 |     0 |           |       |
 |     LUT as Shift Register  |     0 |     0 |           |       |
-| Slice Registers            | 14982 |     0 |     41600 | 36.01 |
-|   Register as Flip Flop    | 14982 |     0 |     41600 | 36.01 |
+| Slice Registers            | 14953 |     0 |     41600 | 35.94 |
+|   Register as Flip Flop    | 14953 |     0 |     41600 | 35.94 |
 |   Register as Latch        |     0 |     0 |     41600 |  0.00 |
 | F7 Muxes                   |  1698 |     0 |     16300 | 10.42 |
 | F8 Muxes                   |   810 |     0 |      8150 |  9.94 |
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 49    |          Yes |         Set |            - |
-| 14933 |          Yes |       Reset |            - |
+| 5     |          Yes |         Set |            - |
+| 14948 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -83,8 +83,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |   14 |     0 |        90 | 15.56 |
-|   DSP48E1 only |   14 |       |           |       |
+| DSPs           |   20 |     0 |        90 | 22.22 |
+|   DSP48E1 only |   20 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -153,22 +153,22 @@ Table of Contents
 +------------+-------+---------------------+
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
-| FDRE       | 14933 |        Flop & Latch |
-| LUT6       |  4211 |                 LUT |
+| FDRE       | 14948 |        Flop & Latch |
+| LUT6       |  4293 |                 LUT |
 | MUXF7      |  1698 |               MuxFx |
-| LUT4       |  1146 |                 LUT |
-| LUT3       |   967 |                 LUT |
+| LUT4       |  1325 |                 LUT |
+| LUT3       |  1015 |                 LUT |
+| LUT2       |   846 |                 LUT |
 | MUXF8      |   810 |               MuxFx |
-| LUT2       |   722 |                 LUT |
-| CARRY4     |   701 |          CarryLogic |
-| LUT1       |   554 |                 LUT |
-| LUT5       |   424 |                 LUT |
+| CARRY4     |   784 |          CarryLogic |
+| LUT1       |   610 |                 LUT |
+| LUT5       |   471 |                 LUT |
 | RAMD64E    |   280 |  Distributed Memory |
 | RAMB18E1   |    83 |        Block Memory |
-| FDSE       |    49 |        Flop & Latch |
 | OBUF       |    41 |                  IO |
-| DSP48E1    |    14 |    Block Arithmetic |
+| DSP48E1    |    20 |    Block Arithmetic |
 | IBUF       |    11 |                  IO |
+| FDSE       |     5 |        Flop & Latch |
 | BUFG       |     5 |               Clock |
 | OBUFT      |     2 |                  IO |
 | MMCME2_ADV |     1 |               Clock |

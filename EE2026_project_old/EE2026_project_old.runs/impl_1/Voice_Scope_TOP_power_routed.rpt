@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Apr  4 20:50:43 2019
+| Date             : Fri Apr  5 01:23:33 2019
 | Host             : LAPTOP-MNQMD5TA running 64-bit major release  (build 9200)
 | Command          : report_power -file Voice_Scope_TOP_power_routed.rpt -pb Voice_Scope_TOP_power_summary_routed.pb -rpx Voice_Scope_TOP_power_routed.rpx
 | Design           : Voice_Scope_TOP
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.417        |
+| Total On-Chip Power (W)  | 0.446        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.341        |
+| Dynamic (W)              | 0.370        |
 | Device Static (W)        | 0.075        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 82.9         |
-| Junction Temperature (C) | 27.1         |
+| Max Ambient (C)          | 82.8         |
+| Junction Temperature (C) | 27.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,21 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.011 |        5 |       --- |             --- |
-| Slice Logic              |     0.038 |    26952 |       --- |             --- |
-|   LUT as Logic           |     0.031 |     6820 |     20800 |           32.79 |
-|   Register               |     0.003 |    15027 |     41600 |           36.12 |
+| Slice Logic              |     0.042 |    27545 |       --- |             --- |
+|   LUT as Logic           |     0.034 |     7295 |     20800 |           35.07 |
+|   Register               |     0.003 |    14995 |     41600 |           36.05 |
 |   F7/F8 Muxes            |     0.003 |     2508 |     32600 |            7.69 |
-|   CARRY4                 |     0.001 |      701 |      8150 |            8.60 |
+|   CARRY4                 |     0.002 |      784 |      8150 |            9.62 |
 |   LUT as Distributed RAM |    <0.001 |      280 |      9600 |            2.92 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |     0.000 |      443 |       --- |             --- |
-| Signals                  |     0.066 |    20134 |       --- |             --- |
+|   Others                 |     0.000 |      448 |       --- |             --- |
+| Signals                  |     0.071 |    20831 |       --- |             --- |
 | Block RAM                |     0.085 |     41.5 |        50 |           83.00 |
 | MMCM                     |     0.123 |        1 |         5 |           20.00 |
-| DSPs                     |     0.003 |       14 |        90 |           15.56 |
-| I/O                      |     0.015 |       52 |       106 |           49.06 |
+| DSPs                     |     0.015 |       20 |        90 |           22.22 |
+| I/O                      |     0.023 |       52 |       106 |           49.06 |
 | Static Power             |     0.075 |          |           |                 |
-| Total                    |     0.417 |          |           |                 |
+| Total                    |     0.446 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,9 +77,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.210 |       0.198 |      0.012 |
-| Vccaux    |       1.800 |     0.081 |       0.069 |      0.013 |
-| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
+| Vccint    |       1.000 |     0.230 |       0.218 |      0.012 |
+| Vccaux    |       1.800 |     0.082 |       0.069 |      0.013 |
+| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -148,10 +148,10 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| Voice_Scope_TOP              |     0.341 |
+| Voice_Scope_TOP              |     0.370 |
 |   clk_30                     |    <0.001 |
 |   cs                         |    <0.001 |
-|   dbg                        |     0.087 |
+|   dbg                        |     0.092 |
 |     ahar1                    |     0.001 |
 |       c                      |     0.001 |
 |         U1                   |     0.001 |
@@ -404,7 +404,7 @@ Table of Contents
 |   fc                         |     0.004 |
 |   mc                         |     0.004 |
 |     mc                       |     0.004 |
-|       Inst_Ps2Interface      |     0.001 |
+|       Inst_Ps2Interface      |     0.002 |
 |   mode_s                     |     0.002 |
 |     ctr                      |    <0.001 |
 |       dff1                   |    <0.001 |
@@ -412,7 +412,7 @@ Table of Contents
 |     down                     |    <0.001 |
 |       dff1                   |    <0.001 |
 |       dff2                   |    <0.001 |
-|     left                     |    <0.001 |
+|     left__0                  |    <0.001 |
 |       dff1                   |    <0.001 |
 |       dff2                   |    <0.001 |
 |     right                    |    <0.001 |
@@ -425,11 +425,11 @@ Table of Contents
 |   mouseClk_IOBUF_inst        |     0.000 |
 |   mouseData_IOBUF_inst       |     0.000 |
 |   my_clk                     |    <0.001 |
-|   sound_converter            |     0.006 |
+|   sound_converter            |     0.009 |
 |   vc                         |    <0.001 |
-|   vga                        |     0.154 |
+|   vga                        |     0.156 |
 |     VGA_CLK_108M             |     0.124 |
-|     VGA_CONTROL              |     0.030 |
+|     VGA_CONTROL              |     0.031 |
 |   wave                       |     0.002 |
 |     memory_reg_0_63_0_2      |    <0.001 |
 |     memory_reg_0_63_3_5      |    <0.001 |
@@ -511,8 +511,8 @@ Table of Contents
 |     memory_reg_960_1023_3_5  |    <0.001 |
 |     memory_reg_960_1023_6_8  |    <0.001 |
 |     memory_reg_960_1023_9_9  |    <0.001 |
-|   wave_c                     |     0.008 |
-|   wave_h                     |     0.054 |
+|   wave_c                     |     0.021 |
+|   wave_h                     |     0.053 |
 +------------------------------+-----------+
 
 
