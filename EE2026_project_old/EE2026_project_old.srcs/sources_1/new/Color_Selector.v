@@ -21,7 +21,7 @@ module Colour_Selector(
     always @ (posedge CLOCK) begin
     state <= STATE;
     case (state)
-        0: begin 
+        1: begin 
             background <= 1;
             waveform <= 12'hFFF;
             axes <= 12'h050;
@@ -29,7 +29,7 @@ module Colour_Selector(
             ticks <= 12'h009;
         end
         
-        1: begin
+        2: begin
             background <= 12'h333;
             waveform <= 12'hF00;
             axes <= 12'h050;
@@ -37,7 +37,7 @@ module Colour_Selector(
             ticks <= 12'h333;
         end
         
-        2: begin
+        3: begin
             background <= 12'h060;
             waveform <= 12'hDDD;
             axes <= 12'h202;
@@ -45,7 +45,7 @@ module Colour_Selector(
             ticks <= 12'h202;
         end
         
-        3: begin
+        4: begin
             background <= 12'h007;
             waveform <= 12'hF00;
             axes <= 12'hAA0;
@@ -53,7 +53,7 @@ module Colour_Selector(
             ticks <= 12'h444;
         end
         
-        4: begin
+        5: begin
             background <= 12'h770;
             waveform <= 12'h666;
             axes <= 12'h00F;

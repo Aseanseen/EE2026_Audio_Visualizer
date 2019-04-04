@@ -5,11 +5,12 @@
  * Changing of options is done via btnL and btnR
  */
 module Mode_Selector(
-    input CLOCK, clk_wire, wave_sample_raw,
+    input CLOCK, clk_wire, clk_30Hz, wave_sample_raw,
     btnC, btnU, btnD, btnL, btnR, 
     [5:0] SEG_VOL0, [5:0] SEG_VOL1, 
     [3:0] FREQ0, [3:0] FREQ1,  [3:0] FREQ2, [3:0] FREQ3, 
     [5:0] SPERCENT0, [5:0] SPERCENT1, [5:0] SPERCENT2,
+    MOUSELEFT, [11:0] MOUSEX, [11:0] MOUSEY,
     output [7:0] SEG, [3:0] AN, [5:0] MODE, 
     [2:0] CLRSTATE, [2:0] WAVEFORMSTATE, [2:0] HISTSTATE, [2:0] CIRCLESTATE, 
     LOCK);
@@ -53,18 +54,39 @@ module Mode_Selector(
     reg [2:0] circlestate = 1;
     reg [2:0] circleprev = 1;
     
-    Button_Pulser up(CLOCK, btnU, USTATE); //single pulser for button presses
-    Button_Pulser down(CLOCK, btnD, DSTATE);
-    Button_Pulser left(CLOCK, btnL, LSTATE);                                      
-    Button_Pulser right(CLOCK, btnR, RSTATE);
-    Button_Pulser ctr(CLOCK, btnC, CSTATE);
+    //mouse last state
+    reg mouseLastState = 0;
+    
+    Button_Pulser up(clk_30Hz, btnU, USTATE); //single pulser for button presses
+    Button_Pulser down(clk_30Hz, btnD, DSTATE);
+    Button_Pulser left(clk_30Hz, btnL, LSTATE);                                      
+    Button_Pulser right(clk_30Hz, btnR, RSTATE);
+    Button_Pulser ctr(clk_30Hz, btnC, CSTATE);
     
     SEG_Decoder seg_d(CLOCK, WORD0, WORD1, WORD2, WORD3, SEG, AN);
     
-    always @ (posedge CLOCK) begin
+    always @ (posedge clk_30Hz) begin
+        if (MOUSELEFT && ~mouseLastState) begin
+            if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 868 && MOUSEY < 894) begin
+                clrstate <= 1;
+            end
+            else if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 898 && MOUSEY < 924) begin
+                clrstate <= 2;
+            end
+            else if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 928 && MOUSEY < 954) begin
+                clrstate <= 3;
+            end
+            else if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 958 && MOUSEY < 984) begin
+                clrstate <= 4;
+            end
+            else if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 988 && MOUSEY < 1014) begin
+                clrstate <= 5;
+            end
+        end
+        
         //mode changing logic
         if (USTATE == 1 && ~btnD) begin //button press up
-            mode <= (mode == 6 ? mode : mode + 1);
+            mode <= (mode >= 6 ? mode : mode + 1);
             display1Hz = 0;
             
             //change back to original settings
@@ -112,7 +134,7 @@ module Mode_Selector(
         end
         
         //parameter display counter, shows FREQ / VOL at the start
-        display1Hz <= (display1Hz >= 210000000 ? display1Hz : display1Hz + 1);
+        display1Hz <= (display1Hz >= 29 ? display1Hz : display1Hz + 1);
         
         //color state mode
         if (LSTATE == 1 && ~btnR && mode == 3) begin //button press left
@@ -216,17 +238,17 @@ module Mode_Selector(
         if (mode == 2) begin
         case (displaystate)
             1: begin
-                word0 <= (display1Hz >= 200000000 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
-                word1 <= (display1Hz >= 200000000 ? FREQ1 : 27);
-                word2 <= (display1Hz >= 200000000 ? FREQ2 : 14);
-                word3 <= (display1Hz >= 200000000 ? FREQ3 : 26);
+                word0 <= (display1Hz >= 29 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
+                word1 <= (display1Hz >= 29 ? FREQ1 : 27);
+                word2 <= (display1Hz >= 29 ? FREQ2 : 14);
+                word3 <= (display1Hz >= 29 ? FREQ3 : 26);
             end
             
             2: begin
-                word0 <= (display1Hz >= 200000000 ? SPERCENT0 : 31);
-                word1 <= (display1Hz >= 200000000 ? SPERCENT1 : 24);
-                word2 <= (display1Hz >= 200000000 ? SPERCENT2 : 21);
-                word3 <= (display1Hz >= 200000000 ? 37 : 37);
+                word0 <= (display1Hz >= 29 ? SPERCENT0 : 31);
+                word1 <= (display1Hz >= 29 ? SPERCENT1 : 24);
+                word2 <= (display1Hz >= 29 ? SPERCENT2 : 21);
+                word3 <= (display1Hz >= 29 ? 37 : 37);
             end
             
         endcase
@@ -253,6 +275,7 @@ module Mode_Selector(
         endcase
     
     end
+    
     
     assign WORD0 = word0;
     assign WORD1 = word1;

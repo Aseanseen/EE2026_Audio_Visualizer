@@ -1331,8 +1331,13 @@ module Draw_Waveform_History(
     assign green = colour << 4 >> 8;
     assign blue = colour << 8 >> 8;
     
-    assign VGA_Red_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 600]) ? red : 0;
-    assign VGA_Green_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 600]) ? green : 0;
-    assign VGA_Blue_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 600]) ? blue : 0;
+    //assign 50 to 1
+    assign VGA_Red_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 1]) ? red : 0;
+    assign VGA_Green_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 1]) ? green : 0;
+    assign VGA_Blue_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 1]) ? blue : 0;
+    
+    /*assign VGA_Red_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 100]) ? red : 0;
+    assign VGA_Green_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 100]) ? green : 0;
+    assign VGA_Blue_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD - 100]) ? blue : 0;*/
     
 endmodule

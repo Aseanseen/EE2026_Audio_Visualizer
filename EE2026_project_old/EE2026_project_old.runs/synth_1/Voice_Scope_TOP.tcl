@@ -34,21 +34,27 @@ read_verilog -library xil_defaultlib {
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Button_Pulser.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Color_Selector.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v
-  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_History.v
-  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Mode.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Freq_Counter.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mouse_Controller.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/SEG_Decoder.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Sound_Lvl_Converter.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_DISPLAY.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Capturer.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/char.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/clk_30hz.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/clk_div.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/pc_vga_8x16.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/pc_vga_8x16_00_7F.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/pc_vga_8x16_80_FF.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/posE_dff.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v
 }
 read_vhdl -library xil_defaultlib {
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/CLK_108M.vhd
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Ps2Interface.vhd
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_CONTROL.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being

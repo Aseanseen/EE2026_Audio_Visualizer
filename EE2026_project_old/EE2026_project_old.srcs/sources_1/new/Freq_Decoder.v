@@ -32,17 +32,6 @@ module Freq_Decoder(input clk_wire, [11:0] freq, output [3:0] FREQ0, [3:0] FREQ1
         freq2 <= (freq % 100) / 10;
         freq3 <= freq % 10;
         
-        
-        /*freq0 <= freq / 1000;
-        freq1 <= freq / 100;
-        freq2 <= freq / 10;
-        freq3 <= freq;*/
-        
-        /*freq0 <= (freq0 > 10 ? 9 : freq0);
-        freq1 <= (freq1 > 10 ? 9 : freq1);
-        freq2 <= (freq2 > 10 ? 9 : freq2);
-        freq3 <= (freq3 > 10 ? 9 : freq3);*/
-        
     end
 
     assign FREQ0 = freq0;

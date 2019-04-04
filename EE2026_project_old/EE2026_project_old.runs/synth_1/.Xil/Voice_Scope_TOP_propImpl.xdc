@@ -99,3 +99,7 @@ set_property src_info {type:XDC file:1 line:211 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN P19 [get_ports Hsync]
 set_property src_info {type:XDC file:1 line:213 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R19 [get_ports Vsync]
+set_property src_info {type:XDC file:1 line:225 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN C17 [get_ports mouseClk]
+set_property src_info {type:XDC file:1 line:228 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B17 [get_ports mouseData]
