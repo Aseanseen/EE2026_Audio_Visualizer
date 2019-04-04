@@ -11,7 +11,7 @@ module Mode_Selector(
     [3:0] FREQ0, [3:0] FREQ1,  [3:0] FREQ2, [3:0] FREQ3, 
     [5:0] SPERCENT0, [5:0] SPERCENT1, [5:0] SPERCENT2,
     MOUSELEFT, [11:0] MOUSEX, [11:0] MOUSEY,
-    output [7:0] SEG, [3:0] AN, [5:0] MODE, 
+    output [7:0] SEG, [3:0] AN, [5:0] MODE, [2:0] WAVEMODE, 
     [2:0] CLRSTATE, [2:0] WAVEFORMSTATE, [2:0] HISTSTATE, [2:0] CIRCLESTATE, 
     LOCK);
     
@@ -41,6 +41,10 @@ module Mode_Selector(
     //state of parameter displays
     reg [2:0] displaystate = 1;
     reg [29:0] display1Hz = 0; //parameter menu word displays (1 sec)
+    
+    //which waveform to display
+    reg [2:0] wavemode = 1;
+    reg [2:0] wavemodeprev = 1;
     
     //state of waveform display
     reg [2:0] waveformstate = 1;
@@ -109,10 +113,19 @@ module Mode_Selector(
         
         //lock waveform mode
         if (mode == 0) begin //set logic when btnC is pressed
+            wavemode <= wavemodeprev;
             if (CSTATE == 1) begin
                 lock <= ~lock;
                 mode <= 1; //switch back to base mode
             end
+        end
+        
+        if (mode == 1) begin
+            clrstate <= clrprev;
+            wavemode <= wavemodeprev;
+            waveformstate <= waveformprev;
+            histstate <= histprev;
+            circlestate <= circleprev;
         end
         
         //parameter display mode
@@ -128,13 +141,14 @@ module Mode_Selector(
         
         if (mode == 2) begin
             clrstate <= clrprev;
+            wavemode <= wavemodeprev;
             waveformstate <= waveformprev;
             histstate <= histprev;
             circlestate <= circleprev;
         end
         
         //parameter display counter, shows FREQ / VOL at the start
-        display1Hz <= (display1Hz >= 29 ? display1Hz : display1Hz + 1);
+        display1Hz <= (display1Hz >= 61 ? display1Hz : display1Hz + 1);
         
         //color state mode
         if (LSTATE == 1 && ~btnR && mode == 3) begin //button press left
@@ -147,6 +161,7 @@ module Mode_Selector(
         
         if (mode == 3) begin //set logic when btnC is pressed
             clrstate <= option;
+            wavemode <= wavemodeprev;
             waveformstate <= waveformprev;
             histstate <= histprev;
             circlestate <= circleprev;
@@ -159,7 +174,7 @@ module Mode_Selector(
             end
         end
         
-        //waveform changer mode
+        //waveform mode
         if (LSTATE == 1 && ~btnR && mode == 4) begin //button press left
             option <= (option >= 5 ? option : option + 1);
             display1Hz = 0;
@@ -172,11 +187,14 @@ module Mode_Selector(
         
         if (mode == 4) begin //set logic when btnC is pressed
             waveformstate <= option;
+            wavemode <= 1;
             clrstate <= clrprev;
             histstate <= histprev;
             circlestate <= circleprev;
             
             if (CSTATE == 1) begin
+                wavemode <= 1;
+                wavemodeprev <= 1;
                 waveformstate <= option;
                 waveformprev <= option;
                 option <= 1;
@@ -184,7 +202,7 @@ module Mode_Selector(
             end
         end
         
-        //history changer mode
+        //history mode
         if (LSTATE == 1 && ~btnR && mode == 5) begin //button press left
             option <= (option >= 3 ? option : option + 1);
             display1Hz = 0;
@@ -196,12 +214,15 @@ module Mode_Selector(
         end
         
         if (mode == 5) begin //set logic when btnC is pressed
+            wavemode <= 2;
             waveformstate <= waveformprev;
             clrstate <= clrprev;
             histstate <= option;
             circlestate <= circleprev;
             
             if (CSTATE == 1) begin
+                wavemode <= 2;
+                wavemodeprev <= 2;
                 histstate <= option;
                 histprev <= option;
                 option <= 1;
@@ -209,7 +230,7 @@ module Mode_Selector(
             end
         end
         
-        //circle waveform changer mode
+        //circle waveform mode
         if (LSTATE == 1 && ~btnR && mode == 6) begin //button press left
             option <= (option >= 4 ? option : option + 1);
             display1Hz = 0;
@@ -221,12 +242,15 @@ module Mode_Selector(
         end
         
         if (mode == 6) begin //set logic when btnC is pressed
+            wavemode <= 3;
             circlestate <= option;
             waveformstate <= waveformprev;
             clrstate <= clrprev;
             histstate <= histprev;
             
             if (CSTATE == 1) begin
+                wavemode <= 3;
+                wavemodeprev <= 3;
                 circlestate <= option;
                 circleprev <= option;
                 option <= 1;
@@ -238,17 +262,17 @@ module Mode_Selector(
         if (mode == 2) begin
         case (displaystate)
             1: begin
-                word0 <= (display1Hz >= 29 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
-                word1 <= (display1Hz >= 29 ? FREQ1 : 27);
-                word2 <= (display1Hz >= 29 ? FREQ2 : 14);
-                word3 <= (display1Hz >= 29 ? FREQ3 : 26);
+                word0 <= (display1Hz >= 60 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
+                word1 <= (display1Hz >= 60 ? FREQ1 : 27);
+                word2 <= (display1Hz >= 60 ? FREQ2 : 14);
+                word3 <= (display1Hz >= 60 ? FREQ3 : 26);
             end
             
             2: begin
-                word0 <= (display1Hz >= 29 ? SPERCENT0 : 31);
-                word1 <= (display1Hz >= 29 ? SPERCENT1 : 24);
-                word2 <= (display1Hz >= 29 ? SPERCENT2 : 21);
-                word3 <= (display1Hz >= 29 ? 37 : 37);
+                word0 <= (display1Hz >= 60 ? SPERCENT0 : 31);
+                word1 <= (display1Hz >= 60 ? SPERCENT1 : 24);
+                word2 <= (display1Hz >= 60 ? SPERCENT2 : 21);
+                word3 <= (display1Hz >= 60 ? 37 : 37);
             end
             
         endcase
@@ -276,7 +300,6 @@ module Mode_Selector(
     
     end
     
-    
     assign WORD0 = word0;
     assign WORD1 = word1;
     assign WORD2 = word2;
@@ -287,6 +310,10 @@ module Mode_Selector(
     assign MODE = mode;
     assign CLRSTATE = clrstate;
     
+    assign WAVEMODE = wavemode;
+    
     assign WAVEFORMSTATE = waveformstate;
+    assign HISTSTATE = histstate;
+    assign CIRCLESTATE = circlestate;
     
 endmodule

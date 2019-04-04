@@ -86,6 +86,7 @@ module Voice_Scope_TOP(
     
     //mode selector
     wire [5:0] MODE;
+    wire [2:0] WAVEMODE;
     wire [2:0] CLRSTATE;
     wire [2:0] WAVEFORMSTATE;
     wire [2:0] HISTSTATE;
@@ -98,7 +99,7 @@ module Voice_Scope_TOP(
     btnC, btnU, btnD, btnL, btnR, 
     SEG_VOL0, SEG_VOL1, freq0, freq1, freq2, freq3, SPERCENT0, SPERCENT1, SPERCENT2,  
     mouseLeft, mouseXPos, mouseYPos,
-    SEG, AN, MODE, CLRSTATE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, LOCK);
+    SEG, AN, MODE, WAVEMODE, CLRSTATE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, LOCK);
     
     assign wave_sample = wave_sample_raw >> 2;
     
@@ -142,19 +143,18 @@ module Voice_Scope_TOP(
     wire CLK_VGA;
         
     //Waveform modules
-    //Draw_Waveform_Mode wave(clk_wire, SW0, SW15, LOCK, MODE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_wave, VGA_Green_wave, VGA_Blue_wave);
-    Draw_Waveform_History wave_h(clk_wire, SW0, SW15, LOCK, MODE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_hist, VGA_Green_hist, VGA_Blue_hist);
-    //Draw_Waveform_Circle wave_c(clk_wire, SW0, SW15, LOCK, MODE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_circle, VGA_Green_circle, VGA_Blue_circle);
+    Draw_Waveform_Mode wave(clk_wire, SW0, SW15, LOCK, MODE, WAVEMODE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_wave, VGA_Green_wave, VGA_Blue_wave);
+    //Draw_Waveform_History wave_h(clk_wire, SW0, SW15, LOCK, MODE, WAVEMODE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_hist, VGA_Green_hist, VGA_Blue_hist);
+    //Draw_Waveform_Circle wave_c(clk_wire, SW0, SW15, LOCK, MODE, WAVEMODE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_circle, VGA_Green_circle, VGA_Blue_circle);
         
     //Draw_Waveform_Circle wave_C(clk_wire, SW0, SW15, LOCK, MODE, WAVEFORMSTATE, wave_sample, VGA_HORZ_COORD, VGA_VERT_COORD, waveform, VGA_Red_waveform, VGA_Green_waveform, VGA_Blue_waveform);
         
     
     //Waveform selection logic
-    assign VGA_Red_waveform = (MODE <= 4 ? VGA_Red_wave : (MODE == 5 ? VGA_Red_hist : VGA_Red_circle));
-    assign VGA_Green_waveform = (MODE <= 4 ? VGA_Green_wave : (MODE == 5 ? VGA_Green_hist : VGA_Green_circle));
-    assign VGA_Blue_waveform = (MODE <= 4 ? VGA_Blue_wave : (MODE == 5 ? VGA_Blue_hist : VGA_Blue_circle));
+    assign VGA_Red_waveform = (WAVEMODE == 1 ? VGA_Red_wave : (WAVEMODE == 2 ? VGA_Red_hist : VGA_Red_circle));
+    assign VGA_Green_waveform = (WAVEMODE == 1 ? VGA_Green_wave : (WAVEMODE == 2 ? VGA_Green_hist : VGA_Green_circle));
+    assign VGA_Blue_waveform = (WAVEMODE == 1 ? VGA_Blue_wave : (WAVEMODE == 2 ? VGA_Blue_hist : VGA_Blue_circle));
     
-       
     //VGA Background Grid 
     wire [3:0] VGA_Red_grid;
     wire [3:0] VGA_Green_grid;

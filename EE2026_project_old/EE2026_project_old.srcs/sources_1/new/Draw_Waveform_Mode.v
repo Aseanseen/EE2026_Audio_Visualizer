@@ -12,6 +12,7 @@ module Draw_Waveform_Mode(
     input SW0, SW15,
     input LOCK,
     input [5:0] mode,
+    input [2:0] wavemode,
     input [2:0] waveformstate,
     input [2:0] histstate,
     input [2:0] circlestate,
@@ -26,9 +27,9 @@ module Draw_Waveform_Mode(
     output [3:0] VGA_Blue_waveform
     );
     
-    //The Sample_Memory represents the memory array used to store the voice samples.
+    //The memory represents the memory array used to store the voice samples.
     //There are 1280 points and each point can range from 0 to 1023. 
-    reg [9:0] Sample_Memory[1279:0];
+    reg [9:0] memory[1279:0];
     reg [10:0] i = 1; //counter for memory
     reg [9:0] ramp_count;
     
@@ -63,12 +64,12 @@ module Draw_Waveform_Mode(
             
             //determine what to assign to each block
             if (waveformstate == 1) begin
-                Sample_Memory[i] <= (SW0 == 1) ? prev : ramp_count;
+                memory[i] <= (SW0 == 1) ? prev : ramp_count;
                 prev <= wave_sample;
             end
             
             if (waveformstate == 2) begin
-                Sample_Memory[i] <= prev;
+                memory[i] <= prev;
                 if (counter == 0) begin
                     prev <= wave_sample;
                     maxWave <= 0;
@@ -76,7 +77,7 @@ module Draw_Waveform_Mode(
             end
             
             if (waveformstate == 3) begin
-                Sample_Memory[i] <= (prev <= 512 ? 512 : prev);
+                memory[i] <= (prev <= 512 ? 512 : prev);
                 if (counter == 0) begin
                     prev <= maxWave;
                     maxWave <= 0;
@@ -95,34 +96,34 @@ module Draw_Waveform_Mode(
     assign blue = colour << 8 >> 8;
     
     assign VGA_Red_waveform = ((mode <= 4 && VGA_HORZ_COORD < 1280) && 
-    ((waveformstate == 1 && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))
+    ((waveformstate == 1 && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD]))
     
-    || (waveformstate == 2 && (Sample_Memory[VGA_HORZ_COORD] >= 512 ? 
-    (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - Sample_Memory[VGA_HORZ_COORD])) :
-    (VGA_VERT_COORD >= 512 && VGA_VERT_COORD <= (1024 - Sample_Memory[VGA_HORZ_COORD])) ))
+    || (waveformstate == 2 && (memory[VGA_HORZ_COORD] >= 512 ? 
+    (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])) :
+    (VGA_VERT_COORD >= 512 && VGA_VERT_COORD <= (1024 - memory[VGA_HORZ_COORD])) ))
     
-    || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - Sample_Memory[VGA_HORZ_COORD])))) ? red : 0;
+    || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])))) ? red : 0;
     
     assign VGA_Green_waveform = ((mode <= 4 && VGA_HORZ_COORD < 1280) && 
-    ((waveformstate == 1 && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))
+    ((waveformstate == 1 && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD]))
     
-    || (waveformstate == 2 && (Sample_Memory[VGA_HORZ_COORD] <= 512 ? 
-    (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - Sample_Memory[VGA_HORZ_COORD])) :
-    (VGA_VERT_COORD >= 512 && VGA_VERT_COORD <= (1024 - Sample_Memory[VGA_HORZ_COORD])) ))
+    || (waveformstate == 2 && (memory[VGA_HORZ_COORD] >= 512 ? 
+    (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])) :
+    (VGA_VERT_COORD >= 512 && VGA_VERT_COORD <= (1024 - memory[VGA_HORZ_COORD])) ))
     
-    || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - Sample_Memory[VGA_HORZ_COORD])))) ? green : 0;
+    || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])))) ? green : 0;
     
     assign VGA_Blue_waveform = ((mode <= 4 && VGA_HORZ_COORD < 1280) && 
-    ((waveformstate == 1 && VGA_VERT_COORD == (1024 - Sample_Memory[VGA_HORZ_COORD]))
+    ((waveformstate == 1 && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD]))
     
-    || (waveformstate == 2 && (Sample_Memory[VGA_HORZ_COORD] <= 512 ? 
-    (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - Sample_Memory[VGA_HORZ_COORD])) :
-    (VGA_VERT_COORD >= 512 && VGA_VERT_COORD <= (1024 - Sample_Memory[VGA_HORZ_COORD])) ))
+    || (waveformstate == 2 && (memory[VGA_HORZ_COORD] >= 512 ? 
+    (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])) :
+    (VGA_VERT_COORD >= 512 && VGA_VERT_COORD <= (1024 - memory[VGA_HORZ_COORD])) ))
     
-    || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - Sample_Memory[VGA_HORZ_COORD])))) ? blue : 0;
+    || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])))) ? blue : 0;
     
-    //assign VGA_Green_waveform = ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - Sample_Memory[VGA_HORZ_COORD]))) ? green : 0;
-    //assign VGA_Blue_waveform = ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - Sample_Memory[VGA_HORZ_COORD]))) ? blue : 0 ;
+    //assign VGA_Green_waveform = ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD]))) ? green : 0;
+    //assign VGA_Blue_waveform = ((VGA_HORZ_COORD < 1280) && (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD]))) ? blue : 0 ;
 
     
 endmodule

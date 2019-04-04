@@ -9,11 +9,13 @@ module Draw_Waveform_Circle(
     input SW0, SW15,
     input LOCK,
     input [5:0] mode,
+    input [2:0] wavemode,
     input [2:0] waveformstate,
     input [2:0] histstate,
     input [2:0] circlestate,
     
     input [9:0] wave_sample,
+    
     input [11:0] VGA_HORZ_COORD,
     input [11:0] VGA_VERT_COORD,
     input [11:0] colour,
@@ -48,7 +50,15 @@ module Draw_Waveform_Circle(
         val <= (wave_sample > 512 ? wave_sample - 512 : 512 - wave_sample);
         cur <= (val > cur ? val : cur);
         
-        if (SW15 == 0 && LOCK == 0 && counter == 0) begin
+        if (circlestate == 1 && SW15 == 0 && LOCK == 0 && counter == 0) begin
+            memory[i] <= (cur > 300 ? 300 : cur);
+            i <= (i > 7 ? 0 : i + 1);
+            //radius <= (val > prev) ? (radius > 200 ? radius : radius + 1) : (radius == 0 ? radius : radius - 1);
+            prev <= val;
+            cur <= 0;
+        end
+        
+        if (circlestate == 2 && SW15 == 0 && LOCK == 0 && counter == 0) begin
             memory[i] <= (cur > 300 ? 300 : cur);
             i <= (i > 7 ? 0 : i + 1);
             //radius <= (val > prev) ? (radius > 200 ? radius : radius + 1) : (radius == 0 ? radius : radius - 1);
