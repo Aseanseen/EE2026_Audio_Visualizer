@@ -15,6 +15,7 @@ module Draw_Waveform_Circle(
     input [2:0] circlestate,
     
     input [9:0] wave_sample,
+    input [9:0] freq_sample,
     
     input [11:0] VGA_HORZ_COORD,
     input [11:0] VGA_VERT_COORD,
@@ -59,7 +60,23 @@ module Draw_Waveform_Circle(
         end
         
         if (circlestate == 2 && SW15 == 0 && LOCK == 0 && counter == 0) begin
-            memory[i] <= (cur > 300 ? 300 : cur);
+            memory[i] <= (cur > 300 ? 300 : 300);
+            i <= (i > 7 ? 0 : i + 1);
+            //radius <= (val > prev) ? (radius > 200 ? radius : radius + 1) : (radius == 0 ? radius : radius - 1);
+            prev <= val;
+            cur <= 0;
+        end
+        
+        if (circlestate == 3 && SW15 == 0 && LOCK == 0 && counter == 0) begin
+            memory[i] <= (cur > 300 ? 400 : 400);
+            i <= (i > 7 ? 0 : i + 1);
+            //radius <= (val > prev) ? (radius > 200 ? radius : radius + 1) : (radius == 0 ? radius : radius - 1);
+            prev <= val;
+            cur <= 0;
+        end
+        
+        if (circlestate == 4 && SW15 == 0 && LOCK == 0 && counter == 0) begin
+            memory[i] <= (cur > 300 ? 500 : 500);
             i <= (i > 7 ? 0 : i + 1);
             //radius <= (val > prev) ? (radius > 200 ? radius : radius + 1) : (radius == 0 ? radius : radius - 1);
             prev <= val;

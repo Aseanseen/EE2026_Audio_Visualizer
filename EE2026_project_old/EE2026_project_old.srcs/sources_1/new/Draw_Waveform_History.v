@@ -18,6 +18,7 @@ module Draw_Waveform_History(
     input [2:0] circlestate,
     
     input [9:0] wave_sample,
+    input [9:0] freq_sample,
     input [11:0] VGA_HORZ_COORD,
     input [11:0] VGA_VERT_COORD,
     input [11:0] colour,
@@ -37,9 +38,11 @@ module Draw_Waveform_History(
     
     //Each wave_sample is displayed on the screen from left to right. 
     always @ (posedge clk_sample) begin
-		counter <= (counter >= 99 ? 0 : counter + 1);
+		counter <= (counter >= 49 ? 0 : counter + 1);
 		
-		prev <= (wave_sample > prev ? wave_sample : prev);
+		prev <= histstate == 1 ? 
+		(wave_sample > prev ? wave_sample : prev) :
+        (freq_sample > prev ? freq_sample : prev);
 		
 		if (SW15 == 0 && LOCK == 0 && counter == 0) begin
 			memory[1278] <= memory[1279];
@@ -1330,14 +1333,14 @@ module Draw_Waveform_History(
 			
 			//freq history
 			if (histstate == 2) begin
-			
-			
+                memory[1279] <= prev;
+                prev <= 0;
 			end
 			
 			//nyan cat
 			if (histstate == 3) begin
-			
-			
+                memory[1279] <= prev * 2;
+                prev <= 0;
 			end
 			
 			

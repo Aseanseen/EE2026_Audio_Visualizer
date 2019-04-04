@@ -18,6 +18,7 @@ module Draw_Waveform_Mode(
     input [2:0] circlestate,
     
     input [9:0] wave_sample,
+    input [9:0] freq_sample,
     input [11:0] VGA_HORZ_COORD,
     input [11:0] VGA_VERT_COORD,
     input [11:0] colour,
@@ -83,6 +84,15 @@ module Draw_Waveform_Mode(
                     maxWave <= 0;
                 end
             end
+            
+            if (waveformstate == 4) begin
+                memory[i] <= (prev <= 512 ? 300 : prev);
+                if (counter == 0) begin
+                    prev <= maxWave;
+                    maxWave <= 0;
+                end
+            end
+            
         end
                       
     end

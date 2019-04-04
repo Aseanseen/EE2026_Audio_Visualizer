@@ -57,11 +57,12 @@ module Draw_Background(
     || ( VGA_VERT_COORD < mouseYPos + 10 && VGA_VERT_COORD > mouseYPos - 10 && VGA_HORZ_COORD < mouseXPos + 2 && VGA_HORZ_COORD > mouseXPos - 2);
     
     wire a1, a2, a3, a4, a5 ,a6, a7, a8, a9, a10, a11, a12 , a13, a14, a15;
-    wire c1, c2, c3, c4, c5, c6, c7, c8;
-    wire d1, d2, d3, d4, d5, d6, d7, d8;
-    wire e1, e2, e3, e4, e5, e6, e7, e8;
-    wire f1, f2, f3, f4, f5, f6, f7, f8;
-    wire g1, g2, g3, g4, g5, g6, g7, g8;
+    wire b1, b2, b3, b4;
+    wire c1, c2, c3, c4;
+    wire d1, d2, d3, d4;
+    wire e1, e2, e3, e4;
+    wire f1, f2, f3, f4;
+    wire g1, g2, g3, g4;
     
     char ahar1(clk, 69, 20, 20, VGA_HORZ_COORD, VGA_VERT_COORD, a1);
     char ahar2(clk, 69, 29, 20, VGA_HORZ_COORD, VGA_VERT_COORD, a2);
@@ -79,70 +80,161 @@ module Draw_Background(
     char ahar14(clk, 78, 173, 20, VGA_HORZ_COORD, VGA_VERT_COORD, a14);
     char ahar15(clk, 1, 191, 20, VGA_HORZ_COORD, VGA_VERT_COORD, a15);
     
-    char char1(clk, 67, 1189, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c1);
-    char char2(clk, 111, 1198, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c2);
-    char char3(clk, 108, 1207, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c3);
-    char char4(clk, 111, 1216, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c4);
-    char char5(clk, 117, 1225, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c5);
-    char char6(clk, 114, 1234, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c6);
-    char char7(clk, 32, 1243, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c7);
-    char char8(clk, 49, 1252, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c8);
+    char bhar1(clk, 67, 1226, 848, VGA_HORZ_COORD, VGA_VERT_COORD, b1);
+    char bhar2(clk, 111, 1235, 848, VGA_HORZ_COORD, VGA_VERT_COORD, b2);
+    char bhar3(clk, 108, 1244, 848, VGA_HORZ_COORD, VGA_VERT_COORD, b3);
+    char bhar4(clk, 115, 1253, 848, VGA_HORZ_COORD, VGA_VERT_COORD, b4);
     
-    char dhar1(clk, 67, 1189, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d1);
-    char dhar2(clk, 111, 1198, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d2);
-    char dhar3(clk, 108, 1207, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d3);
-    char dhar4(clk, 111, 1216, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d4);
-    char dhar5(clk, 117, 1225, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d5);
-    char dhar6(clk, 114, 1234, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d6);
-    char dhar7(clk, 32, 1243, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d7);
-    char dhar8(clk, 50, 1252, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d8);
+    char char1(clk, 83, 1232, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c1);
+    char char2(clk, 49, 1245, 873, VGA_HORZ_COORD, VGA_VERT_COORD, c2);
+    
+    char dhar1(clk, 83, 1232, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d1);
+    char dhar2(clk, 50, 1245, 903, VGA_HORZ_COORD, VGA_VERT_COORD, d2);
         
-    char ehar1(clk, 67, 1189, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e1);
-    char ehar2(clk, 111, 1198, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e2);
-    char ehar3(clk, 108, 1207, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e3);
-    char ehar4(clk, 111, 1216, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e4);
-    char ehar5(clk, 117, 1225, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e5);
-    char ehar6(clk, 114, 1234, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e6);
-    char ehar7(clk, 32, 1243, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e7);
-    char ehar8(clk, 51, 1252, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e8);
+    char ehar1(clk, 83, 1232, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e1);
+    char ehar2(clk, 51, 1245, 933, VGA_HORZ_COORD, VGA_VERT_COORD, e2);
             
-    char fhar1(clk, 67, 1189, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f1);
-    char fhar2(clk, 111, 1198, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f2);
-    char fhar3(clk, 108, 1207, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f3);
-    char fhar4(clk, 111, 1216, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f4);
-    char fhar5(clk, 117, 1225, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f5);
-    char fhar6(clk, 114, 1234, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f6);
-    char fhar7(clk, 32, 1243, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f7);
-    char fhar8(clk, 52, 1252, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f8);
+    char fhar1(clk, 83, 1232, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f1);
+    char fhar2(clk, 52, 1245, 963, VGA_HORZ_COORD, VGA_VERT_COORD, f2);
                 
-    char ghar1(clk, 67, 1189, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g1);
-    char ghar2(clk, 111, 1198, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g2);
-    char ghar3(clk, 108, 1207, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g3);
-    char ghar4(clk, 111, 1216, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g4);
-    char ghar5(clk, 117, 1225, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g5);
-    char ghar6(clk, 114, 1234, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g6);
-    char ghar7(clk, 32, 1243, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g7);
-    char ghar8(clk, 53, 1252, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g8);
+    char ghar1(clk, 83, 1232, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g1);
+    char ghar2(clk, 53, 1245, 993, VGA_HORZ_COORD, VGA_VERT_COORD, g2);
     
-    wire Condition_For_Text = c1 || c2 || c3 || c4 || c5 || c6 || c7 || c8 
-    || d1 || d2 || d3 || d4 || d5 || d6 || d7 || d8 
-    || e1 || e2 || e3 || e4 || e5 || e6 || e7 || e8 
-    || f1 || f2 || f3 || f4 || f5 || f6 || f7 || f8 
-    || g1 || g2 || g3 || g4 || g5 || g6 || g7 || g8;
-    wire Condition_For_Title = a1 || a2 || a3 || a4 || a5 || a6 || a7 || a8 || a9 || a10 || a11 || a12 || a13 || a14 || a15;
+    wire blk1, blk2, blk3;
+    char block1(clk, 66, 20, 993, VGA_HORZ_COORD, VGA_VERT_COORD, blk1);
+    char block2(clk, 108, 28, 993, VGA_HORZ_COORD, VGA_VERT_COORD, blk2);
+    char block3(clk, 107, 36, 993, VGA_HORZ_COORD, VGA_VERT_COORD, blk3);
     
-    wire Condition_For_Box = (VGA_HORZ_COORD >= 1184 && VGA_HORZ_COORD < 1265) && 
+    wire ba1, ba2, ba3;
+    char bar1(clk, 66, 20, 963, VGA_HORZ_COORD, VGA_VERT_COORD, ba1);
+    char bar2(clk, 97, 28, 963, VGA_HORZ_COORD, VGA_VERT_COORD, ba2);
+    char bar3(clk, 114, 36, 963, VGA_HORZ_COORD, VGA_VERT_COORD, ba3);
+    
+    wire fi1, fi2, fi3, fi4;
+    char fill1(clk, 70, 20, 933, VGA_HORZ_COORD, VGA_VERT_COORD, fi1);
+    char fill2(clk, 105, 28, 933, VGA_HORZ_COORD, VGA_VERT_COORD, fi2);
+    char fill3(clk, 108, 36, 933, VGA_HORZ_COORD, VGA_VERT_COORD, fi3);
+    char fill4(clk, 108, 44, 933, VGA_HORZ_COORD, VGA_VERT_COORD, fi4);
+    
+    wire n1, n2, n3, n4;
+    char normal1(clk, 78, 20, 903, VGA_HORZ_COORD, VGA_VERT_COORD, n1);
+    char normal2(clk, 111, 28, 903, VGA_HORZ_COORD, VGA_VERT_COORD, n2);
+    char normal3(clk, 114, 36, 903, VGA_HORZ_COORD, VGA_VERT_COORD, n3);
+    char normal4(clk, 109, 44, 903, VGA_HORZ_COORD, VGA_VERT_COORD, n4);
+    
+    wire wf1, wf2, wf3, wf4, wf5;
+    char waveform1(clk, 87, 15, 878, VGA_HORZ_COORD, VGA_VERT_COORD, wf1);
+    char waveform2(clk, 97, 23, 878, VGA_HORZ_COORD, VGA_VERT_COORD, wf2);
+    char waveform3(clk, 118, 31, 878, VGA_HORZ_COORD, VGA_VERT_COORD, wf3);
+    char waveform4(clk, 101, 39, 878, VGA_HORZ_COORD, VGA_VERT_COORD, wf4);
+    char waveform5(clk, 115, 47, 878, VGA_HORZ_COORD, VGA_VERT_COORD, wf5);
+    
+    wire h1, h2, h3, h4;
+    char hist1(clk, 72, 80, 878, VGA_HORZ_COORD, VGA_VERT_COORD, h1);
+    char hist2(clk, 105, 89, 878, VGA_HORZ_COORD, VGA_VERT_COORD, h2);
+    char hist3(clk, 115, 98, 878, VGA_HORZ_COORD, VGA_VERT_COORD, h3);
+    char hist4(clk, 116, 107, 878, VGA_HORZ_COORD, VGA_VERT_COORD, h4);
+    
+    wire v1, v2, v3;
+    char vol1(clk, 86, 85, 903, VGA_HORZ_COORD, VGA_VERT_COORD, v1);
+    char vol2(clk, 111, 94, 903, VGA_HORZ_COORD, VGA_VERT_COORD, v2);
+    char vol3(clk, 108, 103, 903, VGA_HORZ_COORD, VGA_VERT_COORD, v3);
+    
+    wire fr1, fr2, fr3, fr4;
+    char freq1(clk, 70, 85, 933, VGA_HORZ_COORD, VGA_VERT_COORD, fr1);
+    char freq2(clk, 114, 94, 933, VGA_HORZ_COORD, VGA_VERT_COORD, fr2);
+    char freq3(clk, 101, 103, 933, VGA_HORZ_COORD, VGA_VERT_COORD, fr3);
+    char freq4(clk, 113, 112, 933, VGA_HORZ_COORD, VGA_VERT_COORD, fr4);
+    
+    wire m1, m2, m3, m4;
+    char meow1(clk, 77, 85, 963, VGA_HORZ_COORD, VGA_VERT_COORD, m1);
+    char meow2(clk, 101, 94, 963, VGA_HORZ_COORD, VGA_VERT_COORD, m2);
+    char meow3(clk, 111, 103, 963, VGA_HORZ_COORD, VGA_VERT_COORD, m3);
+    char meow4(clk, 119, 112, 963, VGA_HORZ_COORD, VGA_VERT_COORD, m4);
+    
+    wire ci1, ci2, ci3, ci4;
+    char circ1(clk, 67, 145, 878, VGA_HORZ_COORD, VGA_VERT_COORD, ci1);
+    char circ2(clk, 105, 154, 878, VGA_HORZ_COORD, VGA_VERT_COORD, ci2);
+    char circ3(clk, 114, 163, 878, VGA_HORZ_COORD, VGA_VERT_COORD, ci3);
+    char circ4(clk, 99, 172, 878, VGA_HORZ_COORD, VGA_VERT_COORD, ci4);
+    
+    wire nc1, nc2, nc3, nc4;
+    char normalc1(clk, 78, 150, 903, VGA_HORZ_COORD, VGA_VERT_COORD, nc1);
+    char normalc2(clk, 111, 159, 903, VGA_HORZ_COORD, VGA_VERT_COORD, nc2);
+    char normalc3(clk, 114, 168, 903, VGA_HORZ_COORD, VGA_VERT_COORD, nc3);
+    char normalc4(clk, 109, 177, 903, VGA_HORZ_COORD, VGA_VERT_COORD, nc4);
+    
+    wire s1, s2, s3, s4;
+    char slow1(clk, 83, 150, 933, VGA_HORZ_COORD, VGA_VERT_COORD, s1);
+    char slow2(clk, 108, 159, 933, VGA_HORZ_COORD, VGA_VERT_COORD, s2);
+    char slow3(clk, 111, 168, 933, VGA_HORZ_COORD, VGA_VERT_COORD, s3);
+    char slow4(clk, 119, 177, 933, VGA_HORZ_COORD, VGA_VERT_COORD, s4);
+    
+    wire frc1, frc2, frc3, frc4;
+    char freqc1(clk, 70, 150, 963, VGA_HORZ_COORD, VGA_VERT_COORD, frc1);
+    char freqc2(clk, 114, 159, 963, VGA_HORZ_COORD, VGA_VERT_COORD, frc2);
+    char freqc3(clk, 101, 168, 963, VGA_HORZ_COORD, VGA_VERT_COORD, frc3);
+    char freqc4(clk, 113, 177, 963, VGA_HORZ_COORD, VGA_VERT_COORD, frc4);
+    
+    wire frcs1, frcs2, frcs3, frcs4;
+    char freqcs1(clk, 70, 150, 993, VGA_HORZ_COORD, VGA_VERT_COORD, frcs1);
+    char freqcs2(clk, 114, 159, 993, VGA_HORZ_COORD, VGA_VERT_COORD, frcs2);
+    char freqcs3(clk, 83, 168, 993, VGA_HORZ_COORD, VGA_VERT_COORD, frcs3);
+    char freqcs4(clk, 108, 177, 993, VGA_HORZ_COORD, VGA_VERT_COORD, frcs4);
+    
+    wire Condition_For_Text = c1 || c2
+    || d1 || d2
+    || e1 || e2
+    || f1 || f2
+    || g1 || g2
+    || blk1 || blk2 || blk3
+    || ba1 || ba2 || ba3
+    || fi1 || fi2 || fi3 || fi4
+    || n1 || n2 || n3 || n4
+    || v1 || v2 || v3
+    || fr1 || fr2 || fr3 || fr4
+    || m1 || m2 || m3 || m4
+    || nc1 || nc2 || nc3 || nc4
+    || s1 || s2 || s3 || s4
+    || frc1 || frc2 || frc3 || frc4
+    || frcs1 || frcs2 || frcs3 || frcs4;
+    wire Condition_For_Title = a1 || a2 || a3 || a4 || a5 || a6 || a7 || a8 || a9 || a10 || a11 || a12 || a13 || a14 || a15
+    || b1 || b2 || b3 || b4
+    || wf1 || wf2 || wf3 || wf4 || wf5
+    || h1 || h2 || h3 || h4
+    || ci1 || ci2 || ci3 || ci4;
+    
+    wire Condition_For_Box = ((VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265) && 
     ((VGA_VERT_COORD >= 868 && VGA_VERT_COORD < 894) ||
     (VGA_VERT_COORD >= 898 && VGA_VERT_COORD < 924) ||
     (VGA_VERT_COORD >= 928 && VGA_VERT_COORD < 954) ||
     (VGA_VERT_COORD >= 958 && VGA_VERT_COORD < 984) ||
-    (VGA_VERT_COORD >= 988 && VGA_VERT_COORD < 1014)) ? 1 : 0;
+    (VGA_VERT_COORD >= 988 && VGA_VERT_COORD < 1014))) ||
     
-    wire Condition_For_HBox = (clrstate == 1 && VGA_HORZ_COORD >= 1184 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 868 && VGA_VERT_COORD < 894)
-    || (clrstate == 2 && VGA_HORZ_COORD >= 1184 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 898 && VGA_VERT_COORD < 924)
-    || (clrstate == 3 && VGA_HORZ_COORD >= 1184 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 928 && VGA_VERT_COORD < 954)
-    || (clrstate == 4 && VGA_HORZ_COORD >= 1184 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 958 && VGA_VERT_COORD < 984)
-    || (clrstate == 5 && VGA_HORZ_COORD >= 1184 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 988 && VGA_VERT_COORD < 1014);
+    ((VGA_HORZ_COORD >= 15 && VGA_HORZ_COORD < 60) &&
+    ((VGA_VERT_COORD >= 898 && VGA_VERT_COORD < 924) ||
+    (VGA_VERT_COORD >= 928 && VGA_VERT_COORD < 954) ||
+    (VGA_VERT_COORD >= 958 && VGA_VERT_COORD < 984) ||
+    (VGA_VERT_COORD >= 988 && VGA_VERT_COORD < 1014))) ||
+    
+    ((VGA_HORZ_COORD >= 80 && VGA_HORZ_COORD < 125) &&
+    ((VGA_VERT_COORD >= 898 && VGA_VERT_COORD < 924) ||
+    (VGA_VERT_COORD >= 928 && VGA_VERT_COORD < 954) ||
+    (VGA_VERT_COORD >= 958 && VGA_VERT_COORD < 984))) ||
+    
+    ((VGA_HORZ_COORD >= 145 && VGA_HORZ_COORD < 190) &&
+    ((VGA_VERT_COORD >= 898 && VGA_VERT_COORD < 924) ||
+    (VGA_VERT_COORD >= 928 && VGA_VERT_COORD < 954) ||
+    (VGA_VERT_COORD >= 958 && VGA_VERT_COORD < 984) ||
+    (VGA_VERT_COORD >= 988 && VGA_VERT_COORD < 1014)))
+    
+    ? 1 : 0;
+    
+    wire Condition_For_HBox = (clrstate == 1 && VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 868 && VGA_VERT_COORD < 894)
+    || (clrstate == 2 && VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 898 && VGA_VERT_COORD < 924)
+    || (clrstate == 3 && VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 928 && VGA_VERT_COORD < 954)
+    || (clrstate == 4 && VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 958 && VGA_VERT_COORD < 984)
+    || (clrstate == 5 && VGA_HORZ_COORD >= 1220 && VGA_HORZ_COORD < 1265 && VGA_VERT_COORD >= 988 && VGA_VERT_COORD < 1014);
     
 // Please modify below codes to change the background color and to display ticks defined above
     wire [3:0] bgR;

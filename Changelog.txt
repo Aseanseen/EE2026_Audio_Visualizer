@@ -121,3 +121,9 @@ Stuff to work on:
 	Dan:
 		Merged code w. JY
 		Fixed history waveform
+		
+	JY:
+		Added buttons to display
+		
+	Dan:
+		Binded buttons to states

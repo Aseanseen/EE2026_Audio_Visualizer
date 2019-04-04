@@ -2,17 +2,19 @@
 /**
  */
 
-module Freq_Counter(input CLOCK, clk_wire, [11:0] wave_sample_raw, 
-    output reg [11:0] FREQ = 0, reg [11:0] FREQ100, reg [3:0] FREQ0, reg [3:0] FREQ1, reg [3:0] FREQ2, reg [3:0] FREQ3);
-    reg [11:0] prev = 2048;
-    reg [11:0] counter = 0;
-    reg [15:0] counter100Hz = 1;
+module Freq_Counter(input CLOCK, clk_wire, [13:0] wave_sample_raw, 
+    output reg [13:0] FREQ = 0, reg [13:0] FREQ100HZ, reg [3:0] FREQ0, reg [3:0] FREQ1, reg [3:0] FREQ2, reg [3:0] FREQ3);
+    reg [11:0] prev = 2048; //prev wave_sample value
+    
+    reg [13:0] counter = 0; //num of crossings
+    
+    reg [15:0] counter100Hz = 1; //clock counters
     reg [15:0] counter2Hz = 1;
     
     reg [11:0] freq100Hz; //dynamic 100Hz refresh rate
     reg [11:0] freq; //regular .5Hz
     
-    reg [11:0] freq0;
+    reg [11:0] freq0; //for display in 7SEG
     reg [11:0] freq1;
     reg [11:0] freq2;
     reg [11:0] freq3;
@@ -26,9 +28,8 @@ module Freq_Counter(input CLOCK, clk_wire, [11:0] wave_sample_raw,
         counter <= (wave_sample_raw > 2048 && prev < 2048 ? (counter >= 5000 ? counter : counter + 1) : counter);
         
         if (counter2Hz == 0) begin
-            freq <= freq100Hz;
-            
-            FREQ <= freq;
+            //freq <= freq100Hz;
+            FREQ <= freq100Hz;
                          
             freq0 <= FREQ / 1000;
             freq1 <= (FREQ % 1000) / 100;
@@ -168,7 +169,7 @@ module Freq_Counter(input CLOCK, clk_wire, [11:0] wave_sample_raw,
             memory[4] + memory[3] + memory[2] + memory[1] + memory[0];
 			
             counter <= (counter100Hz == 0 ? 0 : counter); //reset
-			
+			FREQ100HZ <= freq100Hz;
         end
         
         prev = wave_sample_raw; //update prev

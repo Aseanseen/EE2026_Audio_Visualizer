@@ -35,28 +35,28 @@ module Mode_Selector(
     reg [5:0] word3;
     
     reg [5:0] mode = 1;
-    reg [2:0] clrstate = 1; //state of color display options
-    reg [2:0] clrprev = 1;
+    reg [2:0] clrState = 1; //state of color display options
+    reg [2:0] clrPrev = 1;
     
     //state of parameter displays
-    reg [2:0] displaystate = 1;
+    reg [2:0] displayState = 1;
     reg [29:0] display1Hz = 0; //parameter menu word displays (1 sec)
     
     //which waveform to display
-    reg [2:0] wavemode = 1;
-    reg [2:0] wavemodeprev = 1;
+    reg [2:0] waveMode = 1;
+    reg [2:0] waveModePrev = 1;
     
     //state of waveform display
-    reg [2:0] waveformstate = 1;
-    reg [2:0] waveformprev = 1;
+    reg [2:0] waveformState = 1;
+    reg [2:0] waveformPrev = 1;
     
     //state of waveform history display
-    reg [2:0] histstate = 1;
-    reg [2:0] histprev = 1;
+    reg [2:0] histState = 1;
+    reg [2:0] histPrev = 1;
     
     //state of circle waveform display
-    reg [2:0] circlestate = 1;
-    reg [2:0] circleprev = 1;
+    reg [2:0] circleState = 1;
+    reg [2:0] circlePrev = 1;
     
     //mouse last state
     reg mouseLastState = 0;
@@ -70,21 +70,119 @@ module Mode_Selector(
     SEG_Decoder seg_d(CLOCK, WORD0, WORD1, WORD2, WORD3, SEG, AN);
     
     always @ (posedge clk_30Hz) begin
+    
+        //buttons on display
         if (MOUSELEFT && ~mouseLastState) begin
-            if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 868 && MOUSEY < 894) begin
-                clrstate <= 1;
+            //Color Selector
+            if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 868 && MOUSEY < 894) begin
+                clrState <= 1;
+                clrPrev <= 1;
             end
-            else if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 898 && MOUSEY < 924) begin
-                clrstate <= 2;
+            
+            else if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 898 && MOUSEY < 924) begin
+                clrState <= 2;
+                clrPrev <= 2;
             end
-            else if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 928 && MOUSEY < 954) begin
-                clrstate <= 3;
+            
+            else if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 928 && MOUSEY < 954) begin
+                clrState <= 3;
+                clrPrev <= 3;
             end
-            else if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 958 && MOUSEY < 984) begin
-                clrstate <= 4;
+            
+            else if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 958 && MOUSEY < 984) begin
+                clrState <= 4;
+                clrPrev <= 4;
             end
-            else if (MOUSEX >= 1184 && MOUSEX < 1265 && MOUSEY >= 988 && MOUSEY < 1014) begin
-                clrstate <= 5;
+            
+            else if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 988 && MOUSEY < 1014) begin
+                clrState <= 5;
+                clrPrev <= 5;
+            end
+            
+            //MODES
+            //wave
+            //wave norm
+            else if (MOUSEX >= 15 && MOUSEX < 60 && MOUSEY >= 898 && MOUSEY < 924) begin
+                waveMode <= 1;
+                waveModePrev <= 1;
+                waveformState <= 1;
+                waveformPrev <= 1;
+            end
+            
+            //wave fill
+            else if (MOUSEX >= 15 && MOUSEX < 60 && MOUSEY >= 928 && MOUSEY < 954) begin
+                waveMode <= 1;
+                waveModePrev <= 1;
+                waveformState <= 2;
+                waveformPrev <= 2;
+            end
+            
+            //wave bar
+            else if (MOUSEX >= 15 && MOUSEX < 60 && MOUSEY >= 958 && MOUSEY < 984) begin
+                waveMode <= 1;
+                waveModePrev <= 1;
+                waveformState <= 3;
+                waveformPrev <= 3;
+            end
+            
+            //wave block
+            else if (MOUSEX >= 15 && MOUSEX < 60 && MOUSEY >= 988 && MOUSEY < 1014) begin
+                waveMode <= 1;
+                waveModePrev <= 1;
+                waveformState <= 4;
+                waveformPrev <= 4;
+            end
+            
+            //hist
+            //hist vol
+            if (MOUSEX >= 80 && MOUSEX < 125 && MOUSEY >= 898 && MOUSEY < 924) begin
+                waveMode <= 2;
+                waveModePrev <= 2;
+                histState <= 1;
+                histPrev <= 1;
+            end
+            //hist freq
+            else if (MOUSEX >= 80 && MOUSEX < 125 && MOUSEY >= 928 && MOUSEY < 954) begin
+                waveMode <= 2;
+                waveModePrev <= 2;
+                histState <= 2;
+                histPrev <= 2;
+            end
+            //hist nyannn
+            else if (MOUSEX >= 80 && MOUSEX < 125 && MOUSEY >= 958 && MOUSEY < 984) begin
+                waveMode <= 2;
+                waveModePrev <= 2;
+                histState <= 3;
+                histPrev <= 3;
+            end
+            
+            //circ norm
+            else if (MOUSEX >= 145 && MOUSEX < 190 && MOUSEY >= 898 && MOUSEY < 924) begin
+                waveMode <= 3;
+                waveModePrev <= 3;
+                circleState <= 1;
+                circlePrev <= 1;
+            end
+            //circ slow
+            else if (MOUSEX >= 145 && MOUSEX < 190 && MOUSEY >= 928 && MOUSEY < 954) begin
+                waveMode <= 3;
+                waveModePrev <= 3;
+                circleState <= 2;
+                circlePrev <= 2;
+            end
+            //circ freq
+            else if (MOUSEX >= 145 && MOUSEX < 190 && MOUSEY >= 958 && MOUSEY < 984) begin
+                waveMode <= 3;
+                waveModePrev <= 3;
+                circleState <= 3;
+                circlePrev <= 3;
+            end
+            //circ freq slow
+            else if (MOUSEX >= 145 && MOUSEX < 190 && MOUSEY >= 988 && MOUSEY < 1014) begin
+                waveMode <= 3;
+                waveModePrev <= 3;
+                circleState <= 4;
+                circlePrev <= 4;
             end
         end
         
@@ -92,28 +190,30 @@ module Mode_Selector(
         if (USTATE == 1 && ~btnD) begin //button press up
             mode <= (mode >= 6 ? mode : mode + 1);
             display1Hz = 0;
+            option <= 1;
             
             //change back to original settings
-            clrstate <= clrprev;
-            waveformstate <= waveformprev;
-            histstate <= histprev;
-            circlestate <= circleprev;
+            clrState <= clrPrev;
+            waveformState <= waveformPrev;
+            histState <= histPrev;
+            circleState <= circlePrev;
         end
         
         if (DSTATE == 1 && ~btnU) begin //button press down
             mode <= (mode == 0 ? mode : mode - 1);
             display1Hz = 0;
+            option <= 1;
             
             //change back to original settings
-            clrstate <= clrprev;
-            waveformstate <= waveformprev;
-            histstate <= histprev;
-            circlestate <= circleprev;
+            clrState <= clrPrev;
+            waveformState <= waveformPrev;
+            histState <= histPrev;
+            circleState <= circlePrev;
         end
         
         //lock waveform mode
         if (mode == 0) begin //set logic when btnC is pressed
-            wavemode <= wavemodeprev;
+            waveMode <= waveModePrev;
             if (CSTATE == 1) begin
                 lock <= ~lock;
                 mode <= 1; //switch back to base mode
@@ -121,30 +221,30 @@ module Mode_Selector(
         end
         
         if (mode == 1) begin
-            clrstate <= clrprev;
-            wavemode <= wavemodeprev;
-            waveformstate <= waveformprev;
-            histstate <= histprev;
-            circlestate <= circleprev;
+            clrState <= clrPrev;
+            waveMode <= waveModePrev;
+            waveformState <= waveformPrev;
+            histState <= histPrev;
+            circleState <= circlePrev;
         end
         
         //parameter display mode
         if (LSTATE == 1 && ~btnR && mode == 2) begin //button press left
-            displaystate <= (displaystate >= 2 ? displaystate : displaystate + 1);
+            displayState <= (displayState >= 2 ? displayState : displayState + 1);
             display1Hz = 0;
         end
         
         if (RSTATE == 1 && ~btnL && mode == 2) begin //button press right
-            displaystate <= (displaystate == 1 ? displaystate : displaystate - 1);
+            displayState <= (displayState == 1 ? displayState : displayState - 1);
             display1Hz = 0;
         end
         
         if (mode == 2) begin
-            clrstate <= clrprev;
-            wavemode <= wavemodeprev;
-            waveformstate <= waveformprev;
-            histstate <= histprev;
-            circlestate <= circleprev;
+            clrState <= clrPrev;
+            waveMode <= waveModePrev;
+            waveformState <= waveformPrev;
+            histState <= histPrev;
+            circleState <= circlePrev;
         end
         
         //parameter display counter, shows FREQ / VOL at the start
@@ -160,15 +260,15 @@ module Mode_Selector(
         end
         
         if (mode == 3) begin //set logic when btnC is pressed
-            clrstate <= option;
-            wavemode <= wavemodeprev;
-            waveformstate <= waveformprev;
-            histstate <= histprev;
-            circlestate <= circleprev;
+            clrState <= option;
+            waveMode <= waveModePrev;
+            waveformState <= waveformPrev;
+            histState <= histPrev;
+            circleState <= circlePrev;
             
             if (CSTATE == 1) begin
-                clrstate <= option;
-                clrprev <= option;
+                clrState <= option;
+                clrPrev <= option;
                 option <= 1;
                 mode <= 1;
             end
@@ -176,7 +276,7 @@ module Mode_Selector(
         
         //waveform mode
         if (LSTATE == 1 && ~btnR && mode == 4) begin //button press left
-            option <= (option >= 5 ? option : option + 1);
+            option <= (option >= 4 ? option : option + 1);
             display1Hz = 0;
         end
         
@@ -186,17 +286,17 @@ module Mode_Selector(
         end
         
         if (mode == 4) begin //set logic when btnC is pressed
-            waveformstate <= option;
-            wavemode <= 1;
-            clrstate <= clrprev;
-            histstate <= histprev;
-            circlestate <= circleprev;
+            waveformState <= option;
+            waveMode <= 1;
+            clrState <= clrPrev;
+            histState <= histPrev;
+            circleState <= circlePrev;
             
             if (CSTATE == 1) begin
-                wavemode <= 1;
-                wavemodeprev <= 1;
-                waveformstate <= option;
-                waveformprev <= option;
+                waveMode <= 1;
+                waveModePrev <= 1;
+                waveformState <= option;
+                waveformPrev <= option;
                 option <= 1;
                 mode <= 1;
             end
@@ -214,17 +314,17 @@ module Mode_Selector(
         end
         
         if (mode == 5) begin //set logic when btnC is pressed
-            wavemode <= 2;
-            waveformstate <= waveformprev;
-            clrstate <= clrprev;
-            histstate <= option;
-            circlestate <= circleprev;
+            waveMode <= 2;
+            waveformState <= waveformPrev;
+            clrState <= clrPrev;
+            histState <= option;
+            circleState <= circlePrev;
             
             if (CSTATE == 1) begin
-                wavemode <= 2;
-                wavemodeprev <= 2;
-                histstate <= option;
-                histprev <= option;
+                waveMode <= 2;
+                waveModePrev <= 2;
+                histState <= option;
+                histPrev <= option;
                 option <= 1;
                 mode <= 1;
             end
@@ -242,17 +342,17 @@ module Mode_Selector(
         end
         
         if (mode == 6) begin //set logic when btnC is pressed
-            wavemode <= 3;
-            circlestate <= option;
-            waveformstate <= waveformprev;
-            clrstate <= clrprev;
-            histstate <= histprev;
+            waveMode <= 3;
+            circleState <= option;
+            waveformState <= waveformPrev;
+            clrState <= clrPrev;
+            histState <= histPrev;
             
             if (CSTATE == 1) begin
-                wavemode <= 3;
-                wavemodeprev <= 3;
-                circlestate <= option;
-                circleprev <= option;
+                waveMode <= 3;
+                waveModePrev <= 3;
+                circleState <= option;
+                circlePrev <= option;
                 option <= 1;
                 mode <= 1;
             end
@@ -260,7 +360,7 @@ module Mode_Selector(
         
         
         if (mode == 2) begin
-        case (displaystate)
+        case (displayState)
             1: begin
                 word0 <= (display1Hz >= 60 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
                 word1 <= (display1Hz >= 60 ? FREQ1 : 27);
@@ -308,12 +408,12 @@ module Mode_Selector(
     assign LOCK = lock;
     
     assign MODE = mode;
-    assign CLRSTATE = clrstate;
+    assign CLRSTATE = clrState;
     
-    assign WAVEMODE = wavemode;
+    assign WAVEMODE = waveMode;
     
-    assign WAVEFORMSTATE = waveformstate;
-    assign HISTSTATE = histstate;
-    assign CIRCLESTATE = circlestate;
+    assign WAVEFORMSTATE = waveformState;
+    assign HISTSTATE = histState;
+    assign CIRCLESTATE = circleState;
     
 endmodule
