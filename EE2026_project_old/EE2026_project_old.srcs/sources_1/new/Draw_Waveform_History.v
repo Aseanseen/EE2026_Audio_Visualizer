@@ -33,6 +33,11 @@ module Draw_Waveform_History(
     reg [9:0] memory[1279:0];
     
     reg [9:0] counter = 0;
+    reg [9:0] cur;
+    reg [9:0] curWave;
+    reg [9:0] nyanLevel = 512;
+    
+    
     reg [9:0] prev;
     reg [9:0] maxWave;
     
@@ -40,9 +45,11 @@ module Draw_Waveform_History(
     always @ (posedge clk_sample) begin
 		counter <= (counter >= 49 ? 0 : counter + 1);
 		
-		prev <= histstate == 1 ? 
-		(wave_sample > prev ? wave_sample : prev) :
-        (freq_sample > prev ? freq_sample : prev);
+		
+        curWave <= (wave_sample > 512 ? wave_sample - 512 : 512 - wave_sample);
+		
+		cur <= histstate == 1 || histstate == 3 ? 
+		(curWave > cur ? curWave : cur) : (freq_sample > cur ? freq_sample : cur);
 		
 		if (SW15 == 0 && LOCK == 0 && counter == 0) begin
 			memory[1278] <= memory[1279];
@@ -1327,20 +1334,23 @@ module Draw_Waveform_History(
 			
 			//volume history
 			if (histstate == 1) begin
-                memory[1279] <= prev;
-                prev <= 0;
+                memory[1279] <= (cur > prev ? cur + 512 : (prev <= 5 ? 512 : prev - 5 + 512));
+                prev <= (cur > prev ? cur : (prev <= 5 ? 0 : prev - 5));
+                cur <= 0;
 			end
 			
 			//freq history
 			if (histstate == 2) begin
-                memory[1279] <= prev;
-                prev <= 0;
+                memory[1279] <= cur + 512;
+                //prev <= (cur > prev ? cur : (prev <= 25 ? 0 : prev - 25));
+                cur <= 0;
 			end
 			
 			//nyan cat
 			if (histstate == 3) begin
-                memory[1279] <= prev * 2;
-                prev <= 0;
+                memory[1279] <= (cur > prev ? (nyanLevel > 400 ? nyanLevel : nyanLevel + 5) : (nyanLevel <= 5 ? nyanLevel : nyanLevel - 5));
+                cur <= 0;
+                prev <= cur;
 			end
 			
 		end		
@@ -1354,7 +1364,6 @@ module Draw_Waveform_History(
     assign green = colour << 4 >> 8;
     assign blue = colour << 8 >> 8;
     
-    //assign 50 to 1
     assign VGA_Red_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? red : 0;
     assign VGA_Green_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? green : 0;
     assign VGA_Blue_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? blue : 0;
