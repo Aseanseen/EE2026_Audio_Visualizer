@@ -25,6 +25,8 @@ module VGA_DISPLAY(
     input [3:0] VGA_GREEN_GRID,
     input [3:0] VGA_BLUE_GRID,
     
+    input overlay,
+    
     output [11:0] VGA_HORZ_COORD,
     output [11:0] VGA_VERT_COORD, 
 
@@ -39,9 +41,10 @@ module VGA_DISPLAY(
     
     
     // COMBINE ALL OUTPUTS ON EACH CHANNEL
-    wire[3:0] VGA_RED_CHAN = VGA_RED_GRID | VGA_RED_WAVEFORM ;
-    wire[3:0] VGA_GREEN_CHAN = VGA_GREEN_GRID | VGA_GREEN_WAVEFORM ; 
-    wire[3:0] VGA_BLUE_CHAN = VGA_BLUE_GRID | VGA_BLUE_WAVEFORM;   
+    //IF OVERLAY, DRAW BACKGROUND ONLY
+    wire[3:0] VGA_RED_CHAN = overlay ? VGA_RED_GRID : VGA_RED_GRID | VGA_RED_WAVEFORM ;
+    wire[3:0] VGA_GREEN_CHAN = overlay ? VGA_GREEN_GRID : VGA_GREEN_GRID | VGA_GREEN_WAVEFORM ; 
+    wire[3:0] VGA_BLUE_CHAN = overlay ? VGA_BLUE_GRID : VGA_BLUE_GRID | VGA_BLUE_WAVEFORM;   
     
     
     // VGA Clock Generator (108MHz)

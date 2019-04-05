@@ -35,8 +35,8 @@ module Draw_Waveform_History(
     reg [9:0] counter = 0;
     reg [9:0] cur;
     reg [9:0] curWave;
-    reg [9:0] nyanLevel = 512;
     
+    reg [9:0] nyanLevel = 6; //current state of nyan cat (0 to 12), rmb to offset by 
     
     reg [9:0] prev;
     reg [9:0] maxWave;
@@ -44,7 +44,6 @@ module Draw_Waveform_History(
     //Each wave_sample is displayed on the screen from left to right. 
     always @ (posedge clk_sample) begin
 		counter <= (counter >= 49 ? 0 : counter + 1);
-		
 		
         curWave <= (wave_sample > 512 ? wave_sample - 512 : 512 - wave_sample);
 		
@@ -1334,8 +1333,8 @@ module Draw_Waveform_History(
 			
 			//volume history
 			if (histstate == 1) begin
-                memory[1279] <= (cur > prev ? cur + 512 : (prev <= 5 ? 512 : prev - 5 + 512));
-                prev <= (cur > prev ? cur : (prev <= 5 ? 0 : prev - 5));
+                memory[1279] <= (cur > prev ? cur + 512 : (prev <= 5 ? 512 : prev - 2 + 512));
+                prev <= (cur > prev ? cur : (prev <= 5 ? 0 : prev - 2));
                 cur <= 0;
 			end
 			
@@ -1348,13 +1347,24 @@ module Draw_Waveform_History(
 			
 			//nyan cat
 			if (histstate == 3) begin
-                memory[1279] <= (cur > prev ? (nyanLevel > 400 ? nyanLevel : nyanLevel + 5) : (nyanLevel <= 5 ? nyanLevel : nyanLevel - 5));
-                cur <= 0;
+                nyanLevel <= (cur > prev ? (nyanLevel >= 60 ? nyanLevel : nyanLevel + 2) : (nyanLevel == 0 ? nyanLevel : nyanLevel - 2));
+                memory[1279] <= (nyanLevel * 2) + 527;
                 prev <= cur;
+                cur <= 0;
 			end
 			
 		end		
     end
+    
+    //nyan cat rainbow range
+    wire [11:0] nyanHeight = 1023 - memory[VGA_HORZ_COORD - 1];
+    wire nyanRed = (VGA_VERT_COORD >= (nyanHeight + 1) && VGA_VERT_COORD <= (nyanHeight + 15));
+    wire nyanOrange = (VGA_VERT_COORD >= (nyanHeight + 16) && VGA_VERT_COORD <= (nyanHeight + 30));
+    wire nyanYellow = (VGA_VERT_COORD >= (nyanHeight + 31) && VGA_VERT_COORD <= (nyanHeight + 45));
+    wire nyanGreen = (VGA_VERT_COORD >= (nyanHeight + 46) && VGA_VERT_COORD <= (nyanHeight + 60));
+    wire nyanBlue = (VGA_VERT_COORD >= (nyanHeight + 61) && VGA_VERT_COORD <= (nyanHeight + 75));
+    wire nyanIndigo = (VGA_VERT_COORD >= (nyanHeight + 76) && VGA_VERT_COORD <= (nyanHeight + 90));
+    wire nyanViolet = (VGA_VERT_COORD >= (nyanHeight + 91) && VGA_VERT_COORD <= (nyanHeight + 105));
      
     wire [3:0] red;
     wire [3:0] green;
@@ -1364,9 +1374,13 @@ module Draw_Waveform_History(
     assign green = colour << 4 >> 8;
     assign blue = colour << 8 >> 8;
     
-    assign VGA_Red_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? red : 0;
-    assign VGA_Green_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? green : 0;
-    assign VGA_Blue_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? blue : 0;
+    assign VGA_Red_waveform = histstate <= 2 ? ((VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? red : 0) : 
+    (VGA_HORZ_COORD < 1009) ? (nyanRed ? 15 : nyanOrange ? 15 : nyanYellow ? 15 : nyanGreen ? 0 : nyanBlue ? 0 : nyanIndigo ? 4 : nyanViolet ? 8 : 0) : 0;
+    assign VGA_Green_waveform = histstate <= 2 ? ((VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? green : 0) : 
+    (VGA_HORZ_COORD < 1009) ? (nyanRed ? 0 : nyanOrange ? 7 : nyanYellow ? 15 : nyanGreen ? 15 : nyanBlue ? 0 : nyanIndigo ? 0 : nyanViolet ? 0 : 0) : 0;
+    assign VGA_Blue_waveform = histstate <= 2 ? ((VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 1]) ? blue : 0) : 
+    (VGA_HORZ_COORD < 1009) ? (nyanRed ? 0 : nyanOrange ? 0 : nyanYellow ? 0 : nyanGreen ? 0 : nyanBlue ? 15 : nyanIndigo ? 8 : nyanViolet ? 8 : 0) : 0;
+    
     
     /*assign VGA_Red_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 100]) ? red : 0;
     assign VGA_Green_waveform = (VGA_HORZ_COORD < 1279) && VGA_VERT_COORD == (1024 - memory[VGA_HORZ_COORD - 100]) ? green : 0;

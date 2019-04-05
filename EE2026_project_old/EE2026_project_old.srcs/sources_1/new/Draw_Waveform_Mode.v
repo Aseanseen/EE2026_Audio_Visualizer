@@ -142,7 +142,7 @@ module Draw_Waveform_Mode(
     
     || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])))) 
     
-    || (waveformstate == 4 && (VGA_HORZ_COORD < 1280 && (((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE) - VGA_HORZ_COORD) < 36) && 
+    || (waveformstate == 4 && (VGA_HORZ_COORD > 39 && VGA_HORZ_COORD < 1280 && (((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE) - VGA_HORZ_COORD) < 36) && 
     (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (120 + ((10 - memory[((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE)]) * (BLKHT + BLKSPACE)))) && ((((VGA_VERT_COORD / 40) + 1) * (BLKHT + BLKSPACE) - VGA_VERT_COORD) < 36) )
         
     ? red : 0;
@@ -156,7 +156,7 @@ module Draw_Waveform_Mode(
     
     || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])))) 
         
-    || (waveformstate == 4 && (VGA_HORZ_COORD < 1280 && (((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE) - VGA_HORZ_COORD) < 36) && 
+    || (waveformstate == 4 && (VGA_HORZ_COORD > 39 && VGA_HORZ_COORD < 1280 && (((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE) - VGA_HORZ_COORD) < 36) && 
     (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (120 + ((10 - memory[((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE)]) * (BLKHT + BLKSPACE)))) && ((((VGA_VERT_COORD / 40) + 1) * (BLKHT + BLKSPACE) - VGA_VERT_COORD) < 36) )
     
     ? green : 0;
@@ -170,7 +170,7 @@ module Draw_Waveform_Mode(
     
     || (waveformstate == 3 && VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (1024 - memory[VGA_HORZ_COORD])))) 
         
-    || (waveformstate == 4 && (VGA_HORZ_COORD < 1280 && (((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE) - VGA_HORZ_COORD) < 36) && 
+    || (waveformstate == 4 && (VGA_HORZ_COORD > 39 && VGA_HORZ_COORD < 1280 && (((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE) - VGA_HORZ_COORD) < 36) && 
     (VGA_VERT_COORD <= 512 && VGA_VERT_COORD >= (120 + ((10 - memory[((VGA_HORZ_COORD / 40) + 1) * (BARWIDTH + BARSPACE)]) * (BLKHT + BLKSPACE)))) && ((((VGA_VERT_COORD / 40) + 1) * (BLKHT + BLKSPACE) - VGA_VERT_COORD) < 36) )
     
     ? blue : 0;

@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Apr  5 15:40:09 2019
-# Process ID: 11372
+# Start of session at: Sat Apr  6 01:25:47 2019
+# Process ID: 16820
 # Current directory: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1
 # Command line: vivado.exe -log Voice_Scope_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Voice_Scope_TOP.tcl
 # Log file: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/Voice_Scope_TOP.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3368 
+INFO: Helper process launched with PID 3152 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 357.867 ; gain = 101.199
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.926 ; gain = 99.590
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Voice_Scope_TOP' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v:23]
 INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/clk_div.v:23]
@@ -57,75 +57,75 @@ INFO: [Synth 8-6157] synthesizing module 'SEG_Decoder' [D:/NUS/ee2026lab/EE2026_
 INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/SEG_Decoder.v:27]
 WARNING: [Synth 8-6014] Unused sequential element PRINT_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/SEG_Decoder.v:20]
 INFO: [Synth 8-6155] done synthesizing module 'SEG_Decoder' (11#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/SEG_Decoder.v:7]
-WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:251]
-WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:280]
-WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:285]
-WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:308]
-WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:313]
-WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:336]
-WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:341]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:363]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:385]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:385]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:385]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:385]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:388]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:388]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:388]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:388]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:391]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:391]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:391]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:391]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:394]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:394]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:394]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:394]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:399]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:399]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:399]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:399]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:403]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:403]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:403]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:403]
+WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:267]
+WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:296]
+WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:301]
+WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:324]
+WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:329]
+WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:352]
+WARNING: [Synth 8-6090] variable 'display1Hz' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:357]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:379]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:401]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:401]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:401]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:401]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:404]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:404]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:404]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:404]
 WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:407]
 WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:407]
 WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:407]
 WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:407]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:411]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:411]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:411]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:411]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:418]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:418]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:418]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:418]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:422]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:422]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:422]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:422]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:426]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:426]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:426]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:426]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:433]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:433]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:433]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:433]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:437]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:437]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:437]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:437]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:441]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:441]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:441]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:441]
-WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:445]
-WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:445]
-WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:445]
-WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:445]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:383]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:410]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:410]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:410]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:410]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:415]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:415]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:415]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:415]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:419]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:419]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:419]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:419]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:423]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:423]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:423]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:423]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:427]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:427]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:427]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:427]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:434]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:434]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:434]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:434]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:438]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:438]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:438]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:438]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:442]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:442]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:442]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:442]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:449]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:449]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:449]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:449]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:453]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:453]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:453]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:453]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:457]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:457]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:457]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:457]
+WARNING: [Synth 8-6090] variable 'word0' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:461]
+WARNING: [Synth 8-6090] variable 'word1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:461]
+WARNING: [Synth 8-6090] variable 'word2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:461]
+WARNING: [Synth 8-6090] variable 'word3' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:461]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:399]
 INFO: [Synth 8-6155] done synthesizing module 'Mode_Selector' (12#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:7]
 WARNING: [Synth 8-689] width (12) of port connection 'wave_sample_raw' does not match port width (1) of module 'Mode_Selector' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v:101]
 WARNING: [Synth 8-689] width (1) of port connection 'MOUSELEFT' does not match port width (6) of module 'Mode_Selector' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v:104]
@@ -295,8 +295,14 @@ INFO: [Synth 8-6155] done synthesizing module 'pc_vga_8x16' (20#1) [D:/NUS/ee202
 WARNING: [Synth 8-689] width (12) of port connection 'col' does not match port width (3) of module 'pc_vga_8x16' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/char.v:34]
 WARNING: [Synth 8-689] width (12) of port connection 'row' does not match port width (4) of module 'pc_vga_8x16' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/char.v:34]
 INFO: [Synth 8-6155] done synthesizing module 'char' (21#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/char.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Draw_Background' (22#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:24]
-WARNING: [Synth 8-689] width (3) of port connection 'waveMode' does not match port width (6) of module 'Draw_Background' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v:157]
+INFO: [Synth 8-6157] synthesizing module 'nyan_clk' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/nyan_clk.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'nyan_clk' (22#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/nyan_clk.v:28]
+INFO: [Synth 8-6157] synthesizing module 'Draw_Mao' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Mao.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Draw_Mao' (23#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Mao.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'currentX' does not match port width (9) of module 'Draw_Mao' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:288]
+WARNING: [Synth 8-689] width (32) of port connection 'currentY' does not match port width (9) of module 'Draw_Mao' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:288]
+WARNING: [Synth 8-689] width (32) of port connection 'startY' does not match port width (9) of module 'Draw_Mao' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:288]
+INFO: [Synth 8-6155] done synthesizing module 'Draw_Background' (24#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:24]
 INFO: [Synth 8-6157] synthesizing module 'VGA_DISPLAY' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_DISPLAY.v:17]
 INFO: [Synth 8-638] synthesizing module 'CLK_108M' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/CLK_108M.vhd:83]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
@@ -350,11 +356,11 @@ INFO: [Synth 8-638] synthesizing module 'CLK_108M' [D:/NUS/ee2026lab/EE2026_proj
 INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/CLK_108M.vhd:125]
 INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/CLK_108M.vhd:187]
 INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/CLK_108M.vhd:194]
-INFO: [Synth 8-256] done synthesizing module 'CLK_108M' (23#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/CLK_108M.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'CLK_108M' (25#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/CLK_108M.vhd:83]
 INFO: [Synth 8-638] synthesizing module 'VGA_CONTROL' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_CONTROL.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'VGA_CONTROL' (24#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_CONTROL.vhd:61]
-INFO: [Synth 8-6155] done synthesizing module 'VGA_DISPLAY' (25#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_DISPLAY.v:17]
-INFO: [Synth 8-6155] done synthesizing module 'Voice_Scope_TOP' (26#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VGA_CONTROL' (26#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_CONTROL.vhd:61]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_DISPLAY' (27#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_DISPLAY.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Voice_Scope_TOP' (28#1) [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v:23]
 WARNING: [Synth 8-3331] design Draw_Waveform_Circle has unconnected port SW0
 WARNING: [Synth 8-3331] design Draw_Waveform_Circle has unconnected port mode[5]
 WARNING: [Synth 8-3331] design Draw_Waveform_Circle has unconnected port mode[4]
@@ -422,7 +428,7 @@ WARNING: [Synth 8-3331] design Sound_Lvl_Converter has unconnected port freq[1]
 WARNING: [Synth 8-3331] design Sound_Lvl_Converter has unconnected port freq[0]
 WARNING: [Synth 8-3331] design Freq_Counter has unconnected port CLOCK
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 484.500 ; gain = 227.832
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 490.520 ; gain = 233.184
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -452,13 +458,13 @@ WARNING: [Synth 8-3295] tying undriven pin mc:setmax_y to constant 0 [D:/NUS/ee2
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 484.500 ; gain = 227.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 490.520 ; gain = 233.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 484.500 ; gain = 227.832
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 490.520 ; gain = 233.184
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 167 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -475,22 +481,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 166 instances were transformed.
   RAMB16_S1 => RAMB18E1: 166 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 870.012 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 876.004 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 870.012 ; gain = 613.344
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 876.004 ; gain = 618.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 870.012 ; gain = 613.344
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 876.004 ; gain = 618.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 870.012 ; gain = 613.344
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 876.004 ; gain = 618.668
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "memory" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "FREQ" won't be mapped to RAM because it is too sparse
@@ -567,7 +573,6 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "STATE0" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mode_Selector.v:202]
 INFO: [Synth 8-5546] ROM "mode0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "option0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "displayState0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -590,6 +595,7 @@ INFO: [Synth 8-5544] ROM "circleState" won't be mapped to Block RAM because addr
 INFO: [Synth 8-5546] ROM "prevState" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "curWave" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "memory" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nyanLevel1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[7]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[6]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[5]" won't be mapped to RAM because it is too sparse
@@ -606,6 +612,7 @@ WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [D
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
+INFO: [Synth 8-5544] ROM "startY0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Condition_For_Box" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "VGA_Green_Grid1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
@@ -673,18 +680,18 @@ reset_enable_reporting_wait_ack | 0000000010000000000000000000000000000 |       
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MouseCtl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 870.012 ; gain = 613.344
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 876.004 ; gain = 618.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Draw_Background__GB0  |           1|     20303|
-|2     |Draw_Background__GB1  |           1|     16292|
-|3     |Voice_Scope_TOP__GCB0 |           1|     28413|
-|4     |Voice_Scope_TOP__GCB1 |           1|      8686|
-|5     |Voice_Scope_TOP__GCB2 |           1|     14340|
+|1     |Draw_Background__GB0  |           1|     21646|
+|2     |Draw_Background__GB1  |           1|     16879|
+|3     |Draw_Waveform_History |           1|     27535|
+|4     |Voice_Scope_TOP__GCB1 |           1|     10919|
+|5     |Voice_Scope_TOP__GCB2 |           1|     14388|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -701,11 +708,13 @@ Detailed RTL Component Info :
 	   3 Input     12 Bit       Adders := 166   
 	   2 Input     12 Bit       Adders := 4     
 	 100 Input     12 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 4     
-	   2 Input     10 Bit       Adders := 10    
+	   2 Input     11 Bit       Adders := 18    
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 11    
+	   3 Input      9 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 7     
 	   2 Input      4 Bit       Adders := 5     
 	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
@@ -717,14 +726,14 @@ Detailed RTL Component Info :
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 121   
 	               11 Bit    Registers := 3     
-	               10 Bit    Registers := 1297  
+	               10 Bit    Registers := 1298  
 	                8 Bit    Registers := 6     
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 13    
 	                4 Bit    Registers := 14    
 	                3 Bit    Registers := 13    
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 53    
+	                1 Bit    Registers := 54    
 +---Multipliers : 
 	                32x32  Multipliers := 4     
 	                 6x32  Multipliers := 1     
@@ -743,42 +752,42 @@ Detailed RTL Component Info :
 	   6 Input     12 Bit        Muxes := 5     
 	   2 Input     12 Bit        Muxes := 12    
 	   2 Input     11 Bit        Muxes := 3     
-	   2 Input     10 Bit        Muxes := 73    
+	   2 Input     10 Bit        Muxes := 71    
 	   4 Input     10 Bit        Muxes := 1     
 	   3 Input     10 Bit        Muxes := 1     
-	   5 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 2     
 	  37 Input      8 Bit        Muxes := 3     
-	   2 Input      6 Bit        Muxes := 34    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 41    
 	   4 Input      6 Bit        Muxes := 3     
 	   3 Input      6 Bit        Muxes := 5     
 	   8 Input      6 Bit        Muxes := 4     
 	  16 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 7     
 	   3 Input      5 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 17    
+	   2 Input      4 Bit        Muxes := 42    
 	  37 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 	   3 Input      4 Bit        Muxes := 4     
-	   2 Input      3 Bit        Muxes := 37    
+	   2 Input      3 Bit        Muxes := 34    
 	   4 Input      3 Bit        Muxes := 3     
-	   3 Input      3 Bit        Muxes := 1     
-	  13 Input      3 Bit        Muxes := 2     
+	  18 Input      3 Bit        Muxes := 2     
 	   8 Input      3 Bit        Muxes := 2     
 	   7 Input      3 Bit        Muxes := 6     
 	   5 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 10    
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 229   
+	   2 Input      1 Bit        Muxes := 235   
+	   3 Input      1 Bit        Muxes := 3     
 	   6 Input      1 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 3     
 	  17 Input      1 Bit        Muxes := 4     
 	  37 Input      1 Bit        Muxes := 20    
 	  40 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 2     
 	   5 Input      1 Bit        Muxes := 3     
 	   7 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 1     
 	  16 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -792,6 +801,19 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   3 Input      4 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 3     
+Module Draw_Waveform_History 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 15    
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               10 Bit    Registers := 1285  
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 25    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
 Module pc_vga_8x16__1 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -1170,6 +1192,18 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     14 Bit       Adders := 2     
 	   3 Input     12 Bit       Adders := 2     
+Module Draw_Mao 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 6     
+Module nyan_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module pc_vga_8x16__43 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -1549,50 +1583,8 @@ Detailed RTL Component Info :
 +---Multipliers : 
 	                32x32  Multipliers := 2     
 +---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-Module Draw_Waveform_Mode 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 2     
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 3     
-	   2 Input      6 Bit       Adders := 2     
-+---Registers : 
-	               11 Bit    Registers := 1     
-	               10 Bit    Registers := 4     
-	                6 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-+---Multipliers : 
-	                 6x32  Multipliers := 1     
-+---RAMs : 
-	              12K Bit         RAMs := 1     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 2     
-	   2 Input     10 Bit        Muxes := 14    
-	   4 Input     10 Bit        Muxes := 1     
-	   3 Input     10 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 4     
-	   4 Input      6 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 4     
-	   4 Input      3 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 13    
-	   4 Input      1 Bit        Muxes := 3     
-Module Draw_Waveform_History 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 6     
-+---Registers : 
-	               10 Bit    Registers := 1284  
-+---Muxes : 
-	   2 Input     10 Bit        Muxes := 9     
-	   5 Input     10 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 3     
-	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 7     
-	   3 Input      1 Bit        Muxes := 1     
 Module Draw_Waveform_Circle 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1622,6 +1614,37 @@ Detailed RTL Component Info :
 +---Registers : 
 	                4 Bit    Registers := 3     
 	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module Draw_Waveform_Mode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Multipliers : 
+	                 6x32  Multipliers := 1     
++---RAMs : 
+	              12K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 14    
+	   4 Input     10 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 3     
 Module Colour_Selector 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1730,7 +1753,7 @@ Module Mode_Selector
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     30 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 4     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               30 Bit    Registers := 1     
@@ -1739,7 +1762,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     30 Bit        Muxes := 18    
-	   2 Input      6 Bit        Muxes := 28    
+	   2 Input      6 Bit        Muxes := 35    
 	   3 Input      6 Bit        Muxes := 5     
 	   8 Input      6 Bit        Muxes := 4     
 	   4 Input      6 Bit        Muxes := 1     
@@ -1748,20 +1771,21 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 3     
 	   3 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
-	  13 Input      3 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 33    
+	  18 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 23    
 	   8 Input      3 Bit        Muxes := 2     
 	   7 Input      3 Bit        Muxes := 6     
 	   5 Input      3 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 4     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 53    
+	   2 Input      1 Bit        Muxes := 54    
 	   8 Input      1 Bit        Muxes := 2     
 	   5 Input      1 Bit        Muxes := 3     
 	   7 Input      1 Bit        Muxes := 4     
 	   4 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
 Module Sound_Lvl_Converter 
 Detailed RTL Component Info : 
@@ -1816,12 +1840,12 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:246]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:246]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:252]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:252]
 DSP Report: Generating DSP Condition_For_Arc03, operation Mode is: A*B.
 DSP Report: operator Condition_For_Arc03 is absorbed into DSP Condition_For_Arc03.
 DSP Report: operator Condition_For_Arc03 is absorbed into DSP Condition_For_Arc03.
@@ -1840,6 +1864,22 @@ DSP Report: operator Condition_For_Arc03 is absorbed into DSP Condition_For_Arc0
 DSP Report: Generating DSP Condition_For_Arc03, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator Condition_For_Arc03 is absorbed into DSP Condition_For_Arc03.
 DSP Report: operator Condition_For_Arc03 is absorbed into DSP Condition_For_Arc03.
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port SW0
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[5]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[4]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[3]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[2]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[1]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[0]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port wavemode[2]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port wavemode[1]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port wavemode[0]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port waveformstate[2]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port waveformstate[1]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port waveformstate[0]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port circlestate[2]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port circlestate[1]
+WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port circlestate[0]
 INFO: [Synth 8-4471] merging register 'cur_reg[20:0]' into 'cur_reg[20:0]' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:57]
 INFO: [Synth 8-4471] merging register 'memory_reg[1][9:0]' into 'memory_reg[1][9:0]' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
 INFO: [Synth 8-4471] merging register 'memory_reg[2][9:0]' into 'memory_reg[2][9:0]' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
@@ -1924,18 +1964,100 @@ DSP Report: Generating DSP VGA_Red_waveform10, operation Mode is: A2*B2.
 DSP Report: register memory_reg[0] is absorbed into DSP VGA_Red_waveform10.
 DSP Report: register memory_reg[0] is absorbed into DSP VGA_Red_waveform10.
 DSP Report: operator VGA_Red_waveform10 is absorbed into DSP VGA_Red_waveform10.
-WARNING: [Synth 8-6014] Unused sequential element vga/clk_vgaReg_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_DISPLAY.v:75]
-WARNING: [Synth 8-6014] Unused sequential element mc/mc/zpos_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:1007]
-WARNING: [Synth 8-6014] Unused sequential element mc/mc/middle_down_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:421]
-WARNING: [Synth 8-6014] Unused sequential element mc/mc/middle_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:421]
-WARNING: [Synth 8-6014] Unused sequential element mc/mc/right_down_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:423]
-WARNING: [Synth 8-6014] Unused sequential element mc/mc/right_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:423]
-WARNING: [Synth 8-6014] Unused sequential element mc/mc/new_event_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:606]
-INFO: [Synth 8-5545] ROM "mc/mc/periodic_check_tick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "mc/mc/timeout" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element mc/zpos_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:1007]
+WARNING: [Synth 8-6014] Unused sequential element mc/new_event_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:606]
+INFO: [Synth 8-5545] ROM "mc/periodic_check_tick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mc/timeout" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port wavemode[2]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port wavemode[1]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port wavemode[0]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port histstate[2]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port histstate[1]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port histstate[0]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port circlestate[2]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port circlestate[1]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port circlestate[0]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[9]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[8]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[7]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[6]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[5]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[4]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[3]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[2]
+WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[10]' (FD) to 'wave_c/val_reg[11]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[11]' (FD) to 'wave_c/val_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[12]' (FD) to 'wave_c/val_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[13]' (FD) to 'wave_c/val_reg[14]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[14]' (FD) to 'wave_c/val_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[15]' (FD) to 'wave_c/val_reg[16]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[16]' (FD) to 'wave_c/val_reg[17]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[17]' (FD) to 'wave_c/val_reg[18]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[18]' (FD) to 'wave_c/val_reg[19]'
+INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[19]' (FD) to 'wave_c/val_reg[20]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[18]' (FDRE) to 'wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[20]' (FDRE) to 'wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[19]' (FDRE) to 'wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[17]' (FDRE) to 'wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[15]' (FDRE) to 'wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[16]' (FDRE) to 'wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[10]' (FDRE) to 'wave_c/cur_reg[11]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[11]' (FDRE) to 'wave_c/cur_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[12]' (FDRE) to 'wave_c/cur_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[13]' (FDRE) to 'wave_c/cur_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[1]' (FDE) to 'cs/ticks_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[4]' (FDE) to 'cs/ticks_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[5]' (FDE) to 'cs/ticks_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[6]' (FDE) to 'cs/ticks_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[0]' (FDE) to 'cs/grid_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[1]' (FDE) to 'cs/grid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[6]' (FDE) to 'cs/grid_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[7]' (FDE) to 'cs/grid_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[8]' (FDE) to 'cs/grid_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[9]' (FDE) to 'cs/grid_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[11]' (FDE) to 'cs/background_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[0]' (FDE) to 'cs/axes_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[2]' (FDE) to 'cs/axes_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[4]' (FDE) to 'cs/axes_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[5]' (FDE) to 'cs/axes_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[7]' (FDE) to 'cs/axes_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[8]' (FDE) to 'cs/background_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[10]' (FDE) to 'cs/background_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cs/background_reg[3]' (FDE) to 'cs/background_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cs/background_reg[4]' (FDE) to 'cs/background_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cs/background_reg[7]' (FDE) to 'cs/background_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cs/\background_reg[11] )
+INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[0]' (FDE) to 'cs/waveform_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[1]' (FDE) to 'cs/waveform_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[2]' (FDE) to 'cs/waveform_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[3]' (FDE) to 'cs/waveform_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[4]' (FDE) to 'cs/waveform_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[8]' (FDE) to 'cs/waveform_reg[10]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cs/\waveform_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (clk_vgaReg_reg) is unused and will be removed from module VGA_DISPLAY.
+WARNING: [Synth 8-3332] Sequential element (waveform_reg[11]) is unused and will be removed from module Colour_Selector.
+WARNING: [Synth 8-3332] Sequential element (background_reg[11]) is unused and will be removed from module Colour_Selector.
+WARNING: [Synth 8-3332] Sequential element (mc/middle_down_reg) is unused and will be removed from module Mouse_Controller.
+WARNING: [Synth 8-3332] Sequential element (mc/middle_reg) is unused and will be removed from module Mouse_Controller.
+WARNING: [Synth 8-3332] Sequential element (mc/right_down_reg) is unused and will be removed from module Mouse_Controller.
+WARNING: [Synth 8-3332] Sequential element (mc/right_reg) is unused and will be removed from module Mouse_Controller.
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[0]' (FDE) to 'cs/axes_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[3]' (FDE) to 'cs/waveform_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[7]' (FDE) to 'cs/background_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[8]' (FDE) to 'cs/grid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[10]' (FDE) to 'cs/grid_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[2]' (FDE) to 'cs/background_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[3]' (FDE) to 'cs/background_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[5]' (FDE) to 'cs/waveform_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cs/grid_reg[10]' (FDE) to 'cs/background_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[1]' (FDE) to 'cs/background_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[3]' (FDE) to 'cs/background_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cs/axes_reg[11]' (FDE) to 'cs/background_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cs/background_reg[0]' (FDE) to 'cs/waveform_reg[9]'
 INFO: [Synth 8-5545] ROM "STATE0" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "waveModePrev" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "FREQ" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "FREQ" won't be mapped to RAM because it is too sparse
@@ -1945,86 +2067,37 @@ INFO: [Synth 8-5546] ROM "freq0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "freq1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sound_converter/maxVol" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sound_converter/percent1" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[10]' (FD) to 'i_1/wave_c/val_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[11]' (FD) to 'i_1/wave_c/val_reg[12]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[12]' (FD) to 'i_1/wave_c/val_reg[13]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[13]' (FD) to 'i_1/wave_c/val_reg[14]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[14]' (FD) to 'i_1/wave_c/val_reg[15]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[15]' (FD) to 'i_1/wave_c/val_reg[16]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[16]' (FD) to 'i_1/wave_c/val_reg[17]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[17]' (FD) to 'i_1/wave_c/val_reg[18]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[18]' (FD) to 'i_1/wave_c/val_reg[19]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[19]' (FD) to 'i_1/wave_c/val_reg[20]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[18]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[20]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[19]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[17]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[15]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[16]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[10]' (FDRE) to 'i_1/wave_c/cur_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[11]' (FDRE) to 'i_1/wave_c/cur_reg[12]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[12]' (FDRE) to 'i_1/wave_c/cur_reg[13]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[13]' (FDRE) to 'i_1/wave_c/cur_reg[14]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[1]' (FDE) to 'i_1/cs/ticks_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[4]' (FDE) to 'i_1/cs/ticks_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[5]' (FDE) to 'i_1/cs/ticks_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[6]' (FDE) to 'i_1/cs/ticks_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[0]' (FDE) to 'i_1/cs/grid_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[1]' (FDE) to 'i_1/cs/grid_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[6]' (FDE) to 'i_1/cs/grid_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[7]' (FDE) to 'i_1/cs/grid_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[8]' (FDE) to 'i_1/cs/grid_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[9]' (FDE) to 'i_1/cs/grid_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[11]' (FDE) to 'i_1/cs/background_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[0]' (FDE) to 'i_1/cs/axes_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[2]' (FDE) to 'i_1/cs/axes_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[4]' (FDE) to 'i_1/cs/axes_reg[6]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[5]' (FDE) to 'i_1/cs/axes_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[7]' (FDE) to 'i_1/cs/axes_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[8]' (FDE) to 'i_1/cs/background_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[10]' (FDE) to 'i_1/cs/background_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/background_reg[3]' (FDE) to 'i_1/cs/background_reg[11]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/background_reg[4]' (FDE) to 'i_1/cs/background_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/background_reg[7]' (FDE) to 'i_1/cs/background_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\cs/background_reg[11] )
-INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[0]' (FDE) to 'i_1/cs/waveform_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[1]' (FDE) to 'i_1/cs/waveform_reg[5]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[2]' (FDE) to 'i_1/cs/waveform_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[3]' (FDE) to 'i_1/cs/waveform_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[4]' (FDE) to 'i_1/cs/waveform_reg[6]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[8]' (FDE) to 'i_1/cs/waveform_reg[10]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\cs/waveform_reg[11] )
-INFO: [Synth 8-3886] merging instance 'i_2/fc/FREQ_reg[12]' (FDRE) to 'i_2/fc/FREQ_reg[13]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/fc/\FREQ_reg[13] )
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[5]' (FDRE) to 'i_2/sound_converter/percent0_reg[0]'
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent1_reg[5]' (FDRE) to 'i_2/sound_converter/percent2_reg[5]'
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent2_reg[5]' (FDRE) to 'i_2/sound_converter/percent2_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/sound1_reg[5]' (FDE) to 'i_2/sound_converter/sound1_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[3]' (FDRE) to 'i_2/sound_converter/percent0_reg[0]'
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[0]' (FDRE) to 'i_2/sound_converter/percent0_reg[1]'
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[2]' (FDRE) to 'i_2/sound_converter/percent0_reg[1]'
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[4]' (FDRE) to 'i_2/sound_converter/percent0_reg[1]'
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent1_reg[4]' (FDRE) to 'i_2/sound_converter/percent2_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\sound_converter/percent2_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\sound_converter/sound1_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\sound_converter/percent0_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_1/\seg_d/COUNTER_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/\waveModePrev_reg[2] )
-INFO: [Synth 8-3886] merging instance 'i_2/fc/FREQ100HZ_reg[12]' (FDRE) to 'i_2/fc/FREQ100HZ_reg[13]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/fc/\FREQ100HZ_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/fc/\freq0_reg[3] )
-INFO: [Synth 8-3886] merging instance 'i_2/fc/FREQ0_reg[3]' (FDE) to 'i_2/fc/freq0_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/\word2_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/fc/\freq0_reg[3] )
+INFO: [Synth 8-3886] merging instance 'fc/FREQ_reg[12]' (FDRE) to 'fc/FREQ_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fc/\FREQ_reg[13] )
+INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[5]' (FDRE) to 'sound_converter/percent0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/percent1_reg[5]' (FDRE) to 'sound_converter/percent2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/percent2_reg[5]' (FDRE) to 'sound_converter/percent2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/sound1_reg[5]' (FDE) to 'sound_converter/sound1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[3]' (FDRE) to 'sound_converter/percent0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[0]' (FDRE) to 'sound_converter/percent0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[2]' (FDRE) to 'sound_converter/percent0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[4]' (FDRE) to 'sound_converter/percent0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/percent1_reg[4]' (FDRE) to 'sound_converter/percent2_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sound_converter/percent2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sound_converter/sound1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sound_converter/percent0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/\waveModePrev_reg[2] )
+INFO: [Synth 8-3886] merging instance 'fc/FREQ100HZ_reg[12]' (FDRE) to 'fc/FREQ100HZ_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fc/\FREQ100HZ_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fc/\freq0_reg[3] )
+INFO: [Synth 8-3886] merging instance 'fc/FREQ0_reg[3]' (FDE) to 'fc/freq0_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/\word2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fc/\freq0_reg[3] )
 WARNING: [Synth 8-3332] Sequential element (waveModePrev_reg[2]) is unused and will be removed from module Mode_Selector.
 WARNING: [Synth 8-3332] Sequential element (waveMode_reg[2]) is unused and will be removed from module Mode_Selector.
 WARNING: [Synth 8-3332] Sequential element (word2_reg[5]) is unused and will be removed from module Mode_Selector.
@@ -2074,28 +2147,10 @@ WARNING: [Synth 8-3332] Sequential element (freq3_reg[6]) is unused and will be 
 WARNING: [Synth 8-3332] Sequential element (freq3_reg[5]) is unused and will be removed from module Freq_Counter.
 WARNING: [Synth 8-3332] Sequential element (freq3_reg[4]) is unused and will be removed from module Freq_Counter.
 WARNING: [Synth 8-3332] Sequential element (freq0_reg[3]) is unused and will be removed from module Freq_Counter.
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[0]' (FDE) to 'i_1/cs/axes_reg[6]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[3]' (FDE) to 'i_1/cs/waveform_reg[5]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[7]' (FDE) to 'i_1/cs/background_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[8]' (FDE) to 'i_1/cs/grid_reg[3]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[10]' (FDE) to 'i_1/cs/grid_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[2]' (FDE) to 'i_1/cs/background_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[3]' (FDE) to 'i_1/cs/background_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[10]' (FDE) to 'i_1/cs/background_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[11]' (FDE) to 'i_1/cs/background_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/cs/background_reg[0]' (FDE) to 'i_1/cs/waveform_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sound_converter/sound0_reg[0]' (FDE) to 'sound_converter/led_reg[9]'
 WARNING: [Synth 8-3332] Sequential element (FREQ100HZ_reg[0]) is unused and will be removed from module Freq_Counter.
-INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/sound0_reg[0]' (FDE) to 'i_2/sound_converter/led_reg[9]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wave_c/\val_reg[20] )
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/i_0/i_reg[5]' (FDE) to 'i_1/wave_c/i_0/i_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wave_c/i_0/\i_reg[4] )
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[20]' (FD) to 'i_1/wave_c/CIRCLECOUNTER_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_1/wave_c/CIRCLECOUNTER_reg[4]' (FD) to 'i_1/wave_c/CIRCLECOUNTER_reg[5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wave_c/\CIRCLECOUNTER_reg[5] )
-WARNING: [Synth 8-3332] Sequential element (cur_reg[14]) is unused and will be removed from module Draw_Waveform_Circle.
-WARNING: [Synth 8-3332] Sequential element (CIRCLECOUNTER_reg[5]) is unused and will be removed from module Draw_Waveform_Circle.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:30 ; elapsed = 00:02:33 . Memory (MB): peak = 1027.059 ; gain = 770.391
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:49 . Memory (MB): peak = 876.004 ; gain = 618.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2106,16 +2161,15 @@ ROM:
 |Module Name | RTL Object | Depth x Width | Implemented As | 
 +------------+------------+---------------+----------------+
 |SEG_Decoder | seg        | 64x8          | LUT            | 
-|SEG_Decoder | seg        | 64x8          | LUT            | 
 +------------+------------+---------------+----------------+
 
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+----------------+-----------------+-----------+----------------------+-------------------------------+
-|Module Name     | RTL Object      | Inference | Size (Depth x Width) | Primitives                    | 
-+----------------+-----------------+-----------+----------------------+-------------------------------+
-|Voice_Scope_TOP | wave/memory_reg | Implied   | 2 K x 10             | RAM64X1D x 40  RAM64M x 120   | 
-+----------------+-----------------+-----------+----------------------+-------------------------------+
++------------+------------+-----------+----------------------+-------------------------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives                    | 
++------------+------------+-----------+----------------------+-------------------------------+
+|wave        | memory_reg | Implied   | 2 K x 10             | RAM64X1D x 40  RAM64M x 120   | 
++------------+------------+-----------+----------------------+-------------------------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 
@@ -2123,12 +2177,12 @@ DSP: Preliminary Mapping  Report (see note below)
 +---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name          | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Voice_Scope_TOP      | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Voice_Scope_TOP      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Voice_Scope_TOP      | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Voice_Scope_TOP      | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Voice_Scope_TOP      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Voice_Scope_TOP      | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Draw_Background__GB0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Draw_Background__GB0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Draw_Background__GB0 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Draw_Background__GB0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Draw_Background__GB0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Draw_Background__GB0 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Draw_Waveform_Circle | A2*B2          | 10     | 10     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
 |Draw_Waveform_Circle | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Draw_Waveform_Circle | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
@@ -2156,61 +2210,65 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Draw_Background__GB0  |           1|      1117|
-|2     |Draw_Background__GB1  |           1|      1377|
-|3     |Voice_Scope_TOP__GCB0 |           1|     28082|
-|4     |Voice_Scope_TOP__GCB1 |           1|      3300|
-|5     |Voice_Scope_TOP__GCB2 |           1|     10766|
+|1     |Draw_Background__GB0  |           1|      2158|
+|2     |Draw_Background__GB1  |           1|       935|
+|3     |Draw_Waveform_History |           1|     26977|
+|4     |Voice_Scope_TOP__GCB1 |           1|      5875|
+|5     |Voice_Scope_TOP__GCB2 |           1|     10814|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:43 ; elapsed = 00:02:48 . Memory (MB): peak = 1027.059 ; gain = 770.391
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:02:05 . Memory (MB): peak = 876.004 ; gain = 618.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (grid_reg[4]) is unused and will be removed from module Colour_Selector.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:11 ; elapsed = 00:03:16 . Memory (MB): peak = 1027.059 ; gain = 770.391
+Finished Timing Optimization : Time (s): cpu = 00:02:16 ; elapsed = 00:02:55 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping  Report
-+----------------+-----------------+-----------+----------------------+-------------------------------+
-|Module Name     | RTL Object      | Inference | Size (Depth x Width) | Primitives                    | 
-+----------------+-----------------+-----------+----------------------+-------------------------------+
-|Voice_Scope_TOP | wave/memory_reg | Implied   | 2 K x 10             | RAM64X1D x 40  RAM64M x 120   | 
-+----------------+-----------------+-----------+----------------------+-------------------------------+
++------------+------------+-----------+----------------------+-------------------------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives                    | 
++------------+------------+-----------+----------------------+-------------------------------+
+|wave        | memory_reg | Implied   | 2 K x 10             | RAM64X1D x 40  RAM64M x 120   | 
++------------+------------+-----------+----------------------+-------------------------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+---------------------+------------+----------+
-|      |RTL Partition        |Replication |Instances |
-+------+---------------------+------------+----------+
-|1     |Draw_Background__GB0 |           1|      1117|
-|2     |Draw_Background__GB1 |           1|      1377|
-|3     |Voice_Scope_TOP_GT0  |           1|     35182|
-|4     |Voice_Scope_TOP_GT1  |           1|      6984|
-|5     |Voice_Scope_TOP_GT2  |           1|         2|
-+------+---------------------+------------+----------+
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |Draw_Waveform_History |           1|     26964|
+|2     |Voice_Scope_TOP_GT0   |           1|     19497|
++------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_0/wave_c/i_reg[4]' (FDE) to 'i_0/wave_c/i_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\wave_c/i_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\wave_c/CIRCLECOUNTER_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\wave_c/CIRCLECOUNTER_reg[5] )
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Finished Technology Mapping : Time (s): cpu = 00:02:26 ; elapsed = 00:03:28 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |Draw_Waveform_History |           1|     19203|
+|2     |Voice_Scope_TOP_GT0   |           1|      8487|
++------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -2223,13 +2281,13 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5365] Flop mc/mc/Inst_Ps2Interface/ps2_data_h_reg is being inverted and renamed to mc/mc/Inst_Ps2Interface/ps2_data_h_reg_inv.
 INFO: [Synth 8-5365] Flop mc/mc/Inst_Ps2Interface/ps2_clk_h_reg is being inverted and renamed to mc/mc/Inst_Ps2Interface/ps2_clk_h_reg_inv.
+INFO: [Synth 8-5365] Flop mc/mc/Inst_Ps2Interface/ps2_data_h_reg is being inverted and renamed to mc/mc/Inst_Ps2Interface/ps2_data_h_reg_inv.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:26 ; elapsed = 00:03:31 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Finished IO Insertion : Time (s): cpu = 00:02:31 ; elapsed = 00:03:33 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2242,7 +2300,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:26 ; elapsed = 00:03:31 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:31 ; elapsed = 00:03:33 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2254,25 +2312,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:28 ; elapsed = 00:03:33 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:34 ; elapsed = 00:03:36 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:29 ; elapsed = 00:03:33 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:34 ; elapsed = 00:03:37 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:29 ; elapsed = 00:03:34 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:35 ; elapsed = 00:03:37 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:29 ; elapsed = 00:03:34 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:35 ; elapsed = 00:03:37 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2289,23 +2347,23 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     5|
-|2     |CARRY4     |   849|
+|2     |CARRY4     |   906|
 |3     |DSP48E1    |    12|
 |4     |DSP48E1_1  |     8|
-|5     |LUT1       |   637|
-|6     |LUT2       |   955|
-|7     |LUT3       |  1046|
-|8     |LUT4       |  1419|
-|9     |LUT5       |   505|
-|10    |LUT6       |  4458|
+|5     |LUT1       |   612|
+|6     |LUT2       |   995|
+|7     |LUT3       |  1162|
+|8     |LUT4       |  1353|
+|9     |LUT5       |   733|
+|10    |LUT6       |  4687|
 |11    |MMCME2_ADV |     1|
-|12    |MUXF7      |  1718|
+|12    |MUXF7      |  1719|
 |13    |MUXF8      |   810|
 |14    |RAM64M     |   120|
 |15    |RAM64X1D   |    40|
 |16    |RAMB16_S1  |    83|
-|17    |FDRE       | 14986|
-|18    |FDSE       |    13|
+|17    |FDRE       | 15009|
+|18    |FDSE       |    20|
 |19    |IBUF       |     9|
 |20    |IOBUF      |     2|
 |21    |OBUF       |    41|
@@ -2315,16 +2373,16 @@ Report Instance Areas:
 +------+------------------------+----------------------+------+
 |      |Instance                |Module                |Cells |
 +------+------------------------+----------------------+------+
-|1     |top                     |                      | 27717|
-|2     |  clk_30                |clk_30hz              |    30|
-|3     |  cs                    |Colour_Selector       |    45|
-|4     |  dbg                   |Draw_Background       |   363|
-|5     |    ahar1               |char                  |     5|
-|6     |      c                 |pc_vga_8x16_257       |     2|
-|7     |        U1              |pc_vga_8x16_00_7F_258 |     2|
-|8     |    ahar10              |char_13               |     4|
-|9     |      c                 |pc_vga_8x16_255       |     1|
-|10    |        U1              |pc_vga_8x16_00_7F_256 |     1|
+|1     |top                     |                      | 28327|
+|2     |  clk_30                |clk_30hz              |    32|
+|3     |  cs                    |Colour_Selector       |    41|
+|4     |  dbg                   |Draw_Background       |   452|
+|5     |    ahar1               |char                  |     7|
+|6     |      c                 |pc_vga_8x16_257       |     1|
+|7     |        U1              |pc_vga_8x16_00_7F_258 |     1|
+|8     |    ahar10              |char_13               |     5|
+|9     |      c                 |pc_vga_8x16_255       |     2|
+|10    |        U1              |pc_vga_8x16_00_7F_256 |     2|
 |11    |    ahar11              |char_14               |     4|
 |12    |      c                 |pc_vga_8x16_253       |     1|
 |13    |        U1              |pc_vga_8x16_00_7F_254 |     1|
@@ -2346,10 +2404,10 @@ Report Instance Areas:
 |29    |    ahar3               |char_20               |     4|
 |30    |      c                 |pc_vga_8x16_241       |     1|
 |31    |        U1              |pc_vga_8x16_00_7F_242 |     1|
-|32    |    ahar4               |char_21               |     7|
+|32    |    ahar4               |char_21               |     4|
 |33    |      c                 |pc_vga_8x16_239       |     1|
 |34    |        U1              |pc_vga_8x16_00_7F_240 |     1|
-|35    |    ahar5               |char_22               |     6|
+|35    |    ahar5               |char_22               |     3|
 |36    |      c                 |pc_vga_8x16_237       |     1|
 |37    |        U1              |pc_vga_8x16_00_7F_238 |     1|
 |38    |    ahar6               |char_23               |     4|
@@ -2364,7 +2422,7 @@ Report Instance Areas:
 |47    |    ahar9               |char_26               |     4|
 |48    |      c                 |pc_vga_8x16_229       |     1|
 |49    |        U1              |pc_vga_8x16_00_7F_230 |     1|
-|50    |    bar1                |char_27               |     1|
+|50    |    bar1                |char_27               |     4|
 |51    |      c                 |pc_vga_8x16_227       |     1|
 |52    |        U1              |pc_vga_8x16_00_7F_228 |     1|
 |53    |    bar2                |char_28               |     1|
@@ -2394,43 +2452,43 @@ Report Instance Areas:
 |77    |    block3              |char_36               |     4|
 |78    |      c                 |pc_vga_8x16_209       |     1|
 |79    |        U1              |pc_vga_8x16_00_7F_210 |     1|
-|80    |    char1               |char_37               |     7|
+|80    |    char1               |char_37               |     1|
 |81    |      c                 |pc_vga_8x16_207       |     1|
 |82    |        U1              |pc_vga_8x16_00_7F_208 |     1|
-|83    |    char2               |char_38               |     4|
-|84    |      c                 |pc_vga_8x16_205       |     1|
-|85    |        U1              |pc_vga_8x16_00_7F_206 |     1|
-|86    |    circ1               |char_39               |     4|
-|87    |      c                 |pc_vga_8x16_203       |     1|
-|88    |        U1              |pc_vga_8x16_00_7F_204 |     1|
+|83    |    char2               |char_38               |     5|
+|84    |      c                 |pc_vga_8x16_205       |     2|
+|85    |        U1              |pc_vga_8x16_00_7F_206 |     2|
+|86    |    circ1               |char_39               |     5|
+|87    |      c                 |pc_vga_8x16_203       |     2|
+|88    |        U1              |pc_vga_8x16_00_7F_204 |     2|
 |89    |    circ2               |char_40               |     4|
 |90    |      c                 |pc_vga_8x16_201       |     1|
 |91    |        U1              |pc_vga_8x16_00_7F_202 |     1|
 |92    |    circ3               |char_41               |     4|
 |93    |      c                 |pc_vga_8x16_199       |     1|
 |94    |        U1              |pc_vga_8x16_00_7F_200 |     1|
-|95    |    circ4               |char_42               |     4|
-|96    |      c                 |pc_vga_8x16_197       |     1|
-|97    |        U1              |pc_vga_8x16_00_7F_198 |     1|
-|98    |    dhar1               |char_43               |     4|
+|95    |    circ4               |char_42               |     5|
+|96    |      c                 |pc_vga_8x16_197       |     2|
+|97    |        U1              |pc_vga_8x16_00_7F_198 |     2|
+|98    |    dhar1               |char_43               |     1|
 |99    |      c                 |pc_vga_8x16_195       |     1|
 |100   |        U1              |pc_vga_8x16_00_7F_196 |     1|
-|101   |    dhar2               |char_44               |     1|
-|102   |      c                 |pc_vga_8x16_193       |     1|
-|103   |        U1              |pc_vga_8x16_00_7F_194 |     1|
-|104   |    ehar1               |char_45               |     4|
+|101   |    dhar2               |char_44               |     6|
+|102   |      c                 |pc_vga_8x16_193       |     2|
+|103   |        U1              |pc_vga_8x16_00_7F_194 |     2|
+|104   |    ehar1               |char_45               |     1|
 |105   |      c                 |pc_vga_8x16_191       |     1|
 |106   |        U1              |pc_vga_8x16_00_7F_192 |     1|
-|107   |    ehar2               |char_46               |     1|
-|108   |      c                 |pc_vga_8x16_189       |     1|
-|109   |        U1              |pc_vga_8x16_00_7F_190 |     1|
-|110   |    fhar1               |char_47               |     4|
+|107   |    ehar2               |char_46               |     5|
+|108   |      c                 |pc_vga_8x16_189       |     2|
+|109   |        U1              |pc_vga_8x16_00_7F_190 |     2|
+|110   |    fhar1               |char_47               |     1|
 |111   |      c                 |pc_vga_8x16_187       |     1|
 |112   |        U1              |pc_vga_8x16_00_7F_188 |     1|
-|113   |    fhar2               |char_48               |     1|
-|114   |      c                 |pc_vga_8x16_185       |     1|
-|115   |        U1              |pc_vga_8x16_00_7F_186 |     1|
-|116   |    fill1               |char_49               |     1|
+|113   |    fhar2               |char_48               |     9|
+|114   |      c                 |pc_vga_8x16_185       |     2|
+|115   |        U1              |pc_vga_8x16_00_7F_186 |     2|
+|116   |    fill1               |char_49               |     4|
 |117   |      c                 |pc_vga_8x16_183       |     1|
 |118   |        U1              |pc_vga_8x16_00_7F_184 |     1|
 |119   |    fill2               |char_50               |     1|
@@ -2442,7 +2500,7 @@ Report Instance Areas:
 |125   |    fill4               |char_52               |     4|
 |126   |      c                 |pc_vga_8x16_177       |     1|
 |127   |        U1              |pc_vga_8x16_00_7F_178 |     1|
-|128   |    freq1               |char_53               |     4|
+|128   |    freq1               |char_53               |     1|
 |129   |      c                 |pc_vga_8x16_175       |     1|
 |130   |        U1              |pc_vga_8x16_00_7F_176 |     1|
 |131   |    freq2               |char_54               |     1|
@@ -2451,18 +2509,18 @@ Report Instance Areas:
 |134   |    freq3               |char_55               |     2|
 |135   |      c                 |pc_vga_8x16_171       |     2|
 |136   |        U1              |pc_vga_8x16_00_7F_172 |     2|
-|137   |    freq4               |char_56               |     5|
-|138   |      c                 |pc_vga_8x16_169       |     2|
-|139   |        U1              |pc_vga_8x16_00_7F_170 |     2|
-|140   |    freqc1              |char_57               |     1|
-|141   |      c                 |pc_vga_8x16_167       |     1|
-|142   |        U1              |pc_vga_8x16_00_7F_168 |     1|
-|143   |    freqc2              |char_58               |     1|
-|144   |      c                 |pc_vga_8x16_165       |     1|
-|145   |        U1              |pc_vga_8x16_00_7F_166 |     1|
-|146   |    freqc3              |char_59               |     2|
-|147   |      c                 |pc_vga_8x16_163       |     2|
-|148   |        U1              |pc_vga_8x16_00_7F_164 |     2|
+|137   |    freq4               |char_56               |     4|
+|138   |      c                 |pc_vga_8x16_169       |     1|
+|139   |        U1              |pc_vga_8x16_00_7F_170 |     1|
+|140   |    freqc1              |char_57               |     2|
+|141   |      c                 |pc_vga_8x16_167       |     2|
+|142   |        U1              |pc_vga_8x16_00_7F_168 |     2|
+|143   |    freqc2              |char_58               |     2|
+|144   |      c                 |pc_vga_8x16_165       |     2|
+|145   |        U1              |pc_vga_8x16_00_7F_166 |     2|
+|146   |    freqc3              |char_59               |     1|
+|147   |      c                 |pc_vga_8x16_163       |     1|
+|148   |        U1              |pc_vga_8x16_00_7F_164 |     1|
 |149   |    freqc4              |char_60               |     1|
 |150   |      c                 |pc_vga_8x16_161       |     1|
 |151   |        U1              |pc_vga_8x16_00_7F_162 |     1|
@@ -2472,16 +2530,16 @@ Report Instance Areas:
 |155   |    freqcs2             |char_62               |     1|
 |156   |      c                 |pc_vga_8x16_157       |     1|
 |157   |        U1              |pc_vga_8x16_00_7F_158 |     1|
-|158   |    freqcs3             |char_63               |     7|
+|158   |    freqcs3             |char_63               |     1|
 |159   |      c                 |pc_vga_8x16_155       |     1|
 |160   |        U1              |pc_vga_8x16_00_7F_156 |     1|
 |161   |    freqcs4             |char_64               |     1|
 |162   |      c                 |pc_vga_8x16_153       |     1|
 |163   |        U1              |pc_vga_8x16_00_7F_154 |     1|
-|164   |    ghar1               |char_65               |     4|
+|164   |    ghar1               |char_65               |     9|
 |165   |      c                 |pc_vga_8x16_151       |     1|
 |166   |        U1              |pc_vga_8x16_00_7F_152 |     1|
-|167   |    ghar2               |char_66               |     1|
+|167   |    ghar2               |char_66               |     7|
 |168   |      c                 |pc_vga_8x16_149       |     1|
 |169   |        U1              |pc_vga_8x16_00_7F_150 |     1|
 |170   |    hist1               |char_67               |     4|
@@ -2490,15 +2548,15 @@ Report Instance Areas:
 |173   |    hist2               |char_68               |     4|
 |174   |      c                 |pc_vga_8x16_145       |     1|
 |175   |        U1              |pc_vga_8x16_00_7F_146 |     1|
-|176   |    hist3               |char_69               |     4|
+|176   |    hist3               |char_69               |     7|
 |177   |      c                 |pc_vga_8x16_143       |     1|
 |178   |        U1              |pc_vga_8x16_00_7F_144 |     1|
 |179   |    hist4               |char_70               |     4|
 |180   |      c                 |pc_vga_8x16_141       |     1|
 |181   |        U1              |pc_vga_8x16_00_7F_142 |     1|
-|182   |    meow1               |char_71               |     4|
-|183   |      c                 |pc_vga_8x16_139       |     1|
-|184   |        U1              |pc_vga_8x16_00_7F_140 |     1|
+|182   |    meow1               |char_71               |     2|
+|183   |      c                 |pc_vga_8x16_139       |     2|
+|184   |        U1              |pc_vga_8x16_00_7F_140 |     2|
 |185   |    meow2               |char_72               |     1|
 |186   |      c                 |pc_vga_8x16_137       |     1|
 |187   |        U1              |pc_vga_8x16_00_7F_138 |     1|
@@ -2508,105 +2566,107 @@ Report Instance Areas:
 |191   |    meow4               |char_74               |     1|
 |192   |      c                 |pc_vga_8x16_133       |     1|
 |193   |        U1              |pc_vga_8x16_00_7F_134 |     1|
-|194   |    normal1             |char_75               |     1|
-|195   |      c                 |pc_vga_8x16_131       |     1|
-|196   |        U1              |pc_vga_8x16_00_7F_132 |     1|
-|197   |    normal2             |char_76               |     7|
-|198   |      c                 |pc_vga_8x16_129       |     1|
-|199   |        U1              |pc_vga_8x16_00_7F_130 |     1|
-|200   |    normal3             |char_77               |     5|
-|201   |      c                 |pc_vga_8x16_127       |     2|
-|202   |        U1              |pc_vga_8x16_00_7F_128 |     2|
-|203   |    normal4             |char_78               |     5|
-|204   |      c                 |pc_vga_8x16_125       |     2|
-|205   |        U1              |pc_vga_8x16_00_7F_126 |     2|
-|206   |    normalc1            |char_79               |     4|
-|207   |      c                 |pc_vga_8x16_123       |     1|
-|208   |        U1              |pc_vga_8x16_00_7F_124 |     1|
-|209   |    normalc2            |char_80               |     4|
-|210   |      c                 |pc_vga_8x16_121       |     1|
-|211   |        U1              |pc_vga_8x16_00_7F_122 |     1|
-|212   |    normalc3            |char_81               |     1|
-|213   |      c                 |pc_vga_8x16_119       |     1|
-|214   |        U1              |pc_vga_8x16_00_7F_120 |     1|
-|215   |    normalc4            |char_82               |     4|
-|216   |      c                 |pc_vga_8x16_117       |     1|
-|217   |        U1              |pc_vga_8x16_00_7F_118 |     1|
-|218   |    slow1               |char_83               |     1|
-|219   |      c                 |pc_vga_8x16_115       |     1|
-|220   |        U1              |pc_vga_8x16_00_7F_116 |     1|
-|221   |    slow2               |char_84               |     1|
-|222   |      c                 |pc_vga_8x16_113       |     1|
-|223   |        U1              |pc_vga_8x16_00_7F_114 |     1|
-|224   |    slow3               |char_85               |     1|
-|225   |      c                 |pc_vga_8x16_111       |     1|
-|226   |        U1              |pc_vga_8x16_00_7F_112 |     1|
-|227   |    slow4               |char_86               |     1|
-|228   |      c                 |pc_vga_8x16_109       |     1|
-|229   |        U1              |pc_vga_8x16_00_7F_110 |     1|
-|230   |    vol1                |char_87               |     4|
-|231   |      c                 |pc_vga_8x16_107       |     1|
-|232   |        U1              |pc_vga_8x16_00_7F_108 |     1|
-|233   |    vol2                |char_88               |     4|
-|234   |      c                 |pc_vga_8x16_105       |     1|
-|235   |        U1              |pc_vga_8x16_00_7F_106 |     1|
-|236   |    vol3                |char_89               |     6|
-|237   |      c                 |pc_vga_8x16_103       |     2|
-|238   |        U1              |pc_vga_8x16_00_7F_104 |     2|
-|239   |    waveform1           |char_90               |     4|
-|240   |      c                 |pc_vga_8x16_101       |     1|
-|241   |        U1              |pc_vga_8x16_00_7F_102 |     1|
-|242   |    waveform2           |char_91               |     4|
-|243   |      c                 |pc_vga_8x16_99        |     1|
-|244   |        U1              |pc_vga_8x16_00_7F_100 |     1|
-|245   |    waveform3           |char_92               |     7|
-|246   |      c                 |pc_vga_8x16_97        |     1|
-|247   |        U1              |pc_vga_8x16_00_7F_98  |     1|
-|248   |    waveform4           |char_93               |     4|
-|249   |      c                 |pc_vga_8x16_95        |     1|
-|250   |        U1              |pc_vga_8x16_00_7F_96  |     1|
-|251   |    waveform5           |char_94               |     4|
-|252   |      c                 |pc_vga_8x16           |     1|
-|253   |        U1              |pc_vga_8x16_00_7F     |     1|
-|254   |  fc                    |Freq_Counter          |  2799|
-|255   |  mc                    |Mouse_Controller      |   835|
-|256   |    mc                  |MouseCtl              |   835|
-|257   |      Inst_Ps2Interface |Ps2Interface          |   280|
-|258   |  mode_s                |Mode_Selector         |   522|
-|259   |    ctr                 |Button_Pulser         |    33|
-|260   |      dff1              |posE_dff_11           |    18|
-|261   |      dff2              |posE_dff_12           |    15|
-|262   |    down                |Button_Pulser_0       |     9|
-|263   |      dff1              |posE_dff_9            |     7|
-|264   |      dff2              |posE_dff_10           |     2|
-|265   |    left                |Button_Pulser_1       |    59|
-|266   |      dff1              |posE_dff_7            |    51|
-|267   |      dff2              |posE_dff_8            |     8|
-|268   |    right               |Button_Pulser_2       |    17|
-|269   |      dff1              |posE_dff_5            |     6|
-|270   |      dff2              |posE_dff_6            |    11|
-|271   |    seg_d               |SEG_Decoder           |    68|
-|272   |    up                  |Button_Pulser_3       |    98|
-|273   |      dff1              |posE_dff              |    97|
-|274   |      dff2              |posE_dff_4            |     1|
-|275   |  my_clk                |clk_div               |    21|
-|276   |  sound_converter       |Sound_Lvl_Converter   |   975|
-|277   |  vc                    |Voice_Capturer        |   109|
-|278   |  vga                   |VGA_DISPLAY           |  1626|
-|279   |    VGA_CLK_108M        |CLK_108M              |     3|
-|280   |    VGA_CONTROL         |VGA_CONTROL           |  1540|
-|281   |  wave                  |Draw_Waveform_Mode    |   726|
-|282   |  wave_c                |Draw_Waveform_Circle  |   718|
-|283   |  wave_h                |Draw_Waveform_History | 18853|
+|194   |    nc                  |nyan_clk              |    39|
+|195   |    normal1             |char_75               |     5|
+|196   |      c                 |pc_vga_8x16_131       |     2|
+|197   |        U1              |pc_vga_8x16_00_7F_132 |     2|
+|198   |    normal2             |char_76               |     2|
+|199   |      c                 |pc_vga_8x16_129       |     2|
+|200   |        U1              |pc_vga_8x16_00_7F_130 |     2|
+|201   |    normal3             |char_77               |     1|
+|202   |      c                 |pc_vga_8x16_127       |     1|
+|203   |        U1              |pc_vga_8x16_00_7F_128 |     1|
+|204   |    normal4             |char_78               |     1|
+|205   |      c                 |pc_vga_8x16_125       |     1|
+|206   |        U1              |pc_vga_8x16_00_7F_126 |     1|
+|207   |    normalc1            |char_79               |     4|
+|208   |      c                 |pc_vga_8x16_123       |     1|
+|209   |        U1              |pc_vga_8x16_00_7F_124 |     1|
+|210   |    normalc2            |char_80               |     4|
+|211   |      c                 |pc_vga_8x16_121       |     1|
+|212   |        U1              |pc_vga_8x16_00_7F_122 |     1|
+|213   |    normalc3            |char_81               |     4|
+|214   |      c                 |pc_vga_8x16_119       |     1|
+|215   |        U1              |pc_vga_8x16_00_7F_120 |     1|
+|216   |    normalc4            |char_82               |     4|
+|217   |      c                 |pc_vga_8x16_117       |     1|
+|218   |        U1              |pc_vga_8x16_00_7F_118 |     1|
+|219   |    nyan                |Draw_Mao              |    45|
+|220   |    slow1               |char_83               |     1|
+|221   |      c                 |pc_vga_8x16_115       |     1|
+|222   |        U1              |pc_vga_8x16_00_7F_116 |     1|
+|223   |    slow2               |char_84               |     1|
+|224   |      c                 |pc_vga_8x16_113       |     1|
+|225   |        U1              |pc_vga_8x16_00_7F_114 |     1|
+|226   |    slow3               |char_85               |     1|
+|227   |      c                 |pc_vga_8x16_111       |     1|
+|228   |        U1              |pc_vga_8x16_00_7F_112 |     1|
+|229   |    slow4               |char_86               |     1|
+|230   |      c                 |pc_vga_8x16_109       |     1|
+|231   |        U1              |pc_vga_8x16_00_7F_110 |     1|
+|232   |    vol1                |char_87               |     4|
+|233   |      c                 |pc_vga_8x16_107       |     1|
+|234   |        U1              |pc_vga_8x16_00_7F_108 |     1|
+|235   |    vol2                |char_88               |     4|
+|236   |      c                 |pc_vga_8x16_105       |     1|
+|237   |        U1              |pc_vga_8x16_00_7F_106 |     1|
+|238   |    vol3                |char_89               |     4|
+|239   |      c                 |pc_vga_8x16_103       |     1|
+|240   |        U1              |pc_vga_8x16_00_7F_104 |     1|
+|241   |    waveform1           |char_90               |     5|
+|242   |      c                 |pc_vga_8x16_101       |     2|
+|243   |        U1              |pc_vga_8x16_00_7F_102 |     2|
+|244   |    waveform2           |char_91               |     4|
+|245   |      c                 |pc_vga_8x16_99        |     1|
+|246   |        U1              |pc_vga_8x16_00_7F_100 |     1|
+|247   |    waveform3           |char_92               |     4|
+|248   |      c                 |pc_vga_8x16_97        |     1|
+|249   |        U1              |pc_vga_8x16_00_7F_98  |     1|
+|250   |    waveform4           |char_93               |     4|
+|251   |      c                 |pc_vga_8x16_95        |     1|
+|252   |        U1              |pc_vga_8x16_00_7F_96  |     1|
+|253   |    waveform5           |char_94               |     1|
+|254   |      c                 |pc_vga_8x16           |     1|
+|255   |        U1              |pc_vga_8x16_00_7F     |     1|
+|256   |  fc                    |Freq_Counter          |  2803|
+|257   |  mc                    |Mouse_Controller      |   847|
+|258   |    mc                  |MouseCtl              |   847|
+|259   |      Inst_Ps2Interface |Ps2Interface          |   282|
+|260   |  mode_s                |Mode_Selector         |   556|
+|261   |    ctr                 |Button_Pulser         |    25|
+|262   |      dff1              |posE_dff_11           |     8|
+|263   |      dff2              |posE_dff_12           |    17|
+|264   |    down                |Button_Pulser_0       |    27|
+|265   |      dff1              |posE_dff_9            |    22|
+|266   |      dff2              |posE_dff_10           |     5|
+|267   |    left__0             |Button_Pulser_1       |    91|
+|268   |      dff1              |posE_dff_7            |     7|
+|269   |      dff2              |posE_dff_8            |    84|
+|270   |    right               |Button_Pulser_2       |    62|
+|271   |      dff1              |posE_dff_5            |    49|
+|272   |      dff2              |posE_dff_6            |    13|
+|273   |    seg_d               |SEG_Decoder           |    68|
+|274   |    up                  |Button_Pulser_3       |     8|
+|275   |      dff1              |posE_dff              |     5|
+|276   |      dff2              |posE_dff_4            |     3|
+|277   |  my_clk                |clk_div               |    21|
+|278   |  sound_converter       |Sound_Lvl_Converter   |   972|
+|279   |  vc                    |Voice_Capturer        |   111|
+|280   |  vga                   |VGA_DISPLAY           |  1956|
+|281   |    VGA_CLK_108M        |CLK_108M              |     3|
+|282   |    VGA_CONTROL         |VGA_CONTROL           |  1730|
+|283   |  wave                  |Draw_Waveform_Mode    |   490|
+|284   |  wave_c                |Draw_Waveform_Circle  |   804|
+|285   |  wave_h                |Draw_Waveform_History | 19118|
 +------+------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:29 ; elapsed = 00:03:34 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:03:37 . Memory (MB): peak = 944.813 ; gain = 687.477
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 84 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:12 ; elapsed = 00:03:23 . Memory (MB): peak = 1065.805 ; gain = 423.625
-Synthesis Optimization Complete : Time (s): cpu = 00:03:29 ; elapsed = 00:03:34 . Memory (MB): peak = 1065.805 ; gain = 809.137
+Synthesis finished with 0 errors, 0 critical warnings and 139 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:16 ; elapsed = 00:03:26 . Memory (MB): peak = 944.813 ; gain = 301.992
+Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:03:38 . Memory (MB): peak = 944.813 ; gain = 687.477
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3652 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3710 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -2618,11 +2678,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB16_S1 => RAMB18E1: 83 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-314 Infos, 251 Warnings, 0 Critical Warnings and 0 Errors encountered.
+321 Infos, 288 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:38 ; elapsed = 00:03:44 . Memory (MB): peak = 1065.805 ; gain = 822.305
+synth_design: Time (s): cpu = 00:02:44 ; elapsed = 00:03:48 . Memory (MB): peak = 944.813 ; gain = 700.625
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/Voice_Scope_TOP.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Voice_Scope_TOP_utilization_synth.rpt -pb Voice_Scope_TOP_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.240 . Memory (MB): peak = 1065.805 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  5 15:44:00 2019...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.252 . Memory (MB): peak = 944.813 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  6 01:29:44 2019...

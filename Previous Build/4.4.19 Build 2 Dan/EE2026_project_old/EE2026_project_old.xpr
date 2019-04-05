@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/4.4.19 Build 2 Dan/EE2026_project_old/EE2026_project_old.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="34aa4abb380745d782d0c3bee1aba376"/>
@@ -322,7 +322,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../EE2026_Project/archive_project_summary.txt"/>
+      <File Path="D:/NUS/ee2026lab/EE2026_Project/archive_project_summary.txt"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Voice_Scope_TOP"/>

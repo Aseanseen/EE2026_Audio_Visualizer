@@ -1,0 +1,2062 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 17968
+License: Customer
+
+Current time: 	Fri Apr 05 18:57:07 SGT 2019
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 18 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/VivadoHLX/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/VivadoHLX/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Admin
+User home directory: C:/Users/Admin
+User working directory: D:/NUS/ee2026lab/EE2026_project_old
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: D:/VivadoHLX/Vivado
+HDI_APPROOT: D:/VivadoHLX/Vivado/2018.2
+RDI_DATADIR: D:/VivadoHLX/Vivado/2018.2/data
+RDI_BINDIR: D:/VivadoHLX/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/VivadoHLX/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/NUS/ee2026lab/EE2026_project_old/vivado.log
+Vivado journal file location: 	D:/NUS/ee2026lab/EE2026_project_old/vivado.jou
+Engine tmp dir: 	D:/NUS/ee2026lab/EE2026_project_old/.Xil/Vivado-17968-LAPTOP-MNQMD5TA
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/VivadoHLX/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/VivadoHLX/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/VivadoHLX/Vivado/2018.2
+XILINX_SDK: D:/VivadoHLX/SDK/2018.2
+XILINX_VIVADO: D:/VivadoHLX/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/VivadoHLX/Vivado/2018.2
+
+
+GUI allocated memory:	157 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 493 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 54 MB (+54632kb) [00:00:09]
+// [Engine Memory]: 475 MB (+346393kb) [00:00:09]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: D:\NUS\ee2026lab\EE2026_project_old\EE2026_project_old.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.xpr 
+// Tcl Message: open_project D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VivadoHLX/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 60 MB (+2994kb) [00:00:14]
+// [Engine Memory]: 541 MB (+44282kb) [00:00:14]
+// [GUI Memory]: 78 MB (+15708kb) [00:00:14]
+// [GUI Memory]: 96 MB (+14890kb) [00:00:16]
+// [Engine Memory]: 618 MB (+52979kb) [00:00:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 628 MB. GUI used memory: 46 MB. Current time: 4/5/19 6:57:14 PM SGT
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 779.328 ; gain = 90.086 
+// Project name: EE2026_project_old; location: D:/NUS/ee2026lab/EE2026_project_old; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (Voice_Scope_TOP.v) elapsed time: 0.2s
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), my_clk : clk_div (clk_div.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// RDIResource.RDIViews_PROPERTIES: Source File Properties: close view
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), wave_h : Draw_Waveform_History (Draw_Waveform_History.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), wave_h : Draw_Waveform_History (Draw_Waveform_History.v)]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 661 MB. GUI used memory: 48 MB. Current time: 4/5/19 6:58:05 PM SGT
+// [Engine Memory]: 661 MB (+11998kb) [00:01:10]
+// Elapsed time: 42 seconds
+selectCodeEditor("Draw_Waveform_History.v", 669, 206); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 669, 206, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 18:58:47 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 18:58:47 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("Draw_Waveform_History.v", 222, 251); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 222, 251, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// A (ck): No Implementation Results Available: addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 18:59:14 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 18:59:14 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 97 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aE (Q, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 43 MB. Current time: 4/5/19 7:00:55 PM SGT
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Draw_Waveform_History.v", 249, 326); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("Draw_Waveform_History.v", 93, 224); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 170, 221); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Draw_Waveform_History.v", 241, 295); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 259, 287); // ce (w, ck)
+// Elapsed time: 73 seconds
+selectCodeEditor("Draw_Waveform_History.v", 201, 101); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 215, 121); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 233, 178); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 194, 120); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Draw_Waveform_History.v", 216, 148, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 178, 159, false, true, false, false, false); // ce (w, ck) - Control Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+// Elapsed time: 51 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 811ms to process. Increasing delay to 2000 ms.
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+selectButton(PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE, (String) null); // u (f, ck): TRUE
+selectButton(PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE, (String) null); // u (f, ck): FALSE
+selectButton(PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE, (String) null); // u (f, ck): TRUE
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i (A, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 138, 268); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 144, 256); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 111, 250); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 111, 250, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 87, 250); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 93, 249); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 164, 249, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 183, 161); // ce (w, ck)
+// Elapsed time: 33 seconds
+selectCodeEditor("Draw_Waveform_History.v", 134, 159); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 477, 167); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 269, 168); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 274, 139); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("Draw_Waveform_History.v", 225, 61); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 377, 57, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 204, 207); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 382, 57); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 237, 56); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 217, 56); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 407, 60, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 217, 208); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 214, 209); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Draw_Waveform_History.v", 412, 219); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 126, 214); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 126, 214, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 270, 227); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 537, 226); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 377, 233); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 576, 233); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 112, 231, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 192, 247); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 621, 249); // ce (w, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("Draw_Waveform_History.v", 280, 128); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 280, 128, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 363, 164); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("Draw_Waveform_History.v", 398, 144); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Draw_Waveform_History.v", 344, 129); // ce (w, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("Draw_Waveform_History.v", 27, 177); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Draw_Waveform_History.v", 651, 159); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Draw_Waveform_History.v", 293, 155); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 462, 163); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 562, 179); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 623, 179); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 62, 175); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 182, 179); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 632, 178); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 55 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 698 MB (+4520kb) [00:13:55]
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183756765A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 91 MB. Current time: 4/5/19 7:10:59 PM SGT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,353 MB (+649860kb) [00:14:04]
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// [GUI Memory]: 103 MB (+1763kb) [00:15:13]
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+selectCodeEditor("Draw_Waveform_History.v", 247, 197); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 245, 191); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("Draw_Waveform_History.v", 236, 174); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 376, 147); // ce (w, ck)
+// Elapsed time: 50 seconds
+selectCodeEditor("Draw_Waveform_History.v", 100, 95); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 100, 95, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 109, 95); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 109, 95, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 413, 199); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 99, 165); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 99, 166, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 530, 196); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 110, 230); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 110, 230, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 636, 195); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 80, 147); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 81, 147, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 726, 252); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 716, 249); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("Draw_Waveform_History.v", 656, 141); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Draw_Waveform_History.v", 640, 141); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Draw_Waveform_History.v", 752, 146); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 33, 151); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 159, 282); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 210, 178); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 149, 145); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 149, 145, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 155, 142); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 155, 142, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 276, 145); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 275, 146, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 289, 145); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 289, 145, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 405, 146); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 405, 146, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 529, 145); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 529, 145, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 639, 285); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 657, 283); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 773, 35); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 73, 40); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 68, 54); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Draw_Waveform_History.v", 950, 77); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 29, 73, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 965, 93); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 209, 59, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 225, 163); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 212, 180, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 528, 178, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 924, 194); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 70, 41); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 827, 41, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 29, 202); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 967, 194, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 69, 114, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 217, 105, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 212, 144); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 965, 152, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 62, 164, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 1, 95); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 8, 95); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 945, 89, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 945, 186); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 5, 180, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 94, 114); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 77, 118); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 205, 91); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 197, 52); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 154, 60); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+// [GUI Memory]: 109 MB (+653kb) [00:20:09]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 19:17:15 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 19:17:15 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("Draw_Waveform_History.v", 34, 111); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("Draw_Waveform_History.v", 300, 244); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 301, 244, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 301, 250); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 301, 250, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 634ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 344 seconds
+selectCodeEditor("Draw_Waveform_History.v", 369, 279); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 371, 255); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("Draw_Waveform_History.v", 341, 139); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 341, 139, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Elapsed time: 231 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// Elapsed time: 33 seconds
+selectCodeEditor("Draw_Waveform_History.v", 319, 28); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 489, 24); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 32, 40); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 632, 42, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 638, 41, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 487, 25); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 200, 25); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 830, 32); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 817, 23); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 228, 43); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 40, 38); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 260, 44); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 151, 64); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 273, 45, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 246, 45); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("Draw_Waveform_History.v", 914, 22); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 209, 21); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 924, 22); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Draw_Waveform_History.v", 447, 23); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 717, 22); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 785, 22); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 47, 46); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 259, 42); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 258, 42, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 232, 41); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Draw_Waveform_History.v", 941, 42); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("Draw_Waveform_History.v", 205, 26); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 223, 112); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 241, 109); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 25, 214); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 717, 211, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 251, 130); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 946, 129, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 53, 126); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 105, 224); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 221, 106); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 949, 112); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 949, 112, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 216, 110); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 207, 118); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 957, 121, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 612, 150); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 221, 162); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 220, 163, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 217, 163); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 215, 162); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 219, 158, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 220, 158); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 279, 160); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 937, 269); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 33, 265, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 24, 262, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 226, 182); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 772, 263); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 19:32:45 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 19:32:45 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+// [GUI Memory]: 114 MB (+536kb) [00:35:50]
+selectCodeEditor("Draw_Waveform_History.v", 805, 140); // ce (w, ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("Draw_Waveform_History.v", 789, 229); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 789, 230, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 19:33:01 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 19:33:01 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectCodeEditor("Draw_Waveform_History.v", 782, 233); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 768, 229); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 768, 229, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DG_GRAPH_GENERATED
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 19:33:09 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 19:33:09 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// [GUI Memory]: 121 MB (+872kb) [00:36:15]
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 703ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 54 MB. Current time: 4/5/19 7:41:00 PM SGT
+// Elapsed time: 548 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("Voice_Scope_TOP.v", 61, 113); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 58 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// Elapsed time: 62 seconds
+selectCodeEditor("Draw_Waveform_History.v", 207, 156); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 207, 156, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 148, 215); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 144, 214); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+selectCodeEditor("Draw_Waveform_History.v", 528, 182); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 622, 169); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 324, 151); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 240, 82); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 240, 82, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 281, 82); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 281, 82, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 313, 83); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 778, 112); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 272, 75); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 457, 81); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 761, 233); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 761, 231, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("Draw_Waveform_History.v", 288, 28); // ce (w, ck)
+// Elapsed time: 41 seconds
+selectCodeEditor("Draw_Waveform_History.v", 279, 30); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 289, 26); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 853, 31); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 847, 28); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 853, 29); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("Draw_Waveform_History.v", 287, 26); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("Draw_Waveform_History.v", 130, 24); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 681, 181); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 138, 28); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 129, 26); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 225, 23); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 233, 23); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 256, 24); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Draw_Waveform_History.v", 261, 27); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 474, 30); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 437, 28); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 443, 26); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 437, 23); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 852, 29); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 852, 29, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// Elapsed time: 87 seconds
+selectCodeEditor("Draw_Waveform_History.v", 248, 142); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("Draw_Waveform_History.v", 93, 135); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 33, 93); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 28, 93); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 133, 160, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("Draw_Waveform_History.v", 73, 151); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 30, 163); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 26, 99, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 65, 122, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 67, 110, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 117, 150); // ce (w, ck)
+// Elapsed time: 41 seconds
+selectCodeEditor("Draw_Waveform_History.v", 322, 81); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 322, 81, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 131, 64); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 131, 64, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: FILE_SET_CHANGE
+// f (ck): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 19:52:58 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 19:52:58 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+selectCodeEditor("Draw_Waveform_History.v", 740, 212); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 218, 69, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 161, 63, true, false, false, false, false); // ce (w, ck) - Shift Key
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 315, 183); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 330, 158); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 250, 193); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 250, 193, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("Draw_Waveform_History.v", 406, 93); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 421, 95); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 459, 196); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 458, 196, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 466, 193); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 466, 193, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 506, 183); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 421, 197); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 430, 197); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 394, 194, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 212, 195); // ce (w, ck)
+// Elapsed time: 116 seconds
+selectCodeEditor("Draw_Waveform_History.v", 308, 123); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 308, 123, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("Draw_Waveform_History.v", 212, 214); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 918, 211); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 287, 211); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 919, 206); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 513ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 390 seconds
+selectCodeEditor("Draw_Waveform_History.v", 211, 233); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 303, 215); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 38, 263); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 74, 269); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 188, 211); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 832, 215); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 210, 229); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 248, 231); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 299, 230); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 391, 230); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 372, 232); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 366, 231); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 26, 231); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 188, 212); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+// Elapsed time: 56 seconds
+selectCodeEditor("Draw_Waveform_History.v", 110, 258); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 225, 249); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 32 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Save Project"); // aj (ck)
+selectCodeEditor("Draw_Waveform_History.v", 332, 217); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 216, 248); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+selectCodeEditor("Draw_Waveform_History.v", 101, 150); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 117, 166); // ce (w, ck)
+// Elapsed time: 69 seconds
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13); // u (O, ck)
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+selectCodeEditor("Voice_Scope_TOP.v", 145, 83); // ce (w, ck)
+selectCodeEditor("Voice_Scope_TOP.v", 145, 83, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// [GUI Memory]: 129 MB (+1699kb) [01:12:02]
+// Elapsed time: 36 seconds
+selectCodeEditor("Draw_Waveform_History.v", 234, 125); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 20:09:41 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 20:09:41 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 27 seconds
+selectCodeEditor("Draw_Waveform_History.v", 318, 111); // ce (w, ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 50 MB. Current time: 4/5/19 8:11:00 PM SGT
+// Elapsed time: 58 seconds
+selectCodeEditor("Draw_Waveform_History.v", 249, 270); // ce (w, ck)
+// Elapsed time: 68 seconds
+selectCodeEditor("Draw_Waveform_History.v", 353, 311); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 505ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 467 seconds
+selectCodeEditor("Draw_Waveform_History.v", 248, 337); // ce (w, ck)
+// ah (ck): Bitstream Generation Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183756765A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+selectCodeEditor("Draw_Waveform_History.v", 414, 223); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Draw_Waveform_History.v", 388, 202); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Draw_Waveform_History.v", 155, 248); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 201, 251); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 197, 248); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 115, 162); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("Draw_Waveform_History.v", 368, 166); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 369, 167); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 356, 165); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 384, 176); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 155, 165); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 428, 166); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 399, 184); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 401, 183); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 401, 183, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 402, 184); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 391, 178); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 384, 198); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 399, 197); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 399, 197, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Draw_Waveform_History.v", 392, 197); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 364, 212); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 373, 214); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 378, 214); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 383, 215); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 370, 227); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 373, 228); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 388, 227); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 379, 229); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 382, 244); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 387, 246); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 403, 246); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 404, 246); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 386, 264); // ce (w, ck)
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 480, 238); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 20:22:27 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 20:22:27 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_FAILED
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("Draw_Waveform_History.v", 526, 157); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 356, 300); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 138, 248); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 138, 248, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 154, 249); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 152, 244); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 154, 280); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 136, 254); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 144, 254); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 154, 250); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 152, 281); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 156, 313); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Draw_Waveform_History.v", 216, 206); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+selectCodeEditor("Draw_Waveform_History.v", 303, 250); // ce (w, ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 20:23:22 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 20:23:22 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+// Elapsed time: 82 seconds
+selectCodeEditor("Draw_Waveform_History.v", 448, 95); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 448, 95, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// A (ck): No Implementation Results Available: addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: FILE_SET_CHANGE
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Launch Runs"); // f (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 20:25:04 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 20:25:04 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectCodeEditor("Draw_Waveform_History.v", 188, 97, false, false, true, false, false); // ce (w, ck) - Alt Key
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 633, 30); // dn (ae, ck)
+selectCodeEditor("Draw_Waveform_History.v", 116, 75); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 116, 89); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 116, 89, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 34 seconds
+selectCodeEditor("Draw_Waveform_History.v", 193, 244); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 193, 244, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 34 seconds
+selectCodeEditor("Draw_Waveform_History.v", 381, 80); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 381, 80, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("Draw_Waveform_History.v", 454, 78); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 454, 78, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 494, 306); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 324, 50); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 324, 50, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("Draw_Waveform_History.v", 457, 194); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 457, 194, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 228, 41); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Draw_Waveform_History.v", 367, 40); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 367, 40, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 470, 194); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 206, 193, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("Draw_Waveform_History.v", 239, 207); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 238, 197); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 435, 194); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 209, 192); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 208, 194, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 322, 212); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 384, 191); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 391, 193); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 140, 202); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 148, 191); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 148, 190, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 376, 209); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectTab((HResource) null, (HResource) null, "Serial I/O Scans", 3); // aE (Q, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 614ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 130 seconds
+selectCodeEditor("Draw_Waveform_History.v", 170, 223); // ce (w, ck)
+// Elapsed time: 156 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), fc : Freq_Counter (Freq_Counter.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), fc : Freq_Counter (Freq_Counter.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Freq_Counter.v", 201, 213); // ce (w, ck)
+selectCodeEditor("Freq_Counter.v", 201, 213, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Freq_Counter.v", 278, 207); // ce (w, ck)
+selectCodeEditor("Freq_Counter.v", 278, 208, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("Freq_Counter.v", 124, 158); // ce (w, ck)
+selectCodeEditor("Freq_Counter.v", 121, 158, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Freq_Counter.v", 113, 183); // ce (w, ck)
+selectCodeEditor("Freq_Counter.v", 113, 183, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Freq_Counter.v", 197, 166); // ce (w, ck)
+selectCodeEditor("Freq_Counter.v", 197, 166, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("Freq_Counter.v", 384, 18); // ce (w, ck)
+selectCodeEditor("Freq_Counter.v", 385, 18, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 86 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: FILE_SET_CHANGE
+// f (ck): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 205ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 20:36:26 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Draw_Waveform_History.v", 386, 162); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 386, 162, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 391, 224); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 411, 266); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 411, 266, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 19 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ck): Settings: addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+dismissDialog("Settings"); // C (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 20:37:16 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 20:37:16 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectCodeEditor("Draw_Waveform_History.v", 506, 259); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("Draw_Waveform_History.v", 51, 73); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 230, 76); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 117, 75); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 237, 77); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 176, 77); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("Draw_Waveform_History.v", 225, 107); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 127, 79); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 369, 78); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 384, 79); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v), wave_h : Draw_Waveform_History (Draw_Waveform_History.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Draw_Waveform_Mode (Draw_Waveform_Mode.v)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Draw_Waveform_Mode (Draw_Waveform_Mode.v)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Draw_Waveform_Mode (Draw_Waveform_Mode.v)]", 17, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("Draw_Waveform_Mode.v", 215, 198); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_Mode.v", 43, 211); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Freq_Counter.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("Draw_Waveform_History.v", 653, 87); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 197, 262); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 753, 267); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 194, 266); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 274, 319); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 210, 313); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 126, 127); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Draw_Waveform_History.v", 218, 114); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 189, 111); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 401, 109); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 99, 269); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 102, 254); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 96, 263); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 70 MB. Current time: 4/5/19 8:41:01 PM SGT
+selectCodeEditor("Draw_Waveform_History.v", 127, 267); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 94, 267); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 185, 265); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Draw_Waveform_History.v", 319, 253); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 125, 180); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 192, 183); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 189, 161); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("Draw_Waveform_History.v", 65, 267); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 208, 265); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 200, 266); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Draw_Waveform_History.v", 187, 62); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 237, 101); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 44, 79); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 159, 79); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("Draw_Waveform_History.v", 125, 76); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 839ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 107 seconds
+selectCodeEditor("Draw_Waveform_History.v", 351, 169); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 124, 127); // ce (w, ck)
+// Elapsed time: 120 seconds
+selectCodeEditor("Draw_Waveform_History.v", 368, 151); // ce (w, ck)
+// Elapsed time: 92 seconds
+selectCodeEditor("Draw_Waveform_History.v", 149, 133); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 131, 113); // ce (w, ck)
+// Elapsed time: 44 seconds
+selectCodeEditor("Draw_Waveform_History.v", 402, 143); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 95, 110); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 169, 110); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 165, 110); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 68 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 21, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("Draw_Waveform_History.v", 309, 199); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Draw_Waveform_History.v", 329, 131); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("Draw_Waveform_History.v", 375, 100); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 466, 86); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 94, 262); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 120, 179); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 227, 179); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 355, 179); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 337, 178); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 609, 180); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 362, 199); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 363, 216); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 357, 233); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 349, 248); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 364, 266); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 364, 281); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 632, 195); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 11 seconds
+selectCodeEditor("Draw_Waveform_History.v", 571, 218); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 20:52:20 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 20:52:20 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+// Elapsed time: 99 seconds
+selectCodeEditor("Draw_Waveform_History.v", 250, 175); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("Draw_Waveform_History.v", 112, 162); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 202, 162); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("Draw_Waveform_History.v", 199, 54); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 201, 60); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 13 seconds
+selectCodeEditor("Draw_Waveform_History.v", 315, 194); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 295, 155); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 299, 184); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 21, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+selectCodeEditor("Draw_Waveform_History.v", 312, 218); // ce (w, ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 20:55:16 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 20:55:16 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+// Elapsed time: 281 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // i (A, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 604ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 365 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i (A, ck)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 343, 95); // n (q, ck)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 407, 103); // n (q, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Draw_Waveform_History.v", 253, 284); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 515, 275); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 270, 298); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 547, 246); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 271, 264); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 273, 250); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 273, 250, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 275, 260); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 275, 260, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 269, 276); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 269, 276, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 261, 295); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 261, 295, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 272, 312); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 272, 312, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 274, 325); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 274, 325, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 519, 230); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 519, 230, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'c'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 547, 247); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 547, 247, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 551, 264); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 551, 264, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 539, 283); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 539, 283, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 539, 300); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 539, 300, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 541, 314); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 541, 314, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 549, 336); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 549, 336, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Draw_Waveform_History.v", 'v'); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 548, 319); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// TclEventType: DG_GRAPH_GENERATED
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 21:07:35 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 21:07:35 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+// bx (ck):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 201 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("Draw_Waveform_History.v", 207, 298); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 73 MB. Current time: 4/5/19 9:11:01 PM SGT
+selectCodeEditor("Draw_Waveform_History.v", 638, 230); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 398, 247); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 671, 246); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 391, 267); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 670, 262); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 664, 262); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 664, 262, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 390, 280); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 657, 278); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 657, 278, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 379, 300); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 379, 300, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 653, 298); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 653, 298, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 393, 315); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 393, 315, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 666, 312); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 666, 312, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("Draw_Waveform_History.v", 391, 328); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 391, 328, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 665, 332); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 666, 331, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 653, 305); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 21:11:57 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 21:11:57 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+// Elapsed time: 191 seconds
+selectCodeEditor("Draw_Waveform_History.v", 527, 226); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 360, 64); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 359, 63, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 547ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 303 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_Mode.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Draw_Waveform_History.v", 1); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 114 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 94 seconds
+selectCodeEditor("Draw_Waveform_History.v", 299, 135); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Draw_Waveform_History.v", 357, 214); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 357, 214, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Draw_Waveform_History.v", 397, 173); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Draw_Waveform_History.v", 400, 156); // ce (w, ck)
+selectCodeEditor("Draw_Waveform_History.v", 367, 210); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 21:25:34 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 21:25:34 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+selectCodeEditor("Draw_Waveform_History.v", 254, 217); // ce (w, ck)
+// Elapsed time: 388 seconds
+selectCodeEditor("Draw_Waveform_History.v", 254, 217); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 909ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 14 seconds
+selectCodeEditor("Draw_Waveform_History.v", 102, 146); // ce (w, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 401 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 113 seconds
+selectCodeEditor("Draw_Waveform_History.v", 363, 109); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 77 MB. Current time: 4/5/19 9:41:01 PM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Draw_Waveform_History.v", 419, 106); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 75 MB. Current time: 4/5/19 11:39:32 PM SGT
+// Elapsed time: 7148 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Apr  5 23:40:15 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 23:40:15 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 602ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 359 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 422 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 106 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Voice_Scope_TOP (Voice_Scope_TOP.v)]", 1, true); // B (D, ck) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Voice_Scope_TOP.v", 0); // k (j, ck)
+selectCodeEditor("Voice_Scope_TOP.v", 39, 127); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: FILE_SET_CHANGE
+// f (ck): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 365ms to process. Increasing delay to 2000 ms.
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 23:55:23 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Reset to Previous Step : addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 310ms to process. Increasing delay to 2000 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // u (O, ck) - Double Click - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 15 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr  5 23:55:51 2019] Launched synth_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/runme.log [Fri Apr  5 23:55:51 2019] Launched impl_1... Run output will be captured here: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 20 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)

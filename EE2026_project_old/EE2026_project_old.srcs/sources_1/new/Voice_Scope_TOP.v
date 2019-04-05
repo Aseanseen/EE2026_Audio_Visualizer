@@ -116,7 +116,6 @@ module Voice_Scope_TOP(
     wire [11:0] grid;
     wire [11:0] ticks;
     
-    //if clk_wire does not work, default back to 30Hz clock
     Colour_Selector cs(clk_wire, CLRSTATE, background, waveform, axes, grid, ticks);
    
     //VGA Waveforms
@@ -154,10 +153,12 @@ module Voice_Scope_TOP(
     wire [3:0] VGA_Green_grid;
     wire [3:0] VGA_Blue_grid;
         
-    Draw_Background dbg(CLOCK, VGA_HORZ_COORD, VGA_VERT_COORD, mouseXPos, mouseYPos, mouseLeft, CLRSTATE, WAVEMODE, circleCounter, background, axes, grid, ticks, VGA_Red_grid, VGA_Green_grid, VGA_Blue_grid);   
+    wire overlay;
+   
+    Draw_Background dbg(CLOCK, VGA_HORZ_COORD, VGA_VERT_COORD, mouseXPos, mouseYPos, mouseLeft, CLRSTATE, WAVEMODE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, circleCounter, background, axes, grid, ticks, VGA_Red_grid, VGA_Green_grid, VGA_Blue_grid, overlay);   
            
     //VGA Display
-    VGA_DISPLAY vga(CLOCK, VGA_Red_waveform, VGA_Green_waveform, VGA_Blue_waveform, VGA_Red_grid, VGA_Green_grid, VGA_Blue_grid,
+    VGA_DISPLAY vga(CLOCK, VGA_Red_waveform, VGA_Green_waveform, VGA_Blue_waveform, VGA_Red_grid, VGA_Green_grid, VGA_Blue_grid, overlay,
     VGA_HORZ_COORD, VGA_VERT_COORD, vgaRed, vgaGreen, vgaBlue, Vsync, Hsync, CLK_VGA);
     
 endmodule

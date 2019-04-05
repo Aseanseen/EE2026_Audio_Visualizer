@@ -75,26 +75,31 @@ module Mode_Selector(
         if (MOUSELEFT && ~mouseLastState) begin
             //Color Selector
             if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 868 && MOUSEY < 894) begin
+                mode <= 1;
                 clrState <= 1;
                 clrPrev <= 1;
             end
             
             else if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 898 && MOUSEY < 924) begin
+                mode <= 1;
                 clrState <= 2;
                 clrPrev <= 2;
             end
             
             else if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 928 && MOUSEY < 954) begin
+                mode <= 1;  
                 clrState <= 3;
                 clrPrev <= 3;
             end
             
             else if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 958 && MOUSEY < 984) begin
+                mode <= 1;
                 clrState <= 4;
                 clrPrev <= 4;
             end
             
             else if (MOUSEX >= 1220 && MOUSEX < 1265 && MOUSEY >= 988 && MOUSEY < 1014) begin
+                mode <= 1;
                 clrState <= 5;
                 clrPrev <= 5;
             end
@@ -103,6 +108,7 @@ module Mode_Selector(
             //wave
             //wave norm
             else if (MOUSEX >= 15 && MOUSEX < 60 && MOUSEY >= 898 && MOUSEY < 924) begin
+                mode <= 1;
                 waveMode <= 1;
                 waveModePrev <= 1;
                 waveformState <= 1;
@@ -111,6 +117,7 @@ module Mode_Selector(
             
             //wave fill
             else if (MOUSEX >= 15 && MOUSEX < 60 && MOUSEY >= 928 && MOUSEY < 954) begin
+                mode <= 1;
                 waveMode <= 1;
                 waveModePrev <= 1;
                 waveformState <= 2;
@@ -119,6 +126,7 @@ module Mode_Selector(
             
             //wave bar
             else if (MOUSEX >= 15 && MOUSEX < 60 && MOUSEY >= 958 && MOUSEY < 984) begin
+                mode <= 1;
                 waveMode <= 1;
                 waveModePrev <= 1;
                 waveformState <= 3;
@@ -127,6 +135,7 @@ module Mode_Selector(
             
             //wave block
             else if (MOUSEX >= 15 && MOUSEX < 60 && MOUSEY >= 988 && MOUSEY < 1014) begin
+                mode <= 1;
                 waveMode <= 1;
                 waveModePrev <= 1;
                 waveformState <= 4;
@@ -136,6 +145,7 @@ module Mode_Selector(
             //hist
             //hist vol
             if (MOUSEX >= 80 && MOUSEX < 125 && MOUSEY >= 898 && MOUSEY < 924) begin
+                mode <= 1;
                 waveMode <= 2;
                 waveModePrev <= 2;
                 histState <= 1;
@@ -143,6 +153,7 @@ module Mode_Selector(
             end
             //hist freq
             else if (MOUSEX >= 80 && MOUSEX < 125 && MOUSEY >= 928 && MOUSEY < 954) begin
+                mode <= 1;
                 waveMode <= 2;
                 waveModePrev <= 2;
                 histState <= 2;
@@ -150,6 +161,7 @@ module Mode_Selector(
             end
             //hist nyannn
             else if (MOUSEX >= 80 && MOUSEX < 125 && MOUSEY >= 958 && MOUSEY < 984) begin
+                mode <= 1;
                 waveMode <= 2;
                 waveModePrev <= 2;
                 histState <= 3;
@@ -158,6 +170,7 @@ module Mode_Selector(
             
             //circ norm
             else if (MOUSEX >= 145 && MOUSEX < 190 && MOUSEY >= 898 && MOUSEY < 924) begin
+                mode <= 1;
                 waveMode <= 3;
                 waveModePrev <= 3;
                 circleState <= 1;
@@ -165,6 +178,7 @@ module Mode_Selector(
             end
             //circ slow
             else if (MOUSEX >= 145 && MOUSEX < 190 && MOUSEY >= 928 && MOUSEY < 954) begin
+                mode <= 1;
                 waveMode <= 3;
                 waveModePrev <= 3;
                 circleState <= 2;
@@ -172,6 +186,7 @@ module Mode_Selector(
             end
             //circ freq
             else if (MOUSEX >= 145 && MOUSEX < 190 && MOUSEY >= 958 && MOUSEY < 984) begin
+                mode <= 1;
                 waveMode <= 3;
                 waveModePrev <= 3;
                 circleState <= 3;
@@ -179,6 +194,7 @@ module Mode_Selector(
             end
             //circ freq slow
             else if (MOUSEX >= 145 && MOUSEX < 190 && MOUSEY >= 988 && MOUSEY < 1014) begin
+                mode <= 1;
                 waveMode <= 3;
                 waveModePrev <= 3;
                 circleState <= 4;
@@ -248,7 +264,7 @@ module Mode_Selector(
         end
         
         //parameter display counter, shows FREQ / VOL at the start
-        display1Hz <= (display1Hz >= 61 ? display1Hz : display1Hz + 1);
+        display1Hz <= (display1Hz >= 91 ? display1Hz : display1Hz + 1);
         
         //color state mode
         if (LSTATE == 1 && ~btnR && mode == 3) begin //button press left
@@ -362,17 +378,17 @@ module Mode_Selector(
         if (mode == 2) begin
         case (displayState)
             1: begin
-                word0 <= (display1Hz >= 60 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
-                word1 <= (display1Hz >= 60 ? FREQ1 : 27);
-                word2 <= (display1Hz >= 60 ? FREQ2 : 14);
-                word3 <= (display1Hz >= 60 ? FREQ3 : 26);
+                word0 <= (display1Hz >= 90 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
+                word1 <= (display1Hz >= 90 ? FREQ1 : 27);
+                word2 <= (display1Hz >= 90 ? FREQ2 : 14);
+                word3 <= (display1Hz >= 90 ? FREQ3 : 26);
             end
             
             2: begin
-                word0 <= (display1Hz >= 60 ? SPERCENT0 : 31);
-                word1 <= (display1Hz >= 60 ? SPERCENT1 : 24);
-                word2 <= (display1Hz >= 60 ? SPERCENT2 : 21);
-                word3 <= (display1Hz >= 60 ? 37 : 37);
+                word0 <= (display1Hz >= 90 ? SPERCENT0 : 31);
+                word1 <= (display1Hz >= 90 ? SPERCENT1 : 24);
+                word2 <= (display1Hz >= 90 ? SPERCENT2 : 21);
+                word3 <= (display1Hz >= 90 ? 37 : 37);
             end
             
         endcase

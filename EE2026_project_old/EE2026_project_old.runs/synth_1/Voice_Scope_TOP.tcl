@@ -34,6 +34,7 @@ read_verilog -library xil_defaultlib {
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Button_Pulser.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Color_Selector.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Mao.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_History.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Mode.v
@@ -47,6 +48,7 @@ read_verilog -library xil_defaultlib {
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/char.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/clk_30hz.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/clk_div.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/nyan_clk.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/pc_vga_8x16.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/pc_vga_8x16_00_7F.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/pc_vga_8x16_80_FF.v
