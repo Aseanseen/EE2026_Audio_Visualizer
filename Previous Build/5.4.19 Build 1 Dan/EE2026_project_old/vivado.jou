@@ -11,3 +11,15 @@
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/5.4.19 Build 1 Dan/EE2026_project_old/EE2026_project_old.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/5.4.19 Build 1 Dan/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/5.4.19 Build 1 Dan/EE2026_project_old/EE2026_project_old.runs/impl_1/Voice_Scope_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

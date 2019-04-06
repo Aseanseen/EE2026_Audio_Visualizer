@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sat Apr  6 01:35:15 2019
+| Date             : Sat Apr  6 10:24:14 2019
 | Host             : LAPTOP-MNQMD5TA running 64-bit major release  (build 9200)
 | Command          : report_power -file Voice_Scope_TOP_power_routed.rpt -pb Voice_Scope_TOP_power_summary_routed.pb -rpx Voice_Scope_TOP_power_routed.rpx
 | Design           : Voice_Scope_TOP
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.445        |
+| Total On-Chip Power (W)  | 0.454        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.370        |
-| Device Static (W)        | 0.075        |
+| Dynamic (W)              | 0.379        |
+| Device Static (W)        | 0.076        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 82.8         |
-| Junction Temperature (C) | 27.2         |
+| Max Ambient (C)          | 82.7         |
+| Junction Temperature (C) | 27.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,21 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.013 |        5 |       --- |             --- |
-| Slice Logic              |     0.044 |    29011 |       --- |             --- |
-|   LUT as Logic           |     0.037 |     8074 |     20800 |           38.82 |
-|   F7/F8 Muxes            |     0.002 |     2529 |     32600 |            7.76 |
-|   Register               |     0.002 |    15058 |     41600 |           36.20 |
-|   CARRY4                 |     0.002 |      906 |      8150 |           11.12 |
+| Slice Logic              |     0.046 |    28967 |       --- |             --- |
+|   LUT as Logic           |     0.039 |     8043 |     20800 |           38.67 |
+|   F7/F8 Muxes            |     0.003 |     2529 |     32600 |            7.76 |
+|   Register               |     0.002 |    15056 |     41600 |           36.19 |
+|   CARRY4                 |     0.002 |      911 |      8150 |           11.18 |
 |   LUT as Distributed RAM |    <0.001 |      560 |      9600 |            5.83 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |     0.000 |      448 |       --- |             --- |
-| Signals                  |     0.070 |    21803 |       --- |             --- |
+|   Others                 |     0.000 |      454 |       --- |             --- |
+| Signals                  |     0.077 |    21739 |       --- |             --- |
 | Block RAM                |     0.085 |     41.5 |        50 |           83.00 |
 | MMCM                     |     0.123 |        1 |         5 |           20.00 |
-| DSPs                     |     0.015 |       20 |        90 |           22.22 |
-| I/O                      |     0.018 |       52 |       106 |           49.06 |
-| Static Power             |     0.075 |          |           |                 |
-| Total                    |     0.445 |          |           |                 |
+| DSPs                     |     0.014 |       20 |        90 |           22.22 |
+| I/O                      |     0.021 |       52 |       106 |           49.06 |
+| Static Power             |     0.076 |          |           |                 |
+| Total                    |     0.454 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,9 +77,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.234 |       0.222 |      0.012 |
+| Vccint    |       1.000 |     0.241 |       0.229 |      0.012 |
 | Vccaux    |       1.800 |     0.082 |       0.069 |      0.013 |
-| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
+| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -148,7 +148,7 @@ Table of Contents
 +---------------------------------+-----------+
 | Name                            | Power (W) |
 +---------------------------------+-----------+
-| Voice_Scope_TOP                 |     0.370 |
+| Voice_Scope_TOP                 |     0.379 |
 |   clk_30                        |    <0.001 |
 |   cs                            |    <0.001 |
 |   dbg                           |     0.092 |
@@ -414,7 +414,7 @@ Table of Contents
 |     down                        |    <0.001 |
 |       dff1                      |    <0.001 |
 |       dff2                      |    <0.001 |
-|     left__0                     |    <0.001 |
+|     left                        |    <0.001 |
 |       dff1                      |    <0.001 |
 |       dff2                      |    <0.001 |
 |     right                       |    <0.001 |
@@ -431,8 +431,8 @@ Table of Contents
 |   vc                            |    <0.001 |
 |   vga                           |     0.165 |
 |     VGA_CLK_108M                |     0.124 |
-|     VGA_CONTROL                 |     0.039 |
-|   wave                          |     0.002 |
+|     VGA_CONTROL                 |     0.040 |
+|   wave                          |     0.007 |
 |     memory_reg_r1_0_63_0_2      |    <0.001 |
 |     memory_reg_r1_0_63_3_5      |    <0.001 |
 |     memory_reg_r1_0_63_6_8      |    <0.001 |
@@ -593,8 +593,8 @@ Table of Contents
 |     memory_reg_r2_960_1023_3_5  |    <0.001 |
 |     memory_reg_r2_960_1023_6_8  |    <0.001 |
 |     memory_reg_r2_960_1023_9_9  |    <0.001 |
-|   wave_c                        |     0.021 |
-|   wave_h                        |     0.048 |
+|   wave_c                        |     0.019 |
+|   wave_h                        |     0.051 |
 +---------------------------------+-----------+
 
 

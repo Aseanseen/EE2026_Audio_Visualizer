@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Apr  6 01:25:47 2019
-# Process ID: 16820
+# Start of session at: Sat Apr  6 10:16:19 2019
+# Process ID: 13744
 # Current directory: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1
 # Command line: vivado.exe -log Voice_Scope_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Voice_Scope_TOP.tcl
 # Log file: D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/Voice_Scope_TOP.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3152 
+INFO: Helper process launched with PID 8940 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.926 ; gain = 99.590
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 358.172 ; gain = 101.414
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Voice_Scope_TOP' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Scope_TOP.v:23]
 INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/clk_div.v:23]
@@ -428,7 +428,7 @@ WARNING: [Synth 8-3331] design Sound_Lvl_Converter has unconnected port freq[1]
 WARNING: [Synth 8-3331] design Sound_Lvl_Converter has unconnected port freq[0]
 WARNING: [Synth 8-3331] design Freq_Counter has unconnected port CLOCK
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 490.520 ; gain = 233.184
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 491.359 ; gain = 234.602
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -458,10 +458,10 @@ WARNING: [Synth 8-3295] tying undriven pin mc:setmax_y to constant 0 [D:/NUS/ee2
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 490.520 ; gain = 233.184
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 491.359 ; gain = 234.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 490.520 ; gain = 233.184
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 491.359 ; gain = 234.602
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 167 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
@@ -481,22 +481,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 166 instances were transformed.
   RAMB16_S1 => RAMB18E1: 166 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 876.004 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 874.711 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 876.004 ; gain = 618.668
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 874.711 ; gain = 617.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 876.004 ; gain = 618.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 874.711 ; gain = 617.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 876.004 ; gain = 618.668
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 874.711 ; gain = 617.953
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "memory" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "FREQ" won't be mapped to RAM because it is too sparse
@@ -680,7 +680,7 @@ reset_enable_reporting_wait_ack | 0000000010000000000000000000000000000 |       
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MouseCtl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 876.004 ; gain = 618.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 874.711 ; gain = 617.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -689,8 +689,8 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |1     |Draw_Background__GB0  |           1|     21646|
 |2     |Draw_Background__GB1  |           1|     16879|
-|3     |Draw_Waveform_History |           1|     27535|
-|4     |Voice_Scope_TOP__GCB1 |           1|     10919|
+|3     |Voice_Scope_TOP__GCB0 |           1|     29753|
+|4     |Voice_Scope_TOP__GCB1 |           1|      8928|
 |5     |Voice_Scope_TOP__GCB2 |           1|     14388|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -702,15 +702,16 @@ Detailed RTL Component Info :
 	   2 Input     30 Bit       Adders := 1     
 	   2 Input     26 Bit       Adders := 1     
 	   2 Input     24 Bit       Adders := 1     
+	   3 Input     23 Bit       Adders := 1     
 	   2 Input     21 Bit       Adders := 3     
 	   3 Input     14 Bit       Adders := 170   
 	   2 Input     13 Bit       Adders := 4     
 	   3 Input     12 Bit       Adders := 166   
 	   2 Input     12 Bit       Adders := 4     
 	 100 Input     12 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 18    
 	   3 Input     11 Bit       Adders := 4     
-	   2 Input     10 Bit       Adders := 11    
+	   2 Input     11 Bit       Adders := 18    
+	   2 Input     10 Bit       Adders := 12    
 	   3 Input      9 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
@@ -745,7 +746,7 @@ Detailed RTL Component Info :
 	   2 Input     30 Bit        Muxes := 18    
 	   2 Input     26 Bit        Muxes := 1     
 	   2 Input     24 Bit        Muxes := 1     
-	   2 Input     21 Bit        Muxes := 6     
+	   2 Input     21 Bit        Muxes := 10    
 	  17 Input     17 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 18    
 	   2 Input     14 Bit        Muxes := 2     
@@ -778,9 +779,9 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 10    
 	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 235   
-	   3 Input      1 Bit        Muxes := 3     
 	   6 Input      1 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 3     
 	  17 Input      1 Bit        Muxes := 4     
 	  37 Input      1 Bit        Muxes := 20    
 	  40 Input      1 Bit        Muxes := 1     
@@ -801,19 +802,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   3 Input      4 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 3     
-Module Draw_Waveform_History 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 15    
-	   2 Input     10 Bit       Adders := 7     
-+---Registers : 
-	               10 Bit    Registers := 1285  
-+---Muxes : 
-	   2 Input     10 Bit        Muxes := 7     
-	   2 Input      4 Bit        Muxes := 25    
-	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 12    
-	   3 Input      1 Bit        Muxes := 1     
 Module pc_vga_8x16__1 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -1585,37 +1573,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-Module Draw_Waveform_Circle 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 3     
-	   2 Input     21 Bit       Adders := 3     
-	   2 Input     13 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
-+---Registers : 
-	               21 Bit    Registers := 4     
-	               10 Bit    Registers := 9     
-	                6 Bit    Registers := 2     
-+---Multipliers : 
-	                32x32  Multipliers := 2     
-+---Muxes : 
-	   2 Input     21 Bit        Muxes := 6     
-	   2 Input     10 Bit        Muxes := 50    
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 60    
-Module VGA_CONTROL 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 2     
-Module VGA_DISPLAY 
-Detailed RTL Component Info : 
-+---Registers : 
-	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	   2 Input      4 Bit        Muxes := 3     
 Module Draw_Waveform_Mode 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1645,6 +1602,51 @@ Detailed RTL Component Info :
 	   6 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 13    
 	   4 Input      1 Bit        Muxes := 3     
+Module Draw_Waveform_History 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 15    
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               10 Bit    Registers := 1285  
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 25    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+Module Draw_Waveform_Circle 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     23 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 4     
+	               10 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 50    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 60    
+Module VGA_CONTROL 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module VGA_DISPLAY 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
 Module Colour_Selector 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1840,10 +1842,10 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:252]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/Draw_Background.v:252]
 DSP Report: Generating DSP Condition_For_Arc03, operation Mode is: A*B.
@@ -1864,22 +1866,6 @@ DSP Report: operator Condition_For_Arc03 is absorbed into DSP Condition_For_Arc0
 DSP Report: Generating DSP Condition_For_Arc03, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator Condition_For_Arc03 is absorbed into DSP Condition_For_Arc03.
 DSP Report: operator Condition_For_Arc03 is absorbed into DSP Condition_For_Arc03.
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port SW0
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[5]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[4]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[3]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[2]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[1]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port mode[0]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port wavemode[2]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port wavemode[1]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port wavemode[0]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port waveformstate[2]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port waveformstate[1]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port waveformstate[0]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port circlestate[2]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port circlestate[1]
-WARNING: [Synth 8-3331] design Draw_Waveform_History has unconnected port circlestate[0]
 INFO: [Synth 8-4471] merging register 'cur_reg[20:0]' into 'cur_reg[20:0]' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:57]
 INFO: [Synth 8-4471] merging register 'memory_reg[1][9:0]' into 'memory_reg[1][9:0]' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
 INFO: [Synth 8-4471] merging register 'memory_reg[2][9:0]' into 'memory_reg[2][9:0]' [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
@@ -1898,8 +1884,8 @@ WARNING: [Synth 8-6014] Unused sequential element memory_reg[5] was removed.  [D
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[6] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[7] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:104]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:104]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:107]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:107]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Draw_Waveform_Circle.v:61]
@@ -1964,98 +1950,15 @@ DSP Report: Generating DSP VGA_Red_waveform10, operation Mode is: A2*B2.
 DSP Report: register memory_reg[0] is absorbed into DSP VGA_Red_waveform10.
 DSP Report: register memory_reg[0] is absorbed into DSP VGA_Red_waveform10.
 DSP Report: operator VGA_Red_waveform10 is absorbed into DSP VGA_Red_waveform10.
-WARNING: [Synth 8-6014] Unused sequential element mc/zpos_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:1007]
-WARNING: [Synth 8-6014] Unused sequential element mc/new_event_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:606]
-INFO: [Synth 8-5545] ROM "mc/periodic_check_tick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "mc/timeout" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port wavemode[2]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port wavemode[1]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port wavemode[0]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port histstate[2]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port histstate[1]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port histstate[0]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port circlestate[2]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port circlestate[1]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port circlestate[0]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[9]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[8]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[7]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[6]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[5]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[4]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[3]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[2]
-WARNING: [Synth 8-3331] design Draw_Waveform_Mode has unconnected port freq_sample[1]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[10]' (FD) to 'wave_c/val_reg[11]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[11]' (FD) to 'wave_c/val_reg[12]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[12]' (FD) to 'wave_c/val_reg[13]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[13]' (FD) to 'wave_c/val_reg[14]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[14]' (FD) to 'wave_c/val_reg[15]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[15]' (FD) to 'wave_c/val_reg[16]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[16]' (FD) to 'wave_c/val_reg[17]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[17]' (FD) to 'wave_c/val_reg[18]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[18]' (FD) to 'wave_c/val_reg[19]'
-INFO: [Synth 8-3886] merging instance 'wave_c/val_reg[19]' (FD) to 'wave_c/val_reg[20]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[18]' (FDRE) to 'wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[20]' (FDRE) to 'wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[19]' (FDRE) to 'wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[17]' (FDRE) to 'wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[15]' (FDRE) to 'wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[16]' (FDRE) to 'wave_c/cur_reg[10]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[10]' (FDRE) to 'wave_c/cur_reg[11]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[11]' (FDRE) to 'wave_c/cur_reg[12]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[12]' (FDRE) to 'wave_c/cur_reg[13]'
-INFO: [Synth 8-3886] merging instance 'wave_c/cur_reg[13]' (FDRE) to 'wave_c/cur_reg[14]'
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[1]' (FDE) to 'cs/ticks_reg[9]'
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[4]' (FDE) to 'cs/ticks_reg[8]'
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[5]' (FDE) to 'cs/ticks_reg[8]'
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[6]' (FDE) to 'cs/ticks_reg[10]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[0]' (FDE) to 'cs/grid_reg[2]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[1]' (FDE) to 'cs/grid_reg[3]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[6]' (FDE) to 'cs/grid_reg[8]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[7]' (FDE) to 'cs/grid_reg[9]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[8]' (FDE) to 'cs/grid_reg[10]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[9]' (FDE) to 'cs/grid_reg[11]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[11]' (FDE) to 'cs/background_reg[11]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[0]' (FDE) to 'cs/axes_reg[3]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[2]' (FDE) to 'cs/axes_reg[3]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[4]' (FDE) to 'cs/axes_reg[6]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[5]' (FDE) to 'cs/axes_reg[11]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[7]' (FDE) to 'cs/axes_reg[11]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[8]' (FDE) to 'cs/background_reg[11]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[10]' (FDE) to 'cs/background_reg[11]'
-INFO: [Synth 8-3886] merging instance 'cs/background_reg[3]' (FDE) to 'cs/background_reg[11]'
-INFO: [Synth 8-3886] merging instance 'cs/background_reg[4]' (FDE) to 'cs/background_reg[8]'
-INFO: [Synth 8-3886] merging instance 'cs/background_reg[7]' (FDE) to 'cs/background_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cs/\background_reg[11] )
-INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[0]' (FDE) to 'cs/waveform_reg[2]'
-INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[1]' (FDE) to 'cs/waveform_reg[5]'
-INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[2]' (FDE) to 'cs/waveform_reg[4]'
-INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[3]' (FDE) to 'cs/waveform_reg[7]'
-INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[4]' (FDE) to 'cs/waveform_reg[6]'
-INFO: [Synth 8-3886] merging instance 'cs/waveform_reg[8]' (FDE) to 'cs/waveform_reg[10]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (cs/\waveform_reg[11] )
-WARNING: [Synth 8-3332] Sequential element (clk_vgaReg_reg) is unused and will be removed from module VGA_DISPLAY.
-WARNING: [Synth 8-3332] Sequential element (waveform_reg[11]) is unused and will be removed from module Colour_Selector.
-WARNING: [Synth 8-3332] Sequential element (background_reg[11]) is unused and will be removed from module Colour_Selector.
-WARNING: [Synth 8-3332] Sequential element (mc/middle_down_reg) is unused and will be removed from module Mouse_Controller.
-WARNING: [Synth 8-3332] Sequential element (mc/middle_reg) is unused and will be removed from module Mouse_Controller.
-WARNING: [Synth 8-3332] Sequential element (mc/right_down_reg) is unused and will be removed from module Mouse_Controller.
-WARNING: [Synth 8-3332] Sequential element (mc/right_reg) is unused and will be removed from module Mouse_Controller.
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[0]' (FDE) to 'cs/axes_reg[6]'
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[3]' (FDE) to 'cs/waveform_reg[5]'
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[7]' (FDE) to 'cs/background_reg[10]'
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[8]' (FDE) to 'cs/grid_reg[3]'
-INFO: [Synth 8-3886] merging instance 'cs/ticks_reg[10]' (FDE) to 'cs/grid_reg[10]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[2]' (FDE) to 'cs/background_reg[9]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[3]' (FDE) to 'cs/background_reg[8]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[5]' (FDE) to 'cs/waveform_reg[6]'
-INFO: [Synth 8-3886] merging instance 'cs/grid_reg[10]' (FDE) to 'cs/background_reg[2]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[1]' (FDE) to 'cs/background_reg[6]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[3]' (FDE) to 'cs/background_reg[10]'
-INFO: [Synth 8-3886] merging instance 'cs/axes_reg[11]' (FDE) to 'cs/background_reg[2]'
-INFO: [Synth 8-3886] merging instance 'cs/background_reg[0]' (FDE) to 'cs/waveform_reg[9]'
+WARNING: [Synth 8-6014] Unused sequential element vga/clk_vgaReg_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_DISPLAY.v:78]
+WARNING: [Synth 8-6014] Unused sequential element mc/mc/zpos_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:1007]
+WARNING: [Synth 8-6014] Unused sequential element mc/mc/middle_down_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:421]
+WARNING: [Synth 8-6014] Unused sequential element mc/mc/middle_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:421]
+WARNING: [Synth 8-6014] Unused sequential element mc/mc/right_down_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:423]
+WARNING: [Synth 8-6014] Unused sequential element mc/mc/right_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:423]
+WARNING: [Synth 8-6014] Unused sequential element mc/mc/new_event_reg was removed.  [D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/MouseCtl.vhd:606]
+INFO: [Synth 8-5545] ROM "mc/mc/periodic_check_tick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mc/mc/timeout" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "STATE0" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "waveModePrev" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -2067,37 +1970,86 @@ INFO: [Synth 8-5546] ROM "freq0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "freq1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sound_converter/maxVol" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sound_converter/percent1" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3886] merging instance 'fc/FREQ_reg[12]' (FDRE) to 'fc/FREQ_reg[13]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (fc/\FREQ_reg[13] )
-INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[5]' (FDRE) to 'sound_converter/percent0_reg[0]'
-INFO: [Synth 8-3886] merging instance 'sound_converter/percent1_reg[5]' (FDRE) to 'sound_converter/percent2_reg[5]'
-INFO: [Synth 8-3886] merging instance 'sound_converter/percent2_reg[5]' (FDRE) to 'sound_converter/percent2_reg[4]'
-INFO: [Synth 8-3886] merging instance 'sound_converter/sound1_reg[5]' (FDE) to 'sound_converter/sound1_reg[4]'
-INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[3]' (FDRE) to 'sound_converter/percent0_reg[0]'
-INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[0]' (FDRE) to 'sound_converter/percent0_reg[1]'
-INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[2]' (FDRE) to 'sound_converter/percent0_reg[1]'
-INFO: [Synth 8-3886] merging instance 'sound_converter/percent0_reg[4]' (FDRE) to 'sound_converter/percent0_reg[1]'
-INFO: [Synth 8-3886] merging instance 'sound_converter/percent1_reg[4]' (FDRE) to 'sound_converter/percent2_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sound_converter/percent2_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sound_converter/sound1_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sound_converter/percent0_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/i_2/\seg_d/COUNTER_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/\waveModePrev_reg[2] )
-INFO: [Synth 8-3886] merging instance 'fc/FREQ100HZ_reg[12]' (FDRE) to 'fc/FREQ100HZ_reg[13]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (fc/\FREQ100HZ_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (fc/\freq0_reg[3] )
-INFO: [Synth 8-3886] merging instance 'fc/FREQ0_reg[3]' (FDE) to 'fc/freq0_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mode_s/\word2_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (fc/\freq0_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[10]' (FD) to 'i_1/wave_c/val_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[11]' (FD) to 'i_1/wave_c/val_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[12]' (FD) to 'i_1/wave_c/val_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[13]' (FD) to 'i_1/wave_c/val_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[14]' (FD) to 'i_1/wave_c/val_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[15]' (FD) to 'i_1/wave_c/val_reg[16]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[16]' (FD) to 'i_1/wave_c/val_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[17]' (FD) to 'i_1/wave_c/val_reg[18]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[18]' (FD) to 'i_1/wave_c/val_reg[19]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/val_reg[19]' (FD) to 'i_1/wave_c/val_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[18]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[20]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[19]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[17]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[15]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[16]' (FDRE) to 'i_1/wave_c/cur_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[10]' (FDRE) to 'i_1/wave_c/cur_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[11]' (FDRE) to 'i_1/wave_c/cur_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[12]' (FDRE) to 'i_1/wave_c/cur_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_1/wave_c/cur_reg[13]' (FDRE) to 'i_1/wave_c/cur_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[1]' (FDE) to 'i_1/cs/ticks_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[4]' (FDE) to 'i_1/cs/ticks_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[5]' (FDE) to 'i_1/cs/ticks_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[6]' (FDE) to 'i_1/cs/ticks_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[0]' (FDE) to 'i_1/cs/grid_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[1]' (FDE) to 'i_1/cs/grid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[6]' (FDE) to 'i_1/cs/grid_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[7]' (FDE) to 'i_1/cs/grid_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[8]' (FDE) to 'i_1/cs/grid_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[9]' (FDE) to 'i_1/cs/grid_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[11]' (FDE) to 'i_1/cs/background_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[0]' (FDE) to 'i_1/cs/axes_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[2]' (FDE) to 'i_1/cs/axes_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[4]' (FDE) to 'i_1/cs/axes_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[5]' (FDE) to 'i_1/cs/axes_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[7]' (FDE) to 'i_1/cs/axes_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[8]' (FDE) to 'i_1/cs/background_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[10]' (FDE) to 'i_1/cs/background_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/background_reg[3]' (FDE) to 'i_1/cs/background_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/background_reg[4]' (FDE) to 'i_1/cs/background_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/background_reg[7]' (FDE) to 'i_1/cs/background_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\cs/background_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[0]' (FDE) to 'i_1/cs/waveform_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[1]' (FDE) to 'i_1/cs/waveform_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[2]' (FDE) to 'i_1/cs/waveform_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[3]' (FDE) to 'i_1/cs/waveform_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[4]' (FDE) to 'i_1/cs/waveform_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/waveform_reg[8]' (FDE) to 'i_1/cs/waveform_reg[10]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\cs/waveform_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_2/fc/FREQ_reg[12]' (FDRE) to 'i_2/fc/FREQ_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/fc/\FREQ_reg[13] )
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[5]' (FDRE) to 'i_2/sound_converter/percent0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent1_reg[5]' (FDRE) to 'i_2/sound_converter/percent2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent2_reg[5]' (FDRE) to 'i_2/sound_converter/percent2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/sound1_reg[5]' (FDE) to 'i_2/sound_converter/sound1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[3]' (FDRE) to 'i_2/sound_converter/percent0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[0]' (FDRE) to 'i_2/sound_converter/percent0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[2]' (FDRE) to 'i_2/sound_converter/percent0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent0_reg[4]' (FDRE) to 'i_2/sound_converter/percent0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/percent1_reg[4]' (FDRE) to 'i_2/sound_converter/percent2_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\sound_converter/percent2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\sound_converter/sound1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\sound_converter/percent0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/i_2/\seg_d/COUNTER_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/\waveModePrev_reg[2] )
+INFO: [Synth 8-3886] merging instance 'i_2/fc/FREQ100HZ_reg[12]' (FDRE) to 'i_2/fc/FREQ100HZ_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/fc/\FREQ100HZ_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/fc/\freq0_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_2/fc/FREQ0_reg[3]' (FDE) to 'i_2/fc/freq0_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/mode_s/\word2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/fc/\freq0_reg[3] )
 WARNING: [Synth 8-3332] Sequential element (waveModePrev_reg[2]) is unused and will be removed from module Mode_Selector.
 WARNING: [Synth 8-3332] Sequential element (waveMode_reg[2]) is unused and will be removed from module Mode_Selector.
 WARNING: [Synth 8-3332] Sequential element (word2_reg[5]) is unused and will be removed from module Mode_Selector.
@@ -2147,10 +2099,20 @@ WARNING: [Synth 8-3332] Sequential element (freq3_reg[6]) is unused and will be 
 WARNING: [Synth 8-3332] Sequential element (freq3_reg[5]) is unused and will be removed from module Freq_Counter.
 WARNING: [Synth 8-3332] Sequential element (freq3_reg[4]) is unused and will be removed from module Freq_Counter.
 WARNING: [Synth 8-3332] Sequential element (freq0_reg[3]) is unused and will be removed from module Freq_Counter.
-INFO: [Synth 8-3886] merging instance 'sound_converter/sound0_reg[0]' (FDE) to 'sound_converter/led_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[0]' (FDE) to 'i_1/cs/axes_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[3]' (FDE) to 'i_1/cs/waveform_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[7]' (FDE) to 'i_1/cs/background_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[8]' (FDE) to 'i_1/cs/grid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/ticks_reg[10]' (FDE) to 'i_1/cs/grid_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[2]' (FDE) to 'i_1/cs/background_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[3]' (FDE) to 'i_1/cs/background_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/grid_reg[10]' (FDE) to 'i_1/cs/background_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/axes_reg[11]' (FDE) to 'i_1/cs/background_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/cs/background_reg[0]' (FDE) to 'i_1/cs/waveform_reg[9]'
 WARNING: [Synth 8-3332] Sequential element (FREQ100HZ_reg[0]) is unused and will be removed from module Freq_Counter.
+INFO: [Synth 8-3886] merging instance 'i_2/sound_converter/sound0_reg[0]' (FDE) to 'i_2/sound_converter/led_reg[9]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:49 . Memory (MB): peak = 876.004 ; gain = 618.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:22 . Memory (MB): peak = 978.008 ; gain = 721.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2161,15 +2123,16 @@ ROM:
 |Module Name | RTL Object | Depth x Width | Implemented As | 
 +------------+------------+---------------+----------------+
 |SEG_Decoder | seg        | 64x8          | LUT            | 
+|SEG_Decoder | seg        | 64x8          | LUT            | 
 +------------+------------+---------------+----------------+
 
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+------------+-----------+----------------------+-------------------------------+
-|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives                    | 
-+------------+------------+-----------+----------------------+-------------------------------+
-|wave        | memory_reg | Implied   | 2 K x 10             | RAM64X1D x 40  RAM64M x 120   | 
-+------------+------------+-----------+----------------------+-------------------------------+
++----------------+-----------------+-----------+----------------------+-------------------------------+
+|Module Name     | RTL Object      | Inference | Size (Depth x Width) | Primitives                    | 
++----------------+-----------------+-----------+----------------------+-------------------------------+
+|Voice_Scope_TOP | wave/memory_reg | Implied   | 2 K x 10             | RAM64X1D x 40  RAM64M x 120   | 
++----------------+-----------------+-----------+----------------------+-------------------------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 
@@ -2177,12 +2140,12 @@ DSP: Preliminary Mapping  Report (see note below)
 +---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name          | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Draw_Background__GB0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Draw_Background__GB0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Draw_Background__GB0 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Draw_Background__GB0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Draw_Background__GB0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Draw_Background__GB0 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Voice_Scope_TOP      | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Voice_Scope_TOP      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Voice_Scope_TOP      | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Voice_Scope_TOP      | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Voice_Scope_TOP      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Voice_Scope_TOP      | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Draw_Waveform_Circle | A2*B2          | 10     | 10     | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 0    | 
 |Draw_Waveform_Circle | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Draw_Waveform_Circle | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
@@ -2210,65 +2173,71 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Draw_Background__GB0  |           1|      2158|
-|2     |Draw_Background__GB1  |           1|       935|
-|3     |Draw_Waveform_History |           1|     26977|
-|4     |Voice_Scope_TOP__GCB1 |           1|      5875|
-|5     |Voice_Scope_TOP__GCB2 |           1|     10814|
+|1     |Draw_Background__GB0  |           1|      2044|
+|2     |Draw_Background__GB1  |           1|       939|
+|3     |Voice_Scope_TOP__GCB0 |           1|     29093|
+|4     |Voice_Scope_TOP__GCB1 |           1|      3865|
+|5     |Voice_Scope_TOP__GCB2 |           1|     10696|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:02:05 . Memory (MB): peak = 876.004 ; gain = 618.668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:31 ; elapsed = 00:02:35 . Memory (MB): peak = 978.008 ; gain = 721.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (grid_reg[4]) is unused and will be removed from module Colour_Selector.
+info: optimization accepted worst group hill climbing move (-10040.0/oG. 160.0ps)
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:16 ; elapsed = 00:02:55 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished Timing Optimization : Time (s): cpu = 00:02:57 ; elapsed = 00:03:01 . Memory (MB): peak = 993.582 ; gain = 736.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping  Report
-+------------+------------+-----------+----------------------+-------------------------------+
-|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives                    | 
-+------------+------------+-----------+----------------------+-------------------------------+
-|wave        | memory_reg | Implied   | 2 K x 10             | RAM64X1D x 40  RAM64M x 120   | 
-+------------+------------+-----------+----------------------+-------------------------------+
++----------------+-----------------+-----------+----------------------+-------------------------------+
+|Module Name     | RTL Object      | Inference | Size (Depth x Width) | Primitives                    | 
++----------------+-----------------+-----------+----------------------+-------------------------------+
+|Voice_Scope_TOP | wave/memory_reg | Implied   | 2 K x 10             | RAM64X1D x 40  RAM64M x 120   | 
++----------------+-----------------+-----------+----------------------+-------------------------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+----------------------+------------+----------+
-|      |RTL Partition         |Replication |Instances |
-+------+----------------------+------------+----------+
-|1     |Draw_Waveform_History |           1|     26964|
-|2     |Voice_Scope_TOP_GT0   |           1|     19497|
-+------+----------------------+------------+----------+
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |Draw_Background__GB0 |           1|      2044|
+|2     |Draw_Background__GB1 |           1|       939|
+|3     |Voice_Scope_TOP_GT0  |           1|     36370|
+|4     |Voice_Scope_TOP_GT1  |           1|      6984|
+|5     |Voice_Scope_TOP_GT2  |           1|         2|
++------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'i_0/wave_c/i_reg[4]' (FDE) to 'i_0/wave_c/i_reg[5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\wave_c/i_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\wave_c/CIRCLECOUNTER_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\wave_c/CIRCLECOUNTER_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wave_c/val_reg[20] )
+INFO: [Synth 8-3886] merging instance 'wave_c/i_reg[5]' (FDE) to 'wave_c/i_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wave_c/i_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wave_c/CIRCLECOUNTER_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wave_c/CIRCLECOUNTER_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (wave_c/val_reg[20]) is unused and will be removed from module Voice_Scope_TOP.
+WARNING: [Synth 8-3332] Sequential element (wave_c/cur_reg[14]) is unused and will be removed from module Voice_Scope_TOP.
+WARNING: [Synth 8-3332] Sequential element (wave_c/CIRCLECOUNTER_reg[5]) is unused and will be removed from module Voice_Scope_TOP.
+WARNING: [Synth 8-3332] Sequential element (wave_c/CIRCLECOUNTER_reg[4]) is unused and will be removed from module Voice_Scope_TOP.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:26 ; elapsed = 00:03:28 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished Technology Mapping : Time (s): cpu = 00:03:09 ; elapsed = 00:03:13 . Memory (MB): peak = 1073.227 ; gain = 816.469
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+----------------------+------------+----------+
-|      |RTL Partition         |Replication |Instances |
-+------+----------------------+------------+----------+
-|1     |Draw_Waveform_History |           1|     19203|
-|2     |Voice_Scope_TOP_GT0   |           1|      8487|
-+------+----------------------+------------+----------+
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -2281,13 +2250,13 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5365] Flop mc/mc/Inst_Ps2Interface/ps2_clk_h_reg is being inverted and renamed to mc/mc/Inst_Ps2Interface/ps2_clk_h_reg_inv.
 INFO: [Synth 8-5365] Flop mc/mc/Inst_Ps2Interface/ps2_data_h_reg is being inverted and renamed to mc/mc/Inst_Ps2Interface/ps2_data_h_reg_inv.
+INFO: [Synth 8-5365] Flop mc/mc/Inst_Ps2Interface/ps2_clk_h_reg is being inverted and renamed to mc/mc/Inst_Ps2Interface/ps2_clk_h_reg_inv.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:31 ; elapsed = 00:03:33 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished IO Insertion : Time (s): cpu = 00:03:11 ; elapsed = 00:03:16 . Memory (MB): peak = 1073.227 ; gain = 816.469
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2300,7 +2269,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:31 ; elapsed = 00:03:33 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:11 ; elapsed = 00:03:16 . Memory (MB): peak = 1073.227 ; gain = 816.469
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2312,25 +2281,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:34 ; elapsed = 00:03:36 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:13 ; elapsed = 00:03:18 . Memory (MB): peak = 1073.227 ; gain = 816.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:34 ; elapsed = 00:03:37 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:14 ; elapsed = 00:03:18 . Memory (MB): peak = 1073.227 ; gain = 816.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:35 ; elapsed = 00:03:37 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:14 ; elapsed = 00:03:19 . Memory (MB): peak = 1073.227 ; gain = 816.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:35 ; elapsed = 00:03:37 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:14 ; elapsed = 00:03:19 . Memory (MB): peak = 1073.227 ; gain = 816.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2347,23 +2316,23 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     5|
-|2     |CARRY4     |   906|
+|2     |CARRY4     |   911|
 |3     |DSP48E1    |    12|
 |4     |DSP48E1_1  |     8|
-|5     |LUT1       |   612|
-|6     |LUT2       |   995|
-|7     |LUT3       |  1162|
-|8     |LUT4       |  1353|
-|9     |LUT5       |   733|
-|10    |LUT6       |  4687|
+|5     |LUT1       |   652|
+|6     |LUT2       |   977|
+|7     |LUT3       |  1099|
+|8     |LUT4       |  1465|
+|9     |LUT5       |   668|
+|10    |LUT6       |  4656|
 |11    |MMCME2_ADV |     1|
 |12    |MUXF7      |  1719|
 |13    |MUXF8      |   810|
 |14    |RAM64M     |   120|
 |15    |RAM64X1D   |    40|
 |16    |RAMB16_S1  |    83|
-|17    |FDRE       | 15009|
-|18    |FDSE       |    20|
+|17    |FDRE       | 15002|
+|18    |FDSE       |     9|
 |19    |IBUF       |     9|
 |20    |IOBUF      |     2|
 |21    |OBUF       |    41|
@@ -2373,16 +2342,16 @@ Report Instance Areas:
 +------+------------------------+----------------------+------+
 |      |Instance                |Module                |Cells |
 +------+------------------------+----------------------+------+
-|1     |top                     |                      | 28327|
-|2     |  clk_30                |clk_30hz              |    32|
-|3     |  cs                    |Colour_Selector       |    41|
-|4     |  dbg                   |Draw_Background       |   452|
+|1     |top                     |                      | 28289|
+|2     |  clk_30                |clk_30hz              |    30|
+|3     |  cs                    |Colour_Selector       |    38|
+|4     |  dbg                   |Draw_Background       |   454|
 |5     |    ahar1               |char                  |     7|
 |6     |      c                 |pc_vga_8x16_257       |     1|
 |7     |        U1              |pc_vga_8x16_00_7F_258 |     1|
-|8     |    ahar10              |char_13               |     5|
-|9     |      c                 |pc_vga_8x16_255       |     2|
-|10    |        U1              |pc_vga_8x16_00_7F_256 |     2|
+|8     |    ahar10              |char_13               |     4|
+|9     |      c                 |pc_vga_8x16_255       |     1|
+|10    |        U1              |pc_vga_8x16_00_7F_256 |     1|
 |11    |    ahar11              |char_14               |     4|
 |12    |      c                 |pc_vga_8x16_253       |     1|
 |13    |        U1              |pc_vga_8x16_00_7F_254 |     1|
@@ -2395,9 +2364,9 @@ Report Instance Areas:
 |20    |    ahar14              |char_17               |     4|
 |21    |      c                 |pc_vga_8x16_247       |     1|
 |22    |        U1              |pc_vga_8x16_00_7F_248 |     1|
-|23    |    ahar15              |char_18               |     4|
-|24    |      c                 |pc_vga_8x16_245       |     1|
-|25    |        U1              |pc_vga_8x16_00_7F_246 |     1|
+|23    |    ahar15              |char_18               |     5|
+|24    |      c                 |pc_vga_8x16_245       |     2|
+|25    |        U1              |pc_vga_8x16_00_7F_246 |     2|
 |26    |    ahar2               |char_19               |     4|
 |27    |      c                 |pc_vga_8x16_243       |     1|
 |28    |        U1              |pc_vga_8x16_00_7F_244 |     1|
@@ -2458,22 +2427,22 @@ Report Instance Areas:
 |83    |    char2               |char_38               |     5|
 |84    |      c                 |pc_vga_8x16_205       |     2|
 |85    |        U1              |pc_vga_8x16_00_7F_206 |     2|
-|86    |    circ1               |char_39               |     5|
-|87    |      c                 |pc_vga_8x16_203       |     2|
-|88    |        U1              |pc_vga_8x16_00_7F_204 |     2|
+|86    |    circ1               |char_39               |     4|
+|87    |      c                 |pc_vga_8x16_203       |     1|
+|88    |        U1              |pc_vga_8x16_00_7F_204 |     1|
 |89    |    circ2               |char_40               |     4|
 |90    |      c                 |pc_vga_8x16_201       |     1|
 |91    |        U1              |pc_vga_8x16_00_7F_202 |     1|
 |92    |    circ3               |char_41               |     4|
 |93    |      c                 |pc_vga_8x16_199       |     1|
 |94    |        U1              |pc_vga_8x16_00_7F_200 |     1|
-|95    |    circ4               |char_42               |     5|
-|96    |      c                 |pc_vga_8x16_197       |     2|
-|97    |        U1              |pc_vga_8x16_00_7F_198 |     2|
+|95    |    circ4               |char_42               |     4|
+|96    |      c                 |pc_vga_8x16_197       |     1|
+|97    |        U1              |pc_vga_8x16_00_7F_198 |     1|
 |98    |    dhar1               |char_43               |     1|
 |99    |      c                 |pc_vga_8x16_195       |     1|
 |100   |        U1              |pc_vga_8x16_00_7F_196 |     1|
-|101   |    dhar2               |char_44               |     6|
+|101   |    dhar2               |char_44               |     5|
 |102   |      c                 |pc_vga_8x16_193       |     2|
 |103   |        U1              |pc_vga_8x16_00_7F_194 |     2|
 |104   |    ehar1               |char_45               |     1|
@@ -2485,7 +2454,7 @@ Report Instance Areas:
 |110   |    fhar1               |char_47               |     1|
 |111   |      c                 |pc_vga_8x16_187       |     1|
 |112   |        U1              |pc_vga_8x16_00_7F_188 |     1|
-|113   |    fhar2               |char_48               |     9|
+|113   |    fhar2               |char_48               |     8|
 |114   |      c                 |pc_vga_8x16_185       |     2|
 |115   |        U1              |pc_vga_8x16_00_7F_186 |     2|
 |116   |    fill1               |char_49               |     4|
@@ -2506,18 +2475,18 @@ Report Instance Areas:
 |131   |    freq2               |char_54               |     1|
 |132   |      c                 |pc_vga_8x16_173       |     1|
 |133   |        U1              |pc_vga_8x16_00_7F_174 |     1|
-|134   |    freq3               |char_55               |     2|
-|135   |      c                 |pc_vga_8x16_171       |     2|
-|136   |        U1              |pc_vga_8x16_00_7F_172 |     2|
+|134   |    freq3               |char_55               |     1|
+|135   |      c                 |pc_vga_8x16_171       |     1|
+|136   |        U1              |pc_vga_8x16_00_7F_172 |     1|
 |137   |    freq4               |char_56               |     4|
 |138   |      c                 |pc_vga_8x16_169       |     1|
 |139   |        U1              |pc_vga_8x16_00_7F_170 |     1|
-|140   |    freqc1              |char_57               |     2|
-|141   |      c                 |pc_vga_8x16_167       |     2|
-|142   |        U1              |pc_vga_8x16_00_7F_168 |     2|
-|143   |    freqc2              |char_58               |     2|
-|144   |      c                 |pc_vga_8x16_165       |     2|
-|145   |        U1              |pc_vga_8x16_00_7F_166 |     2|
+|140   |    freqc1              |char_57               |     1|
+|141   |      c                 |pc_vga_8x16_167       |     1|
+|142   |        U1              |pc_vga_8x16_00_7F_168 |     1|
+|143   |    freqc2              |char_58               |     1|
+|144   |      c                 |pc_vga_8x16_165       |     1|
+|145   |        U1              |pc_vga_8x16_00_7F_166 |     1|
 |146   |    freqc3              |char_59               |     1|
 |147   |      c                 |pc_vga_8x16_163       |     1|
 |148   |        U1              |pc_vga_8x16_00_7F_164 |     1|
@@ -2536,43 +2505,43 @@ Report Instance Areas:
 |161   |    freqcs4             |char_64               |     1|
 |162   |      c                 |pc_vga_8x16_153       |     1|
 |163   |        U1              |pc_vga_8x16_00_7F_154 |     1|
-|164   |    ghar1               |char_65               |     9|
+|164   |    ghar1               |char_65               |    13|
 |165   |      c                 |pc_vga_8x16_151       |     1|
 |166   |        U1              |pc_vga_8x16_00_7F_152 |     1|
 |167   |    ghar2               |char_66               |     7|
 |168   |      c                 |pc_vga_8x16_149       |     1|
 |169   |        U1              |pc_vga_8x16_00_7F_150 |     1|
-|170   |    hist1               |char_67               |     4|
-|171   |      c                 |pc_vga_8x16_147       |     1|
-|172   |        U1              |pc_vga_8x16_00_7F_148 |     1|
-|173   |    hist2               |char_68               |     4|
-|174   |      c                 |pc_vga_8x16_145       |     1|
-|175   |        U1              |pc_vga_8x16_00_7F_146 |     1|
+|170   |    hist1               |char_67               |     5|
+|171   |      c                 |pc_vga_8x16_147       |     2|
+|172   |        U1              |pc_vga_8x16_00_7F_148 |     2|
+|173   |    hist2               |char_68               |     5|
+|174   |      c                 |pc_vga_8x16_145       |     2|
+|175   |        U1              |pc_vga_8x16_00_7F_146 |     2|
 |176   |    hist3               |char_69               |     7|
 |177   |      c                 |pc_vga_8x16_143       |     1|
 |178   |        U1              |pc_vga_8x16_00_7F_144 |     1|
 |179   |    hist4               |char_70               |     4|
 |180   |      c                 |pc_vga_8x16_141       |     1|
 |181   |        U1              |pc_vga_8x16_00_7F_142 |     1|
-|182   |    meow1               |char_71               |     2|
-|183   |      c                 |pc_vga_8x16_139       |     2|
-|184   |        U1              |pc_vga_8x16_00_7F_140 |     2|
-|185   |    meow2               |char_72               |     1|
-|186   |      c                 |pc_vga_8x16_137       |     1|
-|187   |        U1              |pc_vga_8x16_00_7F_138 |     1|
+|182   |    meow1               |char_71               |     1|
+|183   |      c                 |pc_vga_8x16_139       |     1|
+|184   |        U1              |pc_vga_8x16_00_7F_140 |     1|
+|185   |    meow2               |char_72               |     2|
+|186   |      c                 |pc_vga_8x16_137       |     2|
+|187   |        U1              |pc_vga_8x16_00_7F_138 |     2|
 |188   |    meow3               |char_73               |     1|
 |189   |      c                 |pc_vga_8x16_135       |     1|
 |190   |        U1              |pc_vga_8x16_00_7F_136 |     1|
 |191   |    meow4               |char_74               |     1|
 |192   |      c                 |pc_vga_8x16_133       |     1|
 |193   |        U1              |pc_vga_8x16_00_7F_134 |     1|
-|194   |    nc                  |nyan_clk              |    39|
-|195   |    normal1             |char_75               |     5|
-|196   |      c                 |pc_vga_8x16_131       |     2|
-|197   |        U1              |pc_vga_8x16_00_7F_132 |     2|
-|198   |    normal2             |char_76               |     2|
-|199   |      c                 |pc_vga_8x16_129       |     2|
-|200   |        U1              |pc_vga_8x16_00_7F_130 |     2|
+|194   |    nc                  |nyan_clk              |    49|
+|195   |    normal1             |char_75               |     4|
+|196   |      c                 |pc_vga_8x16_131       |     1|
+|197   |        U1              |pc_vga_8x16_00_7F_132 |     1|
+|198   |    normal2             |char_76               |     1|
+|199   |      c                 |pc_vga_8x16_129       |     1|
+|200   |        U1              |pc_vga_8x16_00_7F_130 |     1|
 |201   |    normal3             |char_77               |     1|
 |202   |      c                 |pc_vga_8x16_127       |     1|
 |203   |        U1              |pc_vga_8x16_00_7F_128 |     1|
@@ -2591,7 +2560,7 @@ Report Instance Areas:
 |216   |    normalc4            |char_82               |     4|
 |217   |      c                 |pc_vga_8x16_117       |     1|
 |218   |        U1              |pc_vga_8x16_00_7F_118 |     1|
-|219   |    nyan                |Draw_Mao              |    45|
+|219   |    nyan                |Draw_Mao              |    47|
 |220   |    slow1               |char_83               |     1|
 |221   |      c                 |pc_vga_8x16_115       |     1|
 |222   |        U1              |pc_vga_8x16_00_7F_116 |     1|
@@ -2610,9 +2579,9 @@ Report Instance Areas:
 |235   |    vol2                |char_88               |     4|
 |236   |      c                 |pc_vga_8x16_105       |     1|
 |237   |        U1              |pc_vga_8x16_00_7F_106 |     1|
-|238   |    vol3                |char_89               |     4|
-|239   |      c                 |pc_vga_8x16_103       |     1|
-|240   |        U1              |pc_vga_8x16_00_7F_104 |     1|
+|238   |    vol3                |char_89               |     5|
+|239   |      c                 |pc_vga_8x16_103       |     2|
+|240   |        U1              |pc_vga_8x16_00_7F_104 |     2|
 |241   |    waveform1           |char_90               |     5|
 |242   |      c                 |pc_vga_8x16_101       |     2|
 |243   |        U1              |pc_vga_8x16_00_7F_102 |     2|
@@ -2628,45 +2597,45 @@ Report Instance Areas:
 |253   |    waveform5           |char_94               |     1|
 |254   |      c                 |pc_vga_8x16           |     1|
 |255   |        U1              |pc_vga_8x16_00_7F     |     1|
-|256   |  fc                    |Freq_Counter          |  2803|
-|257   |  mc                    |Mouse_Controller      |   847|
-|258   |    mc                  |MouseCtl              |   847|
-|259   |      Inst_Ps2Interface |Ps2Interface          |   282|
-|260   |  mode_s                |Mode_Selector         |   556|
-|261   |    ctr                 |Button_Pulser         |    25|
-|262   |      dff1              |posE_dff_11           |     8|
-|263   |      dff2              |posE_dff_12           |    17|
-|264   |    down                |Button_Pulser_0       |    27|
-|265   |      dff1              |posE_dff_9            |    22|
-|266   |      dff2              |posE_dff_10           |     5|
-|267   |    left__0             |Button_Pulser_1       |    91|
-|268   |      dff1              |posE_dff_7            |     7|
-|269   |      dff2              |posE_dff_8            |    84|
-|270   |    right               |Button_Pulser_2       |    62|
-|271   |      dff1              |posE_dff_5            |    49|
-|272   |      dff2              |posE_dff_6            |    13|
+|256   |  fc                    |Freq_Counter          |  2801|
+|257   |  mc                    |Mouse_Controller      |   831|
+|258   |    mc                  |MouseCtl              |   831|
+|259   |      Inst_Ps2Interface |Ps2Interface          |   280|
+|260   |  mode_s                |Mode_Selector         |   550|
+|261   |    ctr                 |Button_Pulser         |    26|
+|262   |      dff1              |posE_dff_11           |    15|
+|263   |      dff2              |posE_dff_12           |    11|
+|264   |    down                |Button_Pulser_0       |    38|
+|265   |      dff1              |posE_dff_9            |    34|
+|266   |      dff2              |posE_dff_10           |     4|
+|267   |    left                |Button_Pulser_1       |   130|
+|268   |      dff1              |posE_dff_7            |     5|
+|269   |      dff2              |posE_dff_8            |   125|
+|270   |    right               |Button_Pulser_2       |    19|
+|271   |      dff1              |posE_dff_5            |    10|
+|272   |      dff2              |posE_dff_6            |     9|
 |273   |    seg_d               |SEG_Decoder           |    68|
-|274   |    up                  |Button_Pulser_3       |     8|
-|275   |      dff1              |posE_dff              |     5|
+|274   |    up                  |Button_Pulser_3       |     5|
+|275   |      dff1              |posE_dff              |     2|
 |276   |      dff2              |posE_dff_4            |     3|
 |277   |  my_clk                |clk_div               |    21|
-|278   |  sound_converter       |Sound_Lvl_Converter   |   972|
-|279   |  vc                    |Voice_Capturer        |   111|
-|280   |  vga                   |VGA_DISPLAY           |  1956|
+|278   |  sound_converter       |Sound_Lvl_Converter   |   952|
+|279   |  vc                    |Voice_Capturer        |   119|
+|280   |  vga                   |VGA_DISPLAY           |  1748|
 |281   |    VGA_CLK_108M        |CLK_108M              |     3|
-|282   |    VGA_CONTROL         |VGA_CONTROL           |  1730|
-|283   |  wave                  |Draw_Waveform_Mode    |   490|
-|284   |  wave_c                |Draw_Waveform_Circle  |   804|
-|285   |  wave_h                |Draw_Waveform_History | 19118|
+|282   |    VGA_CONTROL         |VGA_CONTROL           |  1536|
+|283   |  wave                  |Draw_Waveform_Mode    |   714|
+|284   |  wave_c                |Draw_Waveform_Circle  |   823|
+|285   |  wave_h                |Draw_Waveform_History | 19117|
 +------+------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:03:37 . Memory (MB): peak = 944.813 ; gain = 687.477
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:14 ; elapsed = 00:03:19 . Memory (MB): peak = 1073.227 ; gain = 816.469
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 139 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:16 ; elapsed = 00:03:26 . Memory (MB): peak = 944.813 ; gain = 301.992
-Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:03:38 . Memory (MB): peak = 944.813 ; gain = 687.477
+Synthesis finished with 0 errors, 0 critical warnings and 86 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:59 ; elapsed = 00:03:09 . Memory (MB): peak = 1073.227 ; gain = 433.117
+Synthesis Optimization Complete : Time (s): cpu = 00:03:14 ; elapsed = 00:03:19 . Memory (MB): peak = 1073.227 ; gain = 816.469
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3710 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3715 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -2678,11 +2647,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB16_S1 => RAMB18E1: 83 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-321 Infos, 288 Warnings, 0 Critical Warnings and 0 Errors encountered.
+317 Infos, 255 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:44 ; elapsed = 00:03:48 . Memory (MB): peak = 944.813 ; gain = 700.625
+synth_design: Time (s): cpu = 00:03:24 ; elapsed = 00:03:29 . Memory (MB): peak = 1073.227 ; gain = 829.289
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.runs/synth_1/Voice_Scope_TOP.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Voice_Scope_TOP_utilization_synth.rpt -pb Voice_Scope_TOP_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.252 . Memory (MB): peak = 944.813 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Apr  6 01:29:44 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 1073.227 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  6 10:19:54 2019...

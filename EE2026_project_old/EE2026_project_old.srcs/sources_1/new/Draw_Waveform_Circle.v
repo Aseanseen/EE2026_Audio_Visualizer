@@ -33,7 +33,7 @@ module Draw_Waveform_Circle(
     
     reg [20:0] radius = 0;
     reg [20:0] val;
-    reg [20:0] prev;
+    reg [20:0] prev = 70;
     reg [20:0] cur;
     reg [9:0] counter = 1;
     
@@ -65,9 +65,11 @@ module Draw_Waveform_Circle(
         
         //volume circle waveform w. slow falloff
         if (circlestate == 2 && SW15 == 0 && LOCK == 0 && counter == 0) begin
-            cur <= (cur * 2) / 3; //current val of peak
-            prev <= (cur > prev ? (cur > 350 ? 350 : cur) : (prev <= 40 ? 35 : prev - 35));
-            memory[i] <= prev;
+            cur <= (cur * 2) / 3; //current val of peak.
+            prev <= (cur > prev ? cur : (prev <= 35 ? 0 : prev - 35));
+            //prev <= (cur > prev ? (cur > 350 ? 350 : cur) : (prev <= 40 ? 35 : prev - 35));
+            
+            memory[i] <= prev + 10;
             i <= (i > 7 ? 0 : i + 1);
             cur <= 0;
         end
@@ -81,8 +83,9 @@ module Draw_Waveform_Circle(
         
         //freq circle waveform w. slow falloff
         if (circlestate == 4 && SW15 == 0 && LOCK == 0 && counter == 0) begin
-            prev <= (cur > prev ? (cur > 350 ? 350 : cur) : (prev <= 40 ? 35 : prev - 35));
-            memory[i] <= prev;
+            prev <= (cur + 50 > prev ? cur : (prev <= 35 ? 0 : prev - 35));
+            //prev <= (cur > prev ? (cur > 350 ? 350 : cur) : (prev <= 40 ? 35 : prev - 35));
+            memory[i] <= prev + 10;
             i <= (i > 7 ? 0 : i + 1);
             cur <= 0;
         end
