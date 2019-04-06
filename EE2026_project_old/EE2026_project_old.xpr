@@ -145,6 +145,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/Tuner.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/VGA_DISPLAY.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="G:/EE2026_Project/EE2026_Project.srcs/sources_1/imports/new/VGA_DISPLAY.v"/>
@@ -305,14 +312,6 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../EE2026_Project/archive_project_summary.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/Tuner.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Voice_Scope_TOP"/>

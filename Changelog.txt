@@ -11,6 +11,15 @@ Color scheme change mode
 
 Mode Selector:
 7SEG Menu Display
+	- How to use:
+		Press button up / down to toggle between the various modes
+		Press button left / right to toggle between the options for that mode
+		Press button centre to confirm and lock in choice (except in mode 1 & 2)
+			After confirming, mode is reset back to 1
+			
+		Menu display remembers previous states, but allows for preview of different modes/options
+		when in modes 3 to 6
+		
 	0 - Lock waveform
 	
 	1 - Display vol, default (0 to 12)
@@ -18,6 +27,7 @@ Mode Selector:
 	2 - Waveform Parameter Displays
 		1. Frequency
 		2. Sound Percentage Level
+		3. Music Tuner Mode
 	
 	3 - Color Scheme Mode Changer
 		- 5 different colors
@@ -38,52 +48,10 @@ Mode Selector:
 		3. Frequency (not implemented)
 		4. Frequency w. slow falloff (not implemented)
 		
-		
-EE volume / freq history display
-	- placed at the bottom left of the graph	
-	- the problem with the original code is that the full history bar (for some odd reason)
-	has empty spaces, we can compensate for this by overlaying the bar again
-		- range has been narrowed down in order to not make this look terrible (the bar will jump at some point)
-		
-	- Toggling the display
-		- changed at mode 5 options
-			option states:
-			0. turned off
-			1. turned on (base sound wave)
-			2. sound wave volume
-			3. freq wave
-			
-	- menu drawing for the display
-	- background
-		-
-	
-	border
-	- use the original border for that color scheme, but make it darker
-	- for base sound wave, have a specific line at the middle to demarcate the middle point
-	
-Note: prob with frequency ? 
-	- atm it samples for 1s and returns the number of crossings
-	- can do continuous sampling
-		- have to figure out how much to delete at each point (use reg memory to store?)
-	
-//stuff to check tmr:
-check if the history waveform fills the entire bar
-	- decide if the speed and waveform looks good
 
 Stuff to work on:
 	Dan - 
-		Volume / frequency history cleanup
-		* - % char in decoder doesnt work, will look into it sometime later
-		need to bind maximum option settings to modes 4 and above
-		re-do the freq calculator, so it measures in real time instead of every 1s
-			especially need this for the freq waveforms
-		finish up those alternate waveforms (thurs night)
 		
-		Last feature (if there's time)
-			- Make a musical tuner from this (set to mode 7)
-			- Basically take the freq given, and output a specific note (will need to lookup the values)
-			
-			- possibly rebind the history code for special nyan cat mode
 
 29.3.19
 	Dan:
@@ -127,3 +95,8 @@ Stuff to work on:
 		
 	Dan:
 		Binded buttons to states
+
+6.4.19
+	Dan:
+		Fixed weird issue with circle waveforms with falloff
+		Added music tuner mode to parameter display

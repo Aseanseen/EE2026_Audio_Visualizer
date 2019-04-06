@@ -98,9 +98,18 @@ module Voice_Scope_TOP(
     wire LOCK; //waveform lock status (via 7SEG)
     assign LOCKLED = LOCK || SW15;
     
+    //tuner 7SEG
+    wire [5:0] tuner0;
+    wire [5:0] tuner1;
+    wire [5:0] tuner2;
+    wire [5:0] tuner3;
+    
+    Tuner tnr(CLOCK, freq100Hz, MODE, tuner0, tuner1, tuner2, tuner3); 
+    
     Mode_Selector mode_s(CLOCK, clk_wire, clk_30Hz, wave_sample_raw, 
     btnC, btnU, btnD, btnL, btnR, 
-    SEG_VOL0, SEG_VOL1, freq0, freq1, freq2, freq3, SPERCENT0, SPERCENT1, SPERCENT2,  
+    SEG_VOL0, SEG_VOL1, freq0, freq1, freq2, freq3, SPERCENT0, SPERCENT1, SPERCENT2, 
+    tuner0, tuner1, tuner2, tuner3, 
     mouseLeft, mouseXPos, mouseYPos,
     SEG, AN, MODE, WAVEMODE, CLRSTATE, WAVEFORMSTATE, HISTSTATE, CIRCLESTATE, LOCK);
     

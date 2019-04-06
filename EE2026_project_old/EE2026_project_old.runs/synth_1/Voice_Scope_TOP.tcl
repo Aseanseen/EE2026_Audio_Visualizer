@@ -43,6 +43,7 @@ read_verilog -library xil_defaultlib {
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Mouse_Controller.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/SEG_Decoder.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Sound_Lvl_Converter.v
+  D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Tuner.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/imports/new/VGA_DISPLAY.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/Voice_Capturer.v
   D:/NUS/ee2026lab/EE2026_project_old/EE2026_project_old.srcs/sources_1/new/char.v

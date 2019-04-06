@@ -10,6 +10,7 @@ module Mode_Selector(
     [5:0] SEG_VOL0, [5:0] SEG_VOL1, 
     [3:0] FREQ0, [3:0] FREQ1,  [3:0] FREQ2, [3:0] FREQ3, 
     [5:0] SPERCENT0, [5:0] SPERCENT1, [5:0] SPERCENT2,
+    [5:0] TUNER0, [5:0] TUNER1, [5:0] TUNER2, [5:0] TUNER3, 
     MOUSELEFT, [11:0] MOUSEX, [11:0] MOUSEY,
     output [7:0] SEG, [3:0] AN, [5:0] MODE, [2:0] WAVEMODE, 
     [2:0] CLRSTATE, [2:0] WAVEFORMSTATE, [2:0] HISTSTATE, [2:0] CIRCLESTATE, 
@@ -246,7 +247,7 @@ module Mode_Selector(
         
         //parameter display mode
         if (LSTATE == 1 && ~btnR && mode == 2) begin //button press left
-            displayState <= (displayState >= 2 ? displayState : displayState + 1);
+            displayState <= (displayState >= 3 ? displayState : displayState + 1);
             display1Hz = 0;
         end
         
@@ -378,7 +379,7 @@ module Mode_Selector(
         if (mode == 2) begin
         case (displayState)
             1: begin
-                word0 <= (display1Hz >= 90 ? (FREQ0 == 0 ? 15 : FREQ0) : 15);
+                word0 <= (display1Hz >= 90 ? FREQ0 : 15);
                 word1 <= (display1Hz >= 90 ? FREQ1 : 27);
                 word2 <= (display1Hz >= 90 ? FREQ2 : 14);
                 word3 <= (display1Hz >= 90 ? FREQ3 : 26);
@@ -389,6 +390,13 @@ module Mode_Selector(
                 word1 <= (display1Hz >= 90 ? SPERCENT1 : 24);
                 word2 <= (display1Hz >= 90 ? SPERCENT2 : 21);
                 word3 <= (display1Hz >= 90 ? 37 : 37);
+            end
+            
+            3: begin
+                word0 <= (display1Hz >= 90 ? TUNER0 : 40);
+                word1 <= (display1Hz >= 90 ? TUNER1 : 29);
+                word2 <= (display1Hz >= 90 ? TUNER2 : 23);
+                word3 <= (display1Hz >= 90 ? TUNER3 : 27);
             end
             
         endcase
@@ -404,7 +412,7 @@ module Mode_Selector(
             1: begin word0 = 0; word1 = 0; word2 = SEG_VOL0; word3 = SEG_VOL1; end
             
             //Display parameters - Freq / Vol %
-            2: begin word0 = (FREQ0 == 0 ? 15 : FREQ0); word1 = FREQ1; word2 = FREQ2; word3 = FREQ3; end
+            2: begin word0 = FREQ0; word1 = FREQ1; word2 = FREQ2; word3 = FREQ3; end
             
             //Change screen color scheme
             3: begin word0 = 12; word1 = 21; word2 = 27; word3 = option; end
@@ -431,11 +439,11 @@ module Mode_Selector(
             //History display mode
             5: begin 
                 if (histState == 1) begin
-                    word0 = 17; word1 = 28; word2 = 29; word3 = 15;
+                    word0 = 17; word1 = 28; word2 = 29; word3 = 31;
                 end 
                 
                 if (histState == 2) begin
-                    word0 = 17; word1 = 28; word2 = 29; word3 = 31;
+                    word0 = 17; word1 = 28; word2 = 29; word3 = 15;
                 end 
     
                 if (histState == 3) begin

@@ -53,7 +53,7 @@ module Draw_Waveform_Circle(
         
         val <= (circlestate <= 2 ? 
         (wave_sample > 512 ? wave_sample - 512 : 512 - wave_sample) : 
-        (freq_sample / 3) ); //get absolute diff
+        (freq_sample / 2) ); //get absolute diff
         cur <= (val > cur ? val : cur); //get current peak
         
         //volume circle waveform
