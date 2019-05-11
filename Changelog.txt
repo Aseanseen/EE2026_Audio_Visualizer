@@ -1,14 +1,17 @@
+===================================================================================================
+EE2026 Audio Visualizer Project
+===================================================================================================
+Overview:
+===================================================================================================
+Audio visualizer project using the BASYS 3 FPGA Board and a PMOD microphone. A VGA display is used
+in the project too. Additionally, mouse support allows the user to toggle between different modes
+in the visualizer, though this natively can be navigated via the push buttons in the FPGA.
+
+An "feature report" can be found in this folder.
+---------------------------------------------------------------------------------------------------
+===================================================================================================
 Features:
-LED Volume Indicator (0-12)
-7SEG Volume Indicator (0-12)
-
-Sound wave frequency indicator
-Sound wave volume percentage indicator
-
-Multiple waveform displays
-
-Color scheme change mode
-
+===================================================================================================
 Mode Selector:
 7SEG Menu Display
 	- How to use:
@@ -20,9 +23,9 @@ Mode Selector:
 		Menu display remembers previous states, but allows for preview of different modes/options
 		when in modes 3 to 6
 		
-	0 - Lock waveform
+	0 - Waveform Locking System
 	
-	1 - Display vol, default (0 to 12)
+	1 - Display vol, default mode (0 to 12)
 	
 	2 - Waveform Parameter Displays
 		1. Frequency
@@ -39,20 +42,19 @@ Mode Selector:
 		4. Bar waveform (in blocks?, not implemented)
 		
 	5 - Waveform History Display Toggle
-		1. sound wave + freq
-		2. Nyan cat
+		1. Volume Waveform History
+		2. Frequency Waveform History
+		2. Nyan cat (Using volume as reference)
 	
-	6 - Circle waveform visualisation (2Hz)
+	6 - Circle waveform visualisation (2Hz update)
 		1. Regular waveform
 		2. Waveform w. slow falloff (not implemented)
 		3. Frequency (not implemented)
 		4. Frequency w. slow falloff (not implemented)
-		
-
-Stuff to work on:
-	Dan - 
-		
-
+---------------------------------------------------------------------------------------------------
+===================================================================================================
+Changelog:
+===================================================================================================
 29.3.19
 	Dan:
 		Merged color changing state code
@@ -100,3 +102,4 @@ Stuff to work on:
 	Dan:
 		Fixed weird issue with circle waveforms with falloff
 		Added music tuner mode to parameter display
+		Tidied up the project for submission

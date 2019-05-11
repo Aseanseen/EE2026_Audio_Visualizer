@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Oct 07 18:04:05 2018
+# Process ID: 15028
+# Current directory: C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13120 C:\Users\elechuad\Desktop\EE2026 AY18-19 SEM1\Project\ForStudents\Voice_Scope_Project_Template\Voice_Scope_Project_Template.xpr
+# Log file: C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template/vivado.log
+# Journal file: C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template/Voice_Scope_Project_Template.xpr}
+update_compile_order -fileset sources_1
+archive_project {C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template.xpr.zip} -temp_dir C:/Users/elechuad/Desktop -force -exclude_run_results

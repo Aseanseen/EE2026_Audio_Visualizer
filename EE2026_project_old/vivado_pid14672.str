@@ -1557,3 +1557,23 @@ dismissDialog("Program Device"); // bB (ck)
 // Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
 // Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
 dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,297 MB. GUI used memory: 63 MB. Current time: 4/6/19 12:53:56 PM SGT
+// Elapsed time: 1982 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// HMemoryUtils.trashcanNow. Engine heap size: 1,297 MB. GUI used memory: 64 MB. Current time: 4/6/19 1:23:57 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,297 MB. GUI used memory: 64 MB. Current time: 4/6/19 1:53:57 PM SGT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6447 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6217 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,297 MB. GUI used memory: 64 MB. Current time: 4/6/19 2:23:57 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,297 MB. GUI used memory: 64 MB. Current time: 4/6/19 2:53:57 PM SGT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_SERVER_NEEDS_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE

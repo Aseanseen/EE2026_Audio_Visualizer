@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Oct 07 18:04:05 2018
+# Process ID: 15028
+# Current directory: C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13120 C:\Users\elechuad\Desktop\EE2026 AY18-19 SEM1\Project\ForStudents\Voice_Scope_Project_Template\Voice_Scope_Project_Template.xpr
+# Log file: C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template/vivado.log
+# Journal file: C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template/Voice_Scope_Project_Template.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template/Voice_Scope_Project_Template.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+archive_project {C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template.xpr.zip} -temp_dir C:/Users/elechuad/Desktop -force -exclude_run_results
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/elechuad/Desktop' for archiving project
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/elechuad/Desktop/EE2026 AY18-19 SEM1/Project/ForStudents/Voice_Scope_Project_Template/Voice_Scope_Project_Template.ip_user_files'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...

@@ -2,21 +2,49 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Apr  6 00:56:34 2019
-# Process ID: 4552
-# Current directory: C:/Users/Admin/Documents/GitHub/EE2026_proj/EE2026_project_old
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17320 C:\Users\Admin\Documents\GitHub\EE2026_proj\EE2026_project_old\EE2026_project_old.xpr
-# Log file: C:/Users/Admin/Documents/GitHub/EE2026_proj/EE2026_project_old/vivado.log
-# Journal file: C:/Users/Admin/Documents/GitHub/EE2026_proj/EE2026_project_old\vivado.jou
+# Start of session at: Sat Apr  6 23:02:22 2019
+# Process ID: 18012
+# Current directory: C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/5.4.19 Build 2/EE2026_project_old
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2296 C:\Users\Admin\Documents\GitHub\EE2026_proj\Previous Build\5.4.19 Build 2\EE2026_project_old\EE2026_project_old.xpr
+# Log file: C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/5.4.19 Build 2/EE2026_project_old/vivado.log
+# Journal file: C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/5.4.19 Build 2/EE2026_project_old\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Admin/Documents/GitHub/EE2026_proj/EE2026_project_old/EE2026_project_old.xpr
+open_project {C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/5.4.19 Build 2/EE2026_project_old/EE2026_project_old.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Admin/Documents/GitHub/EE2026_proj/Previous Build/5.4.19 Build 2/EE2026_project_old'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Admin/Documents/GitHub/EE2026_proj/EE2026_project_old' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VivadoHLX/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 846.555 ; gain = 163.516
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 790.215 ; gain = 87.293
 update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 3652 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1679.430 ; gain = 8.457
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1679.430 ; gain = 8.457
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 162 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 120 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 40 instances
+
+open_run: Time (s): cpu = 00:00:59 ; elapsed = 00:00:46 . Memory (MB): peak = 1792.059 ; gain = 997.355
+open_report: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 1985.734 ; gain = 164.738
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Apr  6 01:12:45 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  6 23:36:21 2019...

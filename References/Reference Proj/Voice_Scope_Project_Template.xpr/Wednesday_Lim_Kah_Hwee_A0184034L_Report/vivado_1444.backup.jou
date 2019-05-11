@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct 14 02:06:52 2018
+# Process ID: 1444
+# Current directory: C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10700 C:\Users\KH\Documents\KH\NUS\EE2026\LAB\Lab Project\Voice_Scope_Project_Template.xpr\Wednesday_Lim_Kah_Hwee_A0184034L_Report\Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr
+# Log file: C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/vivado.log
+# Journal file: C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr}
+update_compile_order -fileset sources_1
+archive_project {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr.zip} -temp_dir {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/.Xil/Vivado-1444-KHLim} -force -include_local_ip_cache -include_config_settings
+archive_project {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr.zip} -temp_dir {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/.Xil/Vivado-1444-KHLim} -force -include_local_ip_cache -include_config_settings
+archive_project {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr.zip} -temp_dir {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/.Xil/Vivado-1444-KHLim} -force -include_local_ip_cache -include_config_settings
+archive_project {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr.zip} -temp_dir {C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Lab Project/Voice_Scope_Project_Template.xpr/Wednesday_Lim_Kah_Hwee_A0184034L_Report/.Xil/Vivado-1444-KHLim} -force -include_local_ip_cache -include_config_settings
+archive_project C:/Users/KH/Documents/KH/NUS/EE2026/LAB/Wednesday_Lim_Kah_Hwee_A0184034L_Report.xpr.zip -temp_dir C:/Users/KH/Documents/KH/NUS/EE2026/LAB -force -include_local_ip_cache -include_config_settings
